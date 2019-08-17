@@ -41,7 +41,7 @@ async function importPeople(filePath) {
       name_zh: person.name_zh,
       name_en: person.name_en,
       estimated_yob: person.estimated_yob || null,
-      gender: 'MALE',
+      gender: person.gender,
     })),
   });
 
@@ -200,9 +200,9 @@ async function importAll(directory) {
     return;
   }
 
-  // await importPeople(path.join(directory, 'dcd_people.csv'));
+  await importPeople(path.join(directory, 'dcd_people.csv'));
   await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
-  // await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
+  await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
 }
 
 
