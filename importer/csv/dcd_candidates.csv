@@ -751,7 +751,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 750,單仲偕,SIN CHUNG KAI,ordinary,29,1,1999,S12,39,民主黨,泛民,,銀行資訊科技副經理,,,TRUE
 751,盧慧蘭,LO WAI LAN,ordinary,201,2,1999,S13,53,,其他,,全職區議員,,,TRUE
 752,黃耀聰,WONG YIU CHUNG,ordinary,460,2,1999,S14,41,,其他,,全職議員,1433,72.4,TRUE
-753,程樂蓀,,ordinary,#N/A,1,1999,S14,46,,其他,,註冊保健員,537,27.1,FALSE
+753,程樂蓀,"CHING Lok-suen, Carl",ordinary,655,1,1999,S14,46,,其他,,註冊保健員,537,27.1,FALSE
 754,吳劍昇,NG KIM SING,ordinary,656,1,1999,S15,32,民主黨,泛民,,教師,762,54.3,TRUE
 755,張彼得,CHEUNG PETER,ordinary,30,1,1999,S15,58,民建聯,建制,,藝員／作家,634,45.2,FALSE
 756,周奕希,CHOW YICK HAY,ordinary,32,1,1999,S16,42,民主黨,泛民,,全職議員,,,TRUE
@@ -1757,7 +1757,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 1756,陳振福,CHAN Chun-fuk,ordinary,857,1,2007,C29,32,,其他,1,,1197,38.6,FALSE
 1757,江澤濠,KONG CHACK HO,ordinary,1020,2,2007,C30,58,,建制,0,公司董事,,,TRUE
 1758,許嘉灝,HUI KA HOO,ordinary,2173,1,2007,C31,60,民建聯,建制,2,全職區議員,1491,57.7,TRUE
-1759,黃生鑫,WONG Sang-kam,ordinary,#N/A,1,2007,C31,,民主黨,泛民,1,,1071,41.5,FALSE
+1759,黃生鑫,WONG SANG KAM,ordinary,257,1,2007,C31,,民主黨,泛民,1,,1071,41.5,FALSE
 1760,趙資強,CHIU Chi-keung,ordinary,2328,1,2007,C32,58,民建聯,建制,1,工會工作者,2190,74.8,TRUE
 1761,劉寶坤,LAU Po-kwan,ordinary,1174,1,2007,C32,37,獨民派,泛民,2,社會服務,712,24.3,FALSE
 1762,趙承基,CHAO SHING KIE,ordinary,2241,1,2007,C33,66,民建聯,建制,2,全職議員,2286,66.9,TRUE
@@ -2038,7 +2038,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2037,謝淑珍,TSE SUK CHUN,ordinary,1070,1,2007,J19,45,,泛民,2,社區主任,1926,43.7,FALSE
 2038,范偉光,FAN WAI KONG,ordinary,2371,1,2007,J19,65,,建制,1,全職區議員,2445,55.5,TRUE
 2039,許貴富,HUI Kwai-fu,ordinary,1007,1,2007,J20,26,,其他,1,銷售主任,659,35,FALSE
-2040,黎樹濠,"LAI Shu-ho, Patrick",ordinary,137,1,2007,J20,57,,建制,2,中學校長,1199,63.7,TRUE
+2040,黎樹濠,LAI SHU HO PATRICK,ordinary,137,1,2007,J20,57,,建制,2,中學校長,1199,63.7,TRUE
 2041,呂東孩,LUI TUNG HAI,ordinary,843,1,2007,J21,40,,建制,0,全職區議員,,,TRUE
 2042,鄧咏駿,TANG WING CHUN,ordinary,1071,1,2007,J22,30,,建制,2,環保顧問,3569,71.3,TRUE
 2043,錢正民,CHIN DANNY CHING MAN,ordinary,1276,1,2007,J22,51,,泛民,1,行政經理,1394,27.8,FALSE
@@ -2064,7 +2064,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2063,潘惠芳,POON Wai-fong,ordinary,870,1,2007,J32,47,,建制,2,,515,19,FALSE
 2064,馮錦源,FUNG KAM YUEN,ordinary,2214,1,2007,J33,53,,建制,2,全職區議員,1352,41.3,TRUE
 2065,楊國雄,YEUNG Kwok-hung,ordinary,1009,1,2007,J33,28,社民連,泛民,1,地區發展主任,1011,30.9,FALSE
-2066,羅麗娟,LAW Lai-kuen,ordinary,#N/A,1,2007,J33,,,其他,3,註冊社工,875,26.7,FALSE
+2066,羅麗娟,LAW LAI KUEN,ordinary,1208,1,2007,J33,,,其他,3,註冊社工,875,26.7,FALSE
 2067,蘇冠聰,SO KOON CHUNG KEVIN,ordinary,791,1,2007,J34,31,,泛民,2,全職區議員,2221,66.9,TRUE
 2068,周志威,CHOW CHI WAI,ordinary,841,1,2007,J34,32,民建聯,建制,1,公司財務總監,1062,32,FALSE
 2069,鄺國全,KWONG KWOK CHUEN COSMAS,ordinary,1386,1,2007,K01,48,民主黨,泛民,1,教師,1024,49.1,FALSE
@@ -2176,7 +2176,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2175,袁敏兒,YUEN Man-yee,ordinary,1015,1,2007,M02,45,自由黨,建制,2,社區幹事,1953,60,TRUE
 2176,黃偉賢,WONG WAI YIN ZACHARY,ordinary,1352,1,2007,M03,49,民主黨,泛民,2,區議員,2298,71.3,TRUE
 2177,邱嘉強,YAU Ka-keung,ordinary,695,1,2007,M03,52,民建聯,建制,1,營業員,909,28.2,FALSE
-2178,鄺俊宇,KWONG Chun-yu,ordinary,#N/A,1,2007,M04,26,民主黨,泛民,2,社區幹事,1960,58.2,TRUE
+2178,鄺俊宇,KWONG CHUN YU,ordinary,1634,1,2007,M04,26,民主黨,泛民,2,社區幹事,1960,58.2,TRUE
 2179,陳兆基,CHAN Siu-kay,ordinary,319,2,2007,M04,37,民建聯,建制,1,全職區議員,1383,41,FALSE
 2180,黃文健,"WONG Man-kin, Ken",ordinary,320,1,2007,M05,32,自由黨,建制,1,交通工程師,629,23.5,FALSE
 2181,麥永光,"MAK Wing-kwong, Anthony",ordinary,66,1,2007,M05,49,民主陣線,泛民,3,工程經理,892,33.3,FALSE
@@ -2306,7 +2306,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2305,秦漢煬,CHUN Hon-yeung,ordinary,404,1,2007,P08,48,,建制,3,行政人員,64,1.5,FALSE
 2306,黃碧嬌,WONG PIK KIU,ordinary,630,1,2007,P09,42,民建聯,建制,2,大埔區議員,2578,60.4,TRUE
 2307,黎卓賢,LAI Cheuk-yin,ordinary,699,1,2007,P09,29,前綫,泛民,3,議員助理,795,18.6,FALSE
-2308,黃耀梓,WONG Yiu-chee,ordinary,#N/A,1,2007,P09,,,其他,1,小學校長,865,20.2,FALSE
+2308,黃耀梓,WONG YIU CHEE,ordinary,100,1,2007,P09,,,其他,1,小學校長,865,20.2,FALSE
 2309,陳笑權,CHAN SIU KUEN,ordinary,250,1,2007,P10,45,,建制,0,區議員,,,TRUE
 2310,李志成,LEE CHI SHING EDWARD,ordinary,252,1,2007,P11,39,泛民聯盟,泛民,1,大埔區議員/註冊社工,1662,45.7,FALSE
 2311,余智榮,YU Chi-wing,ordinary,151,1,2007,P11,40,,建制,2,行政人員,1946,53.5,TRUE
@@ -2404,7 +2404,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2403,莫偉雄,MOK WAI HUNG,ordinary,106,1,2007,R13,52,,泛民,1,保險顧問,2022,48.9,FALSE
 2404,甄永樂,"YAN Wing-lok, Alexander",ordinary,2362,1,2007,R14,44,泛民聯盟,泛民,2,環境教育工作者,720,27.5,FALSE
 2405,何厚祥,HO HAU CHEUNG,ordinary,268,1,2007,R14,55,公民力量,建制,1,區議員,1864,71.3,TRUE
-2406,韋國洪,WAI Kwok-hung,ordinary,#N/A,1,2007,R15,,公民力量,建制,1,全職區議員,2058,69.6,TRUE
+2406,韋國洪,WAI KWOK HUNG,ordinary,194,1,2007,R15,,公民力量,建制,1,全職區議員,2058,69.6,TRUE
 2407,梁仲玲,LEUNG CHUNG LING,ordinary,662,1,2007,R15,56,自由黨,建制,2,地區幹事,827,27.9,FALSE
 2408,潘國山,PUN KWOK SHAN,ordinary,990,1,2007,R16,46,公民力量,建制,0,區議員,,,TRUE
 2409,李世鴻,LI Sai-hung,ordinary,705,1,2007,R17,33,社民連,泛民,3,議員助理,779,29.1,FALSE
@@ -2417,7 +2417,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2416,彭長緯,PANG CHEUNG WAI THOMAS,ordinary,24,1,2007,R20,53,民建聯,建制,3,區議員,2128,59.6,TRUE
 2417,李瑞霞,LI SUI HA,ordinary,663,2,2007,R20,54,前綫,泛民,1,社區主任,173,4.8,FALSE
 2418,查錫我,"CHAR Shik-ngor, Stephen",ordinary,1125,1,2007,R20,58,公民黨,泛民,2,執業大律師,1259,35.2,FALSE
-2419,龐愛蘭,PONG Scarlett Oi-lan,ordinary,588,1,2007,R21,48,,建制,3,註冊藥劑師,1346,49.2,TRUE
+2419,龐愛蘭,PONG SCARLETT OI LAN,ordinary,588,1,2007,R21,48,,建制,3,註冊藥劑師,1346,49.2,TRUE
 2420,蔡耀昌,TSOI YIU CHEONG RICHARD,ordinary,689,1,2007,R21,40,,泛民,2,政策研究員,1160,42.4,FALSE
 2421,黃美顏,WONG Mei-ngan,ordinary,548,1,2007,R21,41,,其他,1,東主,216,7.9,FALSE
 2422,廖志凌,LIU Chi-ling,ordinary,549,1,2007,R22,30,公民黨,泛民,2,助理講師,495,27.7,FALSE
@@ -2436,7 +2436,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2435,湯寶珍,TONG Po-chun,ordinary,589,3,2007,R28,,,建制,1,校長,2163,57.9,TRUE
 2436,王學今,WONG HUK KAM,ordinary,734,1,2007,R28,35,前綫,泛民,2,律師,1522,40.7,FALSE
 2437,丁士元,TING TSZ YUEN,ordinary,117,1,2007,R29,28,前綫,泛民,1,廣告製作總監/現任區議員,1997,43.6,FALSE
-2438,黃戊娣,WONG Mo-tai,ordinary,#N/A,1,2007,R29,,民建聯,建制,2,社區工作者,2533,55.3,TRUE
+2438,黃戊娣,WONG MO TAI,ordinary,104,1,2007,R29,,民建聯,建制,2,社區工作者,2533,55.3,TRUE
 2439,鄭則文,CHENG TSUK MAN,ordinary,621,1,2007,R30,64,前綫,泛民,2,退休公務員/現任區議員,3084,66,TRUE
 2440,梁耀才,LEUNG Yiu-choi,ordinary,1128,1,2007,R30,48,民建聯,建制,1,董事經理,1549,33.1,FALSE
 2441,李立航,LEE LAP HONG ALMUSTAFA,ordinary,306,1,2007,R31,42,泛民聯盟,泛民,2,公共政策智庫行政主任,1834,41.6,FALSE
@@ -2481,7 +2481,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2480,黃耀聰,WONG YIU CHUNG,ordinary,460,2,2007,S12,49,,其他,1,全職區議員,1776,73.7,TRUE
 2481,楊文達,YEUNG Man-tat,ordinary,410,1,2007,S13,38,民建聯,建制,2,資訊科技,885,39.2,FALSE
 2482,李永達,LEE WING TAT,ordinary,528,1,2007,S13,52,民主黨,泛民,1,全職議員,1349,59.8,TRUE
-2483,黎名橞,"LAI Ming-wai, Abby",ordinary,#N/A,1,2007,S14,,自由黨,建制,1,地區幹事,1034,34,FALSE
+2483,黎名橞,LAI MING WAI ABBY,ordinary,1845,1,2007,S14,,自由黨,建制,1,地區幹事,1034,34,FALSE
 2484,盧慧蘭,LO WAI LAN,ordinary,201,2,2007,S14,61,,建制,2,全職區議員,1973,64.9,TRUE
 2485,陸景城,LUK King-shing,ordinary,1040,2,2007,S15,,,其他,1,大廈主管,106,3.2,FALSE
 2486,梁嘉銘,LEUNG Kar-ming,ordinary,592,1,2007,S15,28,民建聯,建制,2,全職社區工作者,1451,44,FALSE
@@ -2958,7 +2958,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 2957,張琪騰,CHEUNG KI TANG,ordinary,944,1,2011,J20,26,民建聯,建制,1,助理統籌主任,4050,77.2,TRUE
 2958,金章翔,KAM CHEUNG CHEUNG,ordinary,184,1,2011,J20,54,民主黨,泛民,2,物業管理,760,14.4,FALSE
 2959,莫建成,MOK KIN SHING,ordinary,185,1,2011,J21,30,民主黨,泛民,2,註冊社工,667,29,FALSE
-2960,黎樹濠,"LAI Shu-ho, Patrick",ordinary,137,1,2011,J21,61,獨立,建制,1,全職區議員,1460,63.5,TRUE
+2960,黎樹濠,LAI SHU HO PATRICK,ordinary,137,1,2011,J21,61,獨立,建制,1,全職區議員,1460,63.5,TRUE
 2961,區潤科,AU YUN FO,ordinary,1837,1,2011,J21,34,社民連,泛民,3,社區幹事,144,6.2,FALSE
 2962,梁頴超,LEUNG JULIUS ANTHONY,ordinary,1623,1,2011,J22,31,人民力量,泛民,1,社區發展主任,137,3.7,FALSE
 2963,廖潔明,LIU KIT MING,ordinary,1785,1,2011,J22,55,新民黨,建制,4,大學兼任教師,941,25.8,FALSE
@@ -3333,7 +3333,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 3332,彭長緯,PANG CHEUNG WAI THOMAS,ordinary,24,1,2011,R20,57,民建聯,建制,2,區議員,1950,61.9,TRUE
 3333,李瑞霞,LI SUI HA,ordinary,663,2,2011,R20,58,獨立,其他,3,花店東主,317,10,FALSE
 3334,彭玉英,PANG YUK YING,ordinary,1990,1,2011,R20,67,公民黨,泛民,1,店主,781,24.8,FALSE
-3335,龐愛蘭,PONG Scarlett Oi-lan,ordinary,588,1,2011,R21,52,,建制,1,區議員/註冊藥劑師,1640,65.7,TRUE
+3335,龐愛蘭,PONG SCARLETT OI LAN,ordinary,588,1,2011,R21,52,,建制,1,區議員/註冊藥劑師,1640,65.7,TRUE
 3336,廖韻兒,LIU HUAN YEE PORINDA,ordinary,642,1,2011,R21,51,,其他,3,,295,11.8,FALSE
 3337,陳德章,CHAN TAK CHEUNG,ordinary,1991,1,2011,R21,22,民間電台,泛民,2,民間電台統籌,522,20.9,FALSE
 3338,蕭顯航,SIU HIN HONG,ordinary,525,1,2011,R22,54,獨立無黨派,其他,0,公司董事,,,TRUE
@@ -3869,7 +3869,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 3868,何啟明,HO KAI MING,ordinary,1493,2,2015,J20,30,工聯會,建制,2,民選區議員,2666,63.1,TRUE
 3869,張琪騰,CHEUNG KI TANG,ordinary,944,1,2015,J21,30,民建聯,建制,0,,,,TRUE
 3870,韓家銘,HON KA MING,ordinary,946,1,2015,J22,30,民主黨,泛民,3,註冊社工,1264,31.6,FALSE
-3871,黎樹濠,LAI SHU HO PATRICK,ordinary,#N/A,1,2015,J22,,獨立,建制,2,區議員,1914,47.9,TRUE
+3871,黎樹濠,LAI SHU HO PATRICK,ordinary,137,1,2015,J22,,獨立,建制,2,區議員,1914,47.9,TRUE
 3872,鄭華東,CHENG WAH TUNG FRANCIS,ordinary,2077,1,2015,J22,51,,其他,1,,318,7.9,FALSE
 3873,謝淑珍,TSE SUK CHUN,ordinary,1070,1,2015,J23,53,,其他,1,,2918,58.7,TRUE
 3874,黃啟燊,WONG KAI SAN,ordinary,1674,1,2015,J23,31,工聯會,建制,2,社區工作者,2654,53.4,FALSE
@@ -4266,7 +4266,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 4265,邱智堅,YAU CHI KIN,ordinary,2044,1,2015,R21,42,公民黨,泛民,1,系統分析員,1984,52.7,FALSE
 4266,李瑞霞,LI SUI HA,ordinary,663,2,2015,R21,,,泛民,3,花店東主,101,2.6,FALSE
 4267,陳文煇,CHAN MAN FAI,ordinary,2098,1,2015,R22,,公民黨,泛民,2,項目幹事,1250,34.6,FALSE
-4268,龐愛蘭,PONG SCARLETT OI LAN,ordinary,#N/A,1,2015,R22,,,建制,1,藥劑師,1905,52.7,TRUE
+4268,龐愛蘭,PONG SCARLETT OI LAN,ordinary,588,1,2015,R22,,,建制,1,藥劑師,1905,52.7,TRUE
 4269,鄭榮宗,CHENG WING CHUNG,ordinary,2099,1,2015,R23,,,其他,3,IT經理,148,5,FALSE
 4270,何偉樂,HO WAI LOK,ordinary,1956,1,2015,R23,25,自由黨,建制,1,地區幹事,1169,39.5,FALSE
 4271,蕭顯航,SIU HIN HONG,ordinary,525,1,2015,R23,57,,其他,2,全職區議員,1658,56,TRUE
@@ -4391,8 +4391,8 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,age,political_aff
 4390,梁國豪,LEUNG KWOK HO,ordinary,1828,1,2015,T09,29,,其他,2,,838,29.8,FALSE
 4391,李桂珍,LEE KWAI CHUN,ordinary,207,1,2015,T10,62,民建聯,建制,1,,1681,64.9,TRUE
 4392,鄺惠娟,KWONG WAI KUEN,ordinary,1965,1,2015,T10,,,其他,2,,480,18.5,FALSE
-,楊 哲 安,YOUNG CHIT ON JEREMY,by-election,,,2017,A04,41,自由黨,建制,1,公司董事,1378,,TRUE
-,錢 志 健,CHIN CHI KIN EDWARD,by-election,,,2017,A04,49,,泛民,2,執行董事，另類投資組合,394,,FALSE
-,呂 錦 强,LUI KAM KEUNG,by-election,,,2017,A13,,獨立,建制,1,小學校長,909,,FALSE
-,伍 凱 欣,NG HOI YAN BONNIE,by-election,,,2017,A13,,,泛民,2,,1034,,TRUE
-,劉 舒 燕,LAU SHU YIN (OLIVIA),by-election,,,2017,A13,,,,3,,20,,FALSE
+,楊哲安,YOUNG CHIT ON JEREMY,by-election,,,2017,A04,41,自由黨,建制,1,公司董事,1378,,TRUE
+,錢志健,CHIN CHI KIN EDWARD,by-election,,,2017,A04,49,,泛民,2,執行董事，另類投資組合,394,,FALSE
+,呂錦强,LUI KAM KEUNG,by-election,,,2017,A13,48,獨立,建制,1,小學校長,909,,FALSE
+,伍凱欣,NG HOI YAN BONNIE,by-election,,,2017,A13,34,民主黨,泛民,2,高級社區發展主任,1034,,TRUE
+,劉舒燕,LAU SHU YIN (OLIVIA),by-election,,,2017,A13,33,,,3,行政主任,20,,FALSE

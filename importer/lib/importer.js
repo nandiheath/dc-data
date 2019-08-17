@@ -6,6 +6,8 @@ const async = require('async');
 const { MUTATION_CLEAR_AND_INSERT_PEOPLE,
   MUTATION_DELETE_CONSTITUENCIES, MUTATION_INSERT_CONSTITUENCIES,
   MUTATION_DELETE_COUNCILORS, MUTATION_INSERT_COUNCILORS,
+  MUTATION_DELETE_CANDIDATES, MUTATION_INSERT_CANDIDATES,
+  MUTATION_DELETE_VOTE_STATIONS, MUTATION_INSERT_VOTE_STATIONS,
 } = require('./gql');
 const { runQuery } = require('./hasura');
 const _ = require('lodash');
@@ -38,10 +40,10 @@ async function importPeople(filePath) {
   const res = await runQuery(MUTATION_CLEAR_AND_INSERT_PEOPLE, {
     objects: people.map(person => ({
       id: person.id,
-      name_zh: person.name_zh,
-      name_en: person.name_en,
-      estimated_yob: person.estimated_yob || null,
-      gender: person.gender,
+      name_zh: getStr(person.name_zh, null),
+      name_en: getStr(person.name_en, null),
+      estimated_yob: getInt(person.estimated_yob, null),
+      gender: getStr(person.gender, null),
     })),
   });
 
@@ -62,6 +64,11 @@ async function importPeople(filePath) {
   log.info(`${insert_dcd_people.affected_rows} new data inserted.`);
 }
 
+/**
+ * For constituencies
+ * @param {*} voters 
+ * @param {*} newVoters 
+ */
 function getVoteStats(voters, newVoters) {
   const data = [];
 
@@ -78,10 +85,33 @@ function getVoteStats(voters, newVoters) {
     });
   }
 
-  pushData(voters.M, 'GENDER_AGE', 'VOTERS', 'MALE');
-  pushData(voters.F, 'GENDER_AGE', 'VOTERS', 'FEMALE');
-  pushData(newVoters.M, 'GENDER_AGE', 'NEW_VOTERS', 'MALE');
-  pushData(newVoters.F, 'GENDER_AGE', 'NEW_VOTERS', 'FEMALE');
+  pushData(voters.M, 'BY_GENDER_AGE', 'VOTERS', 'MALE');
+  pushData(voters.F, 'BY_GENDER_AGE', 'VOTERS', 'FEMALE');
+  pushData(newVoters.M, 'BY_GENDER_AGE', 'NEW_VOTERS', 'MALE');
+  pushData(newVoters.F, 'BY_GENDER_AGE', 'NEW_VOTERS', 'FEMALE');
+  return data;
+}
+
+/**
+ * For vote station stats ()
+ * @param {*} voters 
+ * @param {*} newVoters 
+ */
+function getStationVoteStats(record) {
+  const data = [];
+  Object.keys(record).forEach((key) => {
+    if (key.match(/\d{2}_(\d{2}|above)_(male|female)/)) {
+      const tokens = key.split('_');
+
+      data.push({
+        type: 'BY_GENGER_AGE',
+        subtype: 'VOTED',
+        category_1: tokens[2].toUpperCase(),
+        category_2: `${tokens[0]}${tokens[1] === 'above' ? '+' : `-${tokens[1]}`}`,
+        count: parseInt(record[key], 10),
+      });
+    }
+  });
   return data;
 }
 
@@ -191,7 +221,105 @@ async function importCouncilors(filePath) {
   }
 
   log.info(`${records.length} constituencies in csv ..`);
+}
 
+async function importCandidates(filePath) {
+  const records = await csv2json().fromFile(filePath);
+
+  await runQuery(MUTATION_DELETE_CANDIDATES, null);
+
+  const BATCH_SIZE = 500;
+  for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
+    const start = i * BATCH_SIZE;
+    const end = Math.min((i + 1) * BATCH_SIZE, records.length);
+    const res = await runQuery(MUTATION_INSERT_CANDIDATES, {
+      objects: records.slice(start, end).filter(record => record.election_type === 'ordinary')
+        .map((record) => {
+          return {
+            id: record.id,
+            year: parseInt(record.year, 10),
+            cacode: record.cacode,
+            candidate_number: getStr(record.candidate_number, null),
+            political_affiliation: getStr(record.political_affiliation, null),
+            camp: record.camp,
+            age: getInt(record.age, null),
+            is_won: record.is_won === 'TRUE',
+            occupation: getStr(record.occupation, null),
+            votes: getInt(record.votes, 0),
+            person_id: parseInt(record.person_id, 10),
+            vote_percentage: getInt(record.vote_percentage, 0),
+            election_type: getStr(record.election_type, null),
+          };
+        }),
+    });
+
+    if (res.statusCode !== 200) {
+      console.error(JSON.stringify(res.body));
+      throw new Error('Invalid response when inserting people');
+    }
+
+    const {
+      data: {
+        insert_dcd_candidates,
+      },
+    } = res.body;
+
+    log.info(`${insert_dcd_candidates.affected_rows} new data inserted.`);
+  }
+
+  log.info(`${records.length} candidates in csv ..`);
+}
+
+async function importVoteStations(filePath) {
+  const records = await csv2json().fromFile(filePath);
+
+  await runQuery(MUTATION_DELETE_VOTE_STATIONS, null);
+
+  const BATCH_SIZE = 100;
+  for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
+
+    const start = i * BATCH_SIZE;
+    const end = Math.min((i + 1) * BATCH_SIZE, records.length);
+
+    const res = await runQuery(MUTATION_INSERT_VOTE_STATIONS, {
+      objects: records.slice(start, end).map((record) => {
+        let voteStats = null;
+        if (record.voters !== '') {
+          voteStats = {
+            data: getStationVoteStats(record),
+          };
+        }
+        return {
+          id: record.id,
+          constituency_id: record.constituency_id,
+          station_code: record.code,
+          name_en: getStr(record.name_en, null),
+          name_zh: getStr(record.name_zh, null),
+          year: getInt(record.year, null),
+          location: {
+            type: 'Point',
+            coordinates: [114.0149868, 22.4544636],
+          },
+          vote_stats: voteStats,
+        };
+      }),
+    });
+
+    if (res.statusCode !== 200) {
+      console.error(JSON.stringify(res.body));
+      throw new Error('Invalid response when inserting vote stations');
+    }
+
+    const {
+      data: {
+        insert_dcd_constituency_vote_stations,
+      },
+    } = res.body;
+
+    log.info(`${insert_dcd_constituency_vote_stations.affected_rows} new data inserted.`);
+  }
+
+  log.info(`${records.length} vote_station_stats in csv ..`);
 }
 
 async function importAll(directory) {
@@ -203,11 +331,8 @@ async function importAll(directory) {
   await importPeople(path.join(directory, 'dcd_people.csv'));
   await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
   await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
-}
-
-
-async function runParallelFunc(iterable, func) {
-
+  await importCandidates(path.join(directory, 'dcd_candidates.csv'));
+  await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
 }
 
 module.exports = {
