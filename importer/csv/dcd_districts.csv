@@ -1,0 +1,19 @@
+id,area_code,area_name_zh,area_name_en,lc_code,lc_name_zh,lc_name_en,dc_code,dc_name_zh,dc_name_en
+1,HK,香港,Hong Kong,LC1,香港島,Hong Kong Island,A,中西區,Central and Western
+2,HK,香港,Hong Kong,LC1,香港島,Hong Kong Island,B,灣仔,Wan Chai
+3,HK,香港,Hong Kong,LC1,香港島,Hong Kong Island,C,東區,Eastern
+4,HK,香港,Hong Kong,LC1,香港島,Hong Kong Island,D,南區,Southern
+5,KL,九龍,Kowloon,LC2,九龍西,Kowloon West,E,油尖旺,Yau Tsim Mong
+6,KL,九龍,Kowloon,LC2,九龍西,Kowloon West,F,深水埗,Sham Shui Po
+7,KL,九龍,Kowloon,LC2,九龍西,Kowloon West,G,九龍城,Kowloon City
+8,KL,九龍,Kowloon,LC3,九龍東,Kowloon East,H,黃大仙,Wong Tai Sin
+9,KL,九龍,Kowloon,LC3,九龍東,Kowloon East,J,觀塘,Kwun Tong
+10,NT,新界,New Territories,LC4,新界西,New Territories West,K,荃灣,Tsuen Wan
+11,NT,新界,New Territories,LC4,新界西,New Territories West,L,屯門,Tuen Mun
+12,NT,新界,New Territories,LC4,新界西,New Territories West,M,元朗,Yuen Long
+13,NT,新界,New Territories,LC5,新界東,New Territories East,N,北區,North
+14,NT,新界,New Territories,LC5,新界東,New Territories East,P,大埔,Tai Po
+15,NT,新界,New Territories,LC5,新界東,New Territories East,Q,西貢,Sai Kung
+16,NT,新界,New Territories,LC5,新界東,New Territories East,R,沙田,Sha Tin
+17,NT,新界,New Territories,LC4,新界西,New Territories West,S,葵青,Kwai Tsing
+18,NT,新界,New Territories,LC4,新界西,New Territories West,T,離島,Islands

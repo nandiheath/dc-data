@@ -8,6 +8,7 @@ const { MUTATION_CLEAR_AND_INSERT_PEOPLE,
   MUTATION_DELETE_COUNCILORS, MUTATION_INSERT_COUNCILORS,
   MUTATION_DELETE_CANDIDATES, MUTATION_INSERT_CANDIDATES,
   MUTATION_DELETE_VOTE_STATIONS, MUTATION_INSERT_VOTE_STATIONS,
+  MUTATION_DELETE_DISTRICTS, MUTATION_INSERT_DISTRICTS,
 } = require('./gql');
 const { runQuery } = require('./hasura');
 const _ = require('lodash');
@@ -40,6 +41,7 @@ async function importPeople(filePath) {
   const res = await runQuery(MUTATION_CLEAR_AND_INSERT_PEOPLE, {
     objects: people.map(person => ({
       id: person.id,
+      uuid: getStr(person.uuid, null),
       name_zh: getStr(person.name_zh, null),
       name_en: getStr(person.name_en, null),
       estimated_yob: getInt(person.estimated_yob, null),
@@ -115,6 +117,33 @@ function getStationVoteStats(record) {
   return data;
 }
 
+
+async function importDistricts(filePath) {
+  const records = await csv2json().fromFile(filePath);
+
+  await runQuery(MUTATION_DELETE_DISTRICTS, null);
+
+  const res = await runQuery(MUTATION_INSERT_DISTRICTS, {
+    objects: records,
+  });
+
+
+  if (res.statusCode !== 200) {
+    console.error(res.body);
+    throw new Error('Invalid response when inserting people');
+  }
+
+  const {
+    data: {
+      insert_dcd_districts,
+    },
+  } = res.body;
+
+  log.info(`${insert_dcd_districts.affected_rows} new data inserted.`);
+  log.info(`${records.length} districts in csv ..`);
+}
+
+
 async function importConstituencies(filePath) {
   const records = await csv2json().fromFile(filePath);
 
@@ -135,6 +164,7 @@ async function importConstituencies(filePath) {
         return {
           id: record.id,
           code: record.code,
+          district_id: record.district_id,
           year: getInt(record.year),
           name_en: getStr(record.name_en, null),
           name_zh: getStr(record.name_zh, null),
@@ -151,8 +181,8 @@ async function importConstituencies(filePath) {
     });
 
     if (res.statusCode !== 200) {
-      console.error(res.body);
-      throw new Error('Invalid response when inserting people');
+      console.error(JSON.stringify(res.body));
+      throw new Error('Invalid response when inserting constituencies');
     }
 
     const {
@@ -177,11 +207,11 @@ async function importCouncilors(filePath) {
     const start = i * BATCH_SIZE;
     const end = Math.min((i + 1) * BATCH_SIZE, records.length);
     const res = await runQuery(MUTATION_INSERT_COUNCILORS, {
-      objects: records.slice(start, end).filter(record => record.cacode.match(/\w\d\d/))
+      objects: records.slice(start, end)
         .map((record) => {
           return {
             id: record.id,
-            cacode: record.cacode,
+            cacode: record.cacode.match(/\w\d\d/) ? record.cacode : null,
             year: getInt(record.year),
             term_from: getStr(record.term_from, null),
             term_to: getStr(record.term_to, null),
@@ -189,6 +219,7 @@ async function importCouncilors(filePath) {
             capacity: getStr(record.capacity, null),
             post: getStr(record.post, null),
             person_id: getInt(record.dc_people_id),
+            district_id: record.district_id,
             meta: {
               honor: getStr(record.honor, '').split(','),
               address: getStr(record.address, null),
@@ -208,7 +239,7 @@ async function importCouncilors(filePath) {
 
     if (res.statusCode !== 200) {
       console.error(JSON.stringify(res.body));
-      throw new Error('Invalid response when inserting people');
+      throw new Error('Invalid response when inserting councilors');
     }
 
     const {
@@ -220,7 +251,7 @@ async function importCouncilors(filePath) {
     log.info(`${insert_dcd_councilors.affected_rows} new data inserted.`);
   }
 
-  log.info(`${records.length} constituencies in csv ..`);
+  log.info(`${records.length} councilors in csv ..`);
 }
 
 async function importCandidates(filePath) {
@@ -328,6 +359,7 @@ async function importAll(directory) {
     return;
   }
 
+  await importDistricts(path.join(directory, 'dcd_districts.csv'));
   await importPeople(path.join(directory, 'dcd_people.csv'));
   await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
   await importCouncilors(path.join(directory, 'dcd_councilors.csv'));

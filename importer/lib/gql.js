@@ -76,6 +76,23 @@ mutation insert_data($objects: [dcd_constituency_vote_stations_insert_input!]!){
 `;
 
 
+const MUTATION_DELETE_DISTRICTS = `
+mutation delate_data{
+  delete_dcd_districts(where:{}) {
+    affected_rows
+  }
+}
+`;
+
+const MUTATION_INSERT_DISTRICTS = `
+mutation insert_data($objects: [dcd_districts_insert_input!]!){
+  insert_dcd_districts(objects: $objects) {
+    affected_rows
+  }
+}
+`;
+
+
 module.exports = {
   MUTATION_CLEAR_AND_INSERT_PEOPLE,
   MUTATION_DELETE_CONSTITUENCIES,
@@ -86,4 +103,6 @@ module.exports = {
   MUTATION_INSERT_CANDIDATES,
   MUTATION_DELETE_VOTE_STATIONS,
   MUTATION_INSERT_VOTE_STATIONS,
+  MUTATION_DELETE_DISTRICTS,
+  MUTATION_INSERT_DISTRICTS,
 };
