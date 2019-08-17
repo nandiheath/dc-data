@@ -1,0 +1,265 @@
+- args:
+    functions: []
+    query_templates: []
+    remote_schemas: []
+    tables:
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: constituency
+        using:
+          foreign_key_constraint_on: constituency_id
+      select_permissions: []
+      table: dc_constituency_vote_stats
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_political_affiliation_camps
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: constituency
+        using:
+          manual_configuration:
+            column_mapping:
+              cacode: code
+              year: year
+            remote_table: dc_constituencies
+      - comment: null
+        name: person
+        using:
+          foreign_key_constraint_on: people_id
+      select_permissions: []
+      table: dc_candidates
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: elections
+        using:
+          foreign_key_constraint_on:
+            column: people_id
+            table: dc_candidates
+      - comment: null
+        name: political_affiliations
+        using:
+          foreign_key_constraint_on:
+            column: person_id
+            table: dc_people_political_affiliations
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_people
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_people_legacy
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: person
+        using:
+          foreign_key_constraint_on: person_id
+      - comment: null
+        name: political_affiliation
+        using:
+          foreign_key_constraint_on: political_affiliation_id
+      select_permissions: []
+      table: dc_people_political_affiliations
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: candidates
+        using:
+          manual_configuration:
+            column_mapping:
+              code: cacode
+              year: year
+            remote_table: dc_candidates
+      - comment: null
+        name: geometry
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dc_constituency_geometries
+      - comment: null
+        name: station_stats
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dc_constituency_vote_station_stats
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: vote_stat
+        using:
+          manual_configuration:
+            column_mapping:
+              id: constituency_id
+            remote_table: dc_constituency_vote_stats
+      select_permissions:
+      - comment: null
+        permission:
+          allow_aggregations: false
+          columns:
+          - boundaries
+          - code
+          - deviation_percentage
+          - expected_population
+          - main_areas
+          - name_zh
+          - year
+          filter: {}
+        role: public
+      table: dc_constituencies
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_constituency_geometries
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: camp
+        using:
+          foreign_key_constraint_on: camp_id
+      select_permissions: []
+      table: dc_political_affiliations
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: provider
+        using:
+          foreign_key_constraint_on: providerId
+      select_permissions: []
+      table: hmt_places
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: hal_atm_services
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: hal_bank
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: services
+        using:
+          foreign_key_constraint_on:
+            column: atm_id
+            table: hal_atms_atm_services
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: bank
+        using:
+          foreign_key_constraint_on: bank_id
+      select_permissions: []
+      table: hal_atms
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_constituency_vote_station_votes
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: atm
+        using:
+          foreign_key_constraint_on: atm_id
+      - comment: null
+        name: service
+        using:
+          foreign_key_constraint_on: atm_service_id
+      select_permissions: []
+      table: hal_atms_atm_services
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: people
+        using:
+          manual_configuration:
+            column_mapping:
+              cacode: cacode
+            remote_table: dc_people_legacy
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_area
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: hmt_place_providers
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: votes
+        using:
+          foreign_key_constraint_on:
+            column: stat_id
+            table: dc_constituency_vote_station_votes
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dc_constituency_vote_station_stats
+      update_permissions: []
+  type: replace_metadata
