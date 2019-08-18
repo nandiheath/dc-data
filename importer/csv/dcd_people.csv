@@ -1507,7 +1507,7 @@ id,name_en,name_zh,estimated_yob,gender,uuid
 1509,HEUNG MING HAU,香明孝,1976,MALE,468a9efc-ebca-4305-b1a3-8a21b433e744
 1511,TAN WIE HON DERRICK,陳威雄,1900,MALE,722c53ea-56da-4b69-83c2-33dbbbb6eaf8
 1512,CHENG CHI HONG,鄭志康,1900,MALE,bf7c05b4-3ee5-4ccd-980f-a3cedbe8a456
-1513,LAU SHU YIN,劉舒燕,1984,FEMALE,f7efcdda-3a2a-4186-9c2e-c74969bd3f52
+1513,LAU SHU YIN OLIVIA,劉舒燕,1984,FEMALE,f7efcdda-3a2a-4186-9c2e-c74969bd3f52
 1514,CHAN PO YUK,陳寶玉,1976,FEMALE,e932dc5a-5697-4f4d-913d-2c1574ebf70f
 1515,LAM POK,林博,1984,MALE,3ad5896d-b059-411e-ae63-a5aadb2ae252
 1516,YAU WAI CHING,游蕙禎,1991,FEMALE,fe34f2c1-47ea-4ae1-b1b7-1bb01519994c
@@ -2396,7 +2396,7 @@ id,name_en,name_zh,estimated_yob,gender,uuid
 2404,,侯慶榮,1956,MALE,1f8b28bc-f31a-45b8-be54-d6c0cc555bbf
 2405,,陳李佩英,,,
 2406,,畢東尼,,,
-2407,,李思敏,,,
+2407,LI SZE MAN,李思敏,,,
 2408,,周玉堂,,,
 2409,CHAN Lin-wai,陳連偉,,,
 2410,CHEUNG Fu,張富,,,
@@ -2432,4 +2432,10 @@ id,name_en,name_zh,estimated_yob,gender,uuid
 2440,TANG Lai-tung,鄧勵東,,,
 2441,TANG Sui-man,鄧瑞民,,,
 2442,TSANG Shu-wo,曾樹和,,,
-2443,MAN Ka-koy,文家駒,1985,,
+2443,MAN KA KOY,文家駒,1985,,
+2444,CHIN CHI KIN EDWARD,錢志健,,,
+2445,LUI KAM KEUNG,呂錦强,,,
+2447,TAN CHUN CHUN ENKI,陳真真,,,
+2448,ISHIGAMI LEE FUNG KING ALICE,李鳳琼,,,
+2450,LEE KWOK KUEN,李國權,,,
+2453,MAN KA HO DONALD,文嘉豪,,,

@@ -212,7 +212,6 @@ async function importCouncilors(filePath) {
           return {
             id: record.id,
             cacode: record.cacode.match(/\w\d\d/) ? record.cacode : null,
-            year: getInt(record.year),
             term_from: getStr(record.term_from, null),
             term_to: getStr(record.term_to, null),
             career: getStr(record.career, null),
@@ -233,6 +232,7 @@ async function importCouncilors(filePath) {
             },
             political_affiliation: getStr(record.political_affiliation, null),
             services: getStr(record.service, '').split(','),
+            constituency_id: getStr(record.constituency_id, null),
           };
         }),
     });
@@ -280,6 +280,7 @@ async function importCandidates(filePath) {
             person_id: parseInt(record.person_id, 10),
             vote_percentage: getInt(record.vote_percentage, 0),
             election_type: getStr(record.election_type, null),
+            constituency_id: getStr(record.constituency_id, null),
           };
         }),
     });
