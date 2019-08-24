@@ -5,10 +5,12 @@ const path = require('path');
 const async = require('async');
 const { MUTATION_CLEAR_AND_INSERT_PEOPLE,
   MUTATION_DELETE_CONSTITUENCIES, MUTATION_INSERT_CONSTITUENCIES,
+  MUTATION_DELETE_CONSTITUENCY_PREDECESSORS, MUTATION_INSERT_CONSTITUENCY_PREDECESSORS,
   MUTATION_DELETE_COUNCILORS, MUTATION_INSERT_COUNCILORS,
   MUTATION_DELETE_CANDIDATES, MUTATION_INSERT_CANDIDATES,
   MUTATION_DELETE_VOTE_STATIONS, MUTATION_INSERT_VOTE_STATIONS,
   MUTATION_DELETE_DISTRICTS, MUTATION_INSERT_DISTRICTS,
+  MUTATION_DELETE_COUNCILOR_ATTENDACES, MUTATION_INSERT_COUNCILOR_ATTENDANCES,
 } = require('./gql');
 const { runQuery } = require('./hasura');
 const _ = require('lodash');
@@ -28,8 +30,16 @@ function getInt(val, fallback) {
   return v;
 }
 
+function getFloat(val, fallback) {
+  const v = parseFloat(val, 10);
+  if (Number.isNaN(v)) {
+    return fallback;
+  }
+  return v;
+}
+
 function getStr(val, fallback) {
-  if (!val || val === "#N/A") {
+  if (!val || val === '#N/A') {
     return fallback;
   }
   return val;
@@ -197,6 +207,41 @@ async function importConstituencies(filePath) {
   log.info(`${records.length} constituencies in csv ..`);
 }
 
+async function importConstitencyPredecessors(filePath) {
+  const records = await csv2json().fromFile(filePath);
+
+  await runQuery(MUTATION_DELETE_CONSTITUENCY_PREDECESSORS, null);
+
+  const BATCH_SIZE = 100;
+  for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
+    const start = i * BATCH_SIZE;
+    const end = Math.min((i + 1) * BATCH_SIZE, records.length);
+    const res = await runQuery(MUTATION_INSERT_CONSTITUENCY_PREDECESSORS, {
+      objects: records.slice(start, end).map(record => ({
+        id: record.id,
+        constituency_id: getInt(record.constituency_id, null),
+        previous_constituency_id: getInt(record.previous_constituency_id, null),
+        intersect_area: getFloat(record.intersect_area, null),
+      })),
+    });
+
+    if (res.statusCode !== 200) {
+      console.error(JSON.stringify(res.body));
+      throw new Error('Invalid response when inserting constituency predecessors');
+    }
+
+    const {
+      data: {
+        insert_dcd_constituency_predecessors,
+      },
+    } = res.body;
+
+    log.info(`${insert_dcd_constituency_predecessors.affected_rows} new data inserted.`);
+  }
+
+  log.info(`${records.length} constituency predecessors in csv ..`);
+}
+
 async function importCouncilors(filePath) {
   const records = await csv2json().fromFile(filePath);
 
@@ -252,6 +297,55 @@ async function importCouncilors(filePath) {
   }
 
   log.info(`${records.length} councilors in csv ..`);
+}
+
+async function importCouncilorAttendance(filePath) {
+  const records = await csv2json().fromFile(filePath);
+
+  await runQuery(MUTATION_DELETE_COUNCILOR_ATTENDACES, null);
+
+  const BATCH_SIZE = 500;
+  for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
+    const start = i * BATCH_SIZE;
+    const end = Math.min((i + 1) * BATCH_SIZE, records.length);
+    const res = await runQuery(MUTATION_INSERT_COUNCILOR_ATTENDANCES, {
+      objects: records.slice(start, end)
+        .map((record, index) => ({
+          id: start + index + 1,
+          attended: getInt(record.attended, null),
+          total: getInt(record.total, null),
+          councilor_id: getInt(record.councilor_id, null),
+          meeting: {
+            data: {
+              meet_name: record.meet_name,
+              meet_type: record.meet_type,
+              council_year: getInt(record.council_year, null),
+              district_id: getInt(record.district_id, null),
+              meet_year: getInt(record.meet_year, null),
+            },
+            on_conflict: {
+              constraint: 'dcd_councilor_meetings_meet_name_meet_type_meet_year_district_i',
+              update_columns: ['meet_name'],
+            },
+          },
+        })),
+    });
+
+    if (res.statusCode !== 200) {
+      console.error(JSON.stringify(res.body));
+      throw new Error('Invalid response when inserting councilor meeting attendances');
+    }
+
+    const {
+      data: {
+        insert_dcd_councilor_meeting_attendances,
+      },
+    } = res.body;
+
+    log.info(`${insert_dcd_councilor_meeting_attendances.affected_rows} new data inserted.`);
+  }
+
+  log.info(`${records.length} councilor attendance in csv ..`);
 }
 
 async function importCandidates(filePath) {
@@ -360,12 +454,14 @@ async function importAll(directory) {
     return;
   }
 
-  await importDistricts(path.join(directory, 'dcd_districts.csv'));
-  await importPeople(path.join(directory, 'dcd_people.csv'));
-  await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
-  await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
-  await importCandidates(path.join(directory, 'dcd_candidates.csv'));
-  await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
+  // await importDistricts(path.join(directory, 'dcd_districts.csv'));
+  // await importPeople(path.join(directory, 'dcd_people.csv'));
+  // await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
+  // await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
+  // await importCandidates(path.join(directory, 'dcd_candidates.csv'));
+  // await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
+  // await importCouncilorAttendance(path.join(directory, 'dcd_councilor_attendances.csv'));
+  await importConstitencyPredecessors(path.join(directory, 'dcd_constituency_predecessors.csv'));
 }
 
 module.exports = {
