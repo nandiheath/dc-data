@@ -243,6 +243,7 @@ async function importConstitencyPredecessors(filePath) {
 }
 
 async function importCouncilors(filePath) {
+  const name = 'concillors';
   const records = await csv2json().fromFile(filePath);
 
   await runQuery(MUTATION_DELETE_COUNCILORS, null);
@@ -259,6 +260,7 @@ async function importCouncilors(filePath) {
             cacode: record.cacode.match(/\w\d\d/) ? record.cacode : null,
             term_from: getStr(record.term_from, null),
             term_to: getStr(record.term_to, null),
+            year: getInt(record.year, null),
             career: getStr(record.career, null),
             capacity: getStr(record.capacity, null),
             post: getStr(record.post, null),
@@ -283,8 +285,9 @@ async function importCouncilors(filePath) {
     });
 
     if (res.statusCode !== 200) {
+      console.error(`error when inserting ${i * BATCH_SIZE} - ${(i + 1) * BATCH_SIZE} concillors`);
       console.error(JSON.stringify(res.body));
-      throw new Error('Invalid response when inserting councilors');
+      throw new Error(`invalid response when inserting ${name}`);
     }
 
     const {
@@ -293,10 +296,10 @@ async function importCouncilors(filePath) {
       },
     } = res.body;
 
-    log.info(`${insert_dcd_councilors.affected_rows} new data inserted.`);
+    log.info(`${insert_dcd_councilors.affected_rows} ${name}s inserted.`);
   }
 
-  log.info(`${records.length} councilors in csv ..`);
+  log.info(`finished importing ${records.length} ${name} in csv ..`);
 }
 
 async function importCouncilorAttendance(filePath) {
@@ -454,13 +457,13 @@ async function importAll(directory) {
     return;
   }
 
-  // await importDistricts(path.join(directory, 'dcd_districts.csv'));
-  // await importPeople(path.join(directory, 'dcd_people.csv'));
-  // await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
-  // await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
-  // await importCandidates(path.join(directory, 'dcd_candidates.csv'));
-  // await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
-  // await importCouncilorAttendance(path.join(directory, 'dcd_councilor_attendances.csv'));
+  await importDistricts(path.join(directory, 'dcd_districts.csv'));
+  await importPeople(path.join(directory, 'dcd_people.csv'));
+  await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
+  await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
+  await importCandidates(path.join(directory, 'dcd_candidates.csv'));
+  await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
+  await importCouncilorAttendance(path.join(directory, 'dcd_councilor_attendances.csv'));
   await importConstitencyPredecessors(path.join(directory, 'dcd_constituency_predecessors.csv'));
 }
 

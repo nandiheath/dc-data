@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const fs = require('fs');
-const chalk = require('chalk');
+
 const async = require('async');
 const { importAll } = require('./lib/importer');
 
