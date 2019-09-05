@@ -292,11 +292,11 @@ async function importCouncilors(filePath) {
 
     const {
       data: {
-        insert_dcd_councilors,
+        insert_dcd_councillors,
       },
     } = res.body;
 
-    log.info(`${insert_dcd_councilors.affected_rows} ${name}s inserted.`);
+    log.info(`${insert_dcd_councillors.affected_rows} ${name}s inserted.`);
   }
 
   log.info(`finished importing ${records.length} ${name} in csv ..`);
@@ -341,11 +341,11 @@ async function importCouncilorAttendance(filePath) {
 
     const {
       data: {
-        insert_dcd_councilor_meeting_attendances,
+        insert_dcd_councillor_meeting_attendances,
       },
     } = res.body;
 
-    log.info(`${insert_dcd_councilor_meeting_attendances.affected_rows} new data inserted.`);
+    log.info(`${insert_dcd_councillor_meeting_attendances.affected_rows} new data inserted.`);
   }
 
   log.info(`${records.length} councilor attendance in csv ..`);

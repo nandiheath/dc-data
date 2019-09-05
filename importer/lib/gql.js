@@ -43,15 +43,15 @@ mutation insert_data($objects: [dcd_constituency_predecessors_insert_input!]!){
 
 const MUTATION_DELETE_COUNCILORS = `
 mutation delate_data{
-  delete_dcd_councilors(where:{}) {
+  delete_dcd_councillors(where:{}) {
     affected_rows
   }
 }
 `;
 
 const MUTATION_INSERT_COUNCILORS = `
-mutation insert_data($objects: [dcd_councilors_insert_input!]!){
-  insert_dcd_councilors(objects: $objects) {
+mutation insert_data($objects: [dcd_councillors_insert_input!]!){
+  insert_dcd_councillors(objects: $objects) {
     affected_rows
   }
 }
@@ -59,15 +59,15 @@ mutation insert_data($objects: [dcd_councilors_insert_input!]!){
 
 const MUTATION_DELETE_COUNCILOR_ATTENDACES = `
 mutation delate_data{
-  delete_dcd_councilor_meetings(where:{}) {
+  delete_dcd_councillor_meetings(where:{}) {
     affected_rows
   }
 }
 `;
 
 const MUTATION_INSERT_COUNCILOR_ATTENDANCES = `
-mutation insert_data($objects: [dcd_councilor_meeting_attendances_insert_input!]!){
-  insert_dcd_councilor_meeting_attendances(objects: $objects) {
+mutation insert_data($objects: [dcd_councillor_meeting_attendances_insert_input!]!){
+  insert_dcd_councillor_meeting_attendances(objects: $objects) {
     affected_rows
   }
 }
