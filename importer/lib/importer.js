@@ -56,6 +56,7 @@ async function importPeople(filePath) {
       name_en: getStr(person.name_en, null),
       estimated_yob: getInt(person.estimated_yob, null),
       gender: getStr(person.gender, null),
+      fc_uuid: getStr(person.fc_uuid, null),
     })),
   });
 
@@ -181,7 +182,10 @@ async function importConstituencies(filePath) {
           expected_population: getInt(record.expected_population, 0),
           deviation_percentage: getInt(record.deviation_percentage, 0),
           tags: {
-            data: record.tags.split(',').filter(t => t.length > 0).map(tag => ({ tag })),
+            data: [
+              ...record.tags.split(',').filter(t => t.length > 0).map(tag => ({ tag, type: 'boundary' })),
+              ...record.meta_tags.split(',').filter(t => t.length > 0).map(tag => ({ tag, type: 'meta' })),
+            ],
           },
           main_areas: JSON.parse(record.main_areas),
           boundaries: JSON.parse(record.boundaries),
@@ -361,7 +365,7 @@ async function importCandidates(filePath) {
     const start = i * BATCH_SIZE;
     const end = Math.min((i + 1) * BATCH_SIZE, records.length);
     const res = await runQuery(MUTATION_INSERT_CANDIDATES, {
-      objects: records.slice(start, end).filter(record => record.election_type === 'ordinary')
+      objects: records.slice(start, end)
         .map((record) => {
           return {
             id: record.id,
