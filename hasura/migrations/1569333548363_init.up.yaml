@@ -7,6 +7,14 @@
       delete_permissions: []
       event_triggers: []
       insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dcd_constituency_tag
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
       object_relationships:
       - comment: null
         name: constituency
@@ -69,7 +77,53 @@
       insert_permissions: []
       object_relationships: []
       select_permissions: []
+      table: dcd_constituency_vote_station_stats
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dcd_political_affiliations
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: councilor
+        using:
+          foreign_key_constraint_on: councilor_id
+      - comment: null
+        name: meeting
+        using:
+          foreign_key_constraint_on: meeting_id
+      select_permissions: []
+      table: dcd_councillor_meeting_attendances
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
       table: dc_people_legacy
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: vote_stats
+        using:
+          foreign_key_constraint_on:
+            column: station_id
+            table: dcd_constituency_vote_station_stats
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dcd_constituency_vote_stations
       update_permissions: []
     - array_relationships: []
       delete_permissions: []
@@ -135,6 +189,32 @@
         role: public
       table: dc_constituencies
       update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: meeting_attendances
+        using:
+          foreign_key_constraint_on:
+            column: councilor_id
+            table: dcd_councillor_meeting_attendances
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: district
+        using:
+          foreign_key_constraint_on: district_id
+      - comment: null
+        name: constituency
+        using:
+          foreign_key_constraint_on: constituency_id
+      - comment: null
+        name: person
+        using:
+          foreign_key_constraint_on: person_id
+      select_permissions: []
+      table: dcd_councillors
+      update_permissions: []
     - array_relationships: []
       delete_permissions: []
       event_triggers: []
@@ -142,6 +222,26 @@
       object_relationships: []
       select_permissions: []
       table: dc_constituency_geometries
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: candidates
+        using:
+          foreign_key_constraint_on:
+            column: person_id
+            table: dcd_candidates
+      - comment: null
+        name: councillors
+        using:
+          foreign_key_constraint_on:
+            column: person_id
+            table: dcd_councillors
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dcd_people
       update_permissions: []
     - array_relationships: []
       delete_permissions: []
@@ -154,6 +254,60 @@
           foreign_key_constraint_on: camp_id
       select_permissions: []
       table: dc_political_affiliations
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: tags
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dcd_constituency_tag
+      - comment: null
+        name: vote_stats
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dcd_constituency_vote_stats
+      - comment: null
+        name: stations
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dcd_constituency_vote_stations
+      - comment: null
+        name: candidates
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dcd_candidates
+      - comment: null
+        name: predecessors
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dcd_constituency_predecessors
+      - comment: null
+        name: successors
+        using:
+          foreign_key_constraint_on:
+            column: previous_constituency_id
+            table: dcd_constituency_predecessors
+      - comment: null
+        name: councillors
+        using:
+          foreign_key_constraint_on:
+            column: constituency_id
+            table: dcd_councillors
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: district
+        using:
+          foreign_key_constraint_on: district_id
+      select_permissions: []
+      table: dcd_constituencies
       update_permissions: []
     - array_relationships: []
       delete_permissions: []
@@ -183,6 +337,14 @@
       select_permissions: []
       table: hal_bank
       update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dcd_constituency_vote_stats
+      update_permissions: []
     - array_relationships:
       - comment: null
         name: services
@@ -200,6 +362,70 @@
           foreign_key_constraint_on: bank_id
       select_permissions: []
       table: hal_atms
+      update_permissions: []
+    - array_relationships:
+      - comment: null
+        name: constituencies
+        using:
+          foreign_key_constraint_on:
+            column: district_id
+            table: dcd_constituencies
+      - comment: null
+        name: meetings
+        using:
+          foreign_key_constraint_on:
+            column: district_id
+            table: dcd_councillor_meetings
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships: []
+      select_permissions: []
+      table: dcd_districts
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: predecessor
+        using:
+          foreign_key_constraint_on: previous_constituency_id
+      - comment: null
+        name: successor
+        using:
+          foreign_key_constraint_on: constituency_id
+      select_permissions: []
+      table: dcd_constituency_predecessors
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: district
+        using:
+          foreign_key_constraint_on: district_id
+      select_permissions: []
+      table: dcd_councillor_meetings
+      update_permissions: []
+    - array_relationships: []
+      delete_permissions: []
+      event_triggers: []
+      insert_permissions: []
+      object_relationships:
+      - comment: null
+        name: person
+        using:
+          foreign_key_constraint_on: person_id
+      - comment: null
+        name: constituency
+        using:
+          foreign_key_constraint_on: constituency_id
+      select_permissions: []
+      table: dcd_candidates
       update_permissions: []
     - array_relationships: []
       delete_permissions: []
