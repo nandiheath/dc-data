@@ -3017,7 +3017,7 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,constituency_id,a
 3016,林發耿,LAM FAAT KANG,ordinary,517,1,2011,K13,1408,52,,建制,2,公司董事總經理,2481,74.5,TRUE
 3017,蘇耀坤,SO Yiu-kwan,ordinary,64,1,2011,K13,1408,60,公民黨,泛民,1,項目經理(工程),805,24.2,FALSE
 3018,陳琬琛,CHAN YUEN SUM SUMLY,ordinary,2379,1,2011,K14,1409,53,公民黨,泛民,2,社工,2761,58.6,TRUE
-3019,周慧兒,CHAU WAI YEE,ordinary,1966,1,2011,K14,1409,49,候選人要求刪除在這欄內的資料,其他,3,居民關注組(創辦人),77,1.6,FALSE
+3019,周慧兒,CHAU WAI YEE,ordinary,1966,1,2011,K14,1409,49,,其他,3,居民關注組(創辦人),77,1.6,FALSE
 3020,呂廸明,LUI DIK MING,ordinary,1496,1,2011,K14,1409,30,民建聯,建制,1,戲劇導師,1839,39,FALSE
 3021,黃德智,WONG TAK CHI,ordinary,1627,1,2011,K15,1410,33,工聯會,建制,2,立法會議員助理,1548,40.2,FALSE
 3022,黃家華,WONG KA WA,ordinary,291,1,2011,K15,1410,39,公民黨,泛民,1,全職區議員,2260,58.8,TRUE
@@ -4334,9 +4334,9 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,constituency_id,a
 4333,戴沛珊,TAI PUI SHAN CHRISTABEL DONNA,ordinary,1775,1,2015,S13,2012,51,,其他,1,退休,263,5.9,FALSE
 4334,黃耀聰,WONG YIU CHUNG,ordinary,460,2,2015,S13,2012,,經民聯,建制,3,區議員,2130,48.5,TRUE
 4335,朱麗玲,CHU LAI LING,ordinary,1581,1,2015,S14,2013,37,民建聯,建制,0,,,,TRUE
-4336,盧慧蘭,LO WAI LAN,ordinary,201,2,2015,S15,2014,,經民聯,建制,2,全職區議員,580,14.2,FALSE
-4337,鮑銘康,PAU MING HONG,ordinary,2103,1,2015,S15,2014,27,民建聯,建制,1,助理統籌主任,2986,73.5,TRUE
-4338,陳德章,CHAN TAK CHEUNG,ordinary,1991,1,2015,S15,2014,26,社民連,泛民,3,社民連秘書長/碩士生,1230,30.2,FALSE
+4336,盧慧蘭,LO WAI LAN,ordinary,201,2,2015,S15,2014,,經民聯,建制,2,全職區議員,580,12.1,FALSE
+4337,鮑銘康,PAU MING HONG,ordinary,2103,1,2015,S15,2014,27,民建聯,建制,1,助理統籌主任,2986,62.3,TRUE
+4338,陳德章,CHAN TAK CHEUNG,ordinary,1991,1,2015,S15,2014,26,社民連,泛民,3,社民連秘書長/碩士生,1230,25.6,FALSE
 4339,梁嘉銘,LEUNG Kar-ming,ordinary,592,1,2015,S16,2015,36,民建聯,建制,1,,2629,55.9,FALSE
 4340,吳劍昇,NG KIM SING,ordinary,656,1,2015,S16,2015,47,民主黨,泛民,2,葵青區議員,2701,57.4,TRUE
 4341,周奕希,CHOW YICK HAY,ordinary,32,1,2015,S17,2016,58,獨立候選人,其他,0,區議員,,,TRUE
@@ -4398,9 +4398,9 @@ id,name_zh,name_en,election_type,person_id,matched,year,cacode,constituency_id,a
 4397,劉舒燕,LAU SHU YIN OLIVIA,by-election,1513,1,2017,A13,1620,33,,其他,3,行政主任,20,,FALSE
 4398,陳真真,TAN CHUN CHUN ENKI,by-election,2447,1,2018,C35,1670,56,獨立民生派,其他,1,前林翠蓮議員助理,707,,
 4399,李鳳琼,ISHIGAMI LEE FUNG KING ALICE,by-election,2448,1,2018,C35,1670,,民主派,泛民,2,,1302,,
-4400,植潔鈴,CHIK KIT LING ELAINE,by-election,1589,1,2018,C35,1670,30,民建聯，工聯會,泛民,3,議員助理,2268,,
+4400,植潔鈴,CHIK KIT LING ELAINE,by-election,1589,1,2018,C35,1670,30,"民建聯,工聯會",泛民,3,議員助理,2268,,
 4401,李國權,LEE KWOK KUEN,by-election,2450,1,2019,E12,1699,37,社區前進,泛民,1,註冊社工,1134,,
-4402,李思敏,LI SZE MAN,by-election,2407,1,2019,E12,1699,33,香港經濟民生聯盟,建制,2,體育總監,1343,,
+4402,李思敏,LI SZE MAN,by-election,2407,1,2019,E12,1699,33,經民聯,建制,2,體育總監,1343,,
 4403,梁福元,LEUNG Fuk-yuen,by-election,1400,1,2019,M10,1872,61,,建制,0,商人,,,
 4404,文家駒,MAN KA KOY,by-election,2443,1,2019,M32,1894,34,獨立候選人,,1,花式跳繩教練,1340,,
 4405,文嘉豪,MAN KA HO DONALD,by-election,2453,1,2019,M32,1894,42,,,2,註冊外國律師,565,,
