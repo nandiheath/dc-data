@@ -54,6 +54,7 @@ async function importPeople(filePath) {
       uuid: getStr(person.uuid, null),
       name_zh: getStr(person.name_zh, null),
       name_en: getStr(person.name_en, null),
+      related_organization: getStr(person.related_organization, null),
       estimated_yob: getInt(person.estimated_yob, null),
       gender: getStr(person.gender, null),
       fc_uuid: getStr(person.fc_uuid, null),

@@ -191,6 +191,7 @@ CREATE TABLE public.dcd_people (
     id integer NOT NULL,
     name_zh text,
     name_en text,
+    related_organization text,
     estimated_yob integer,
     gender text,
     uuid uuid DEFAULT public.gen_random_uuid(),
