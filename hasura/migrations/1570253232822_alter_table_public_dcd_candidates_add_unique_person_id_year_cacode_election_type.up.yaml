@@ -1,0 +1,7 @@
+- args:
+    sql: alter table "public"."dcd_candidates" drop constraint "dcd_candidates_people_id_year_cacode_key";
+  type: run_sql
+- args:
+    sql: alter table "public"."dcd_candidates" add constraint "dcd_candidates_person_id_year_cacode_election_type_key"
+      unique ("person_id", "year", "cacode", "election_type");
+  type: run_sql
