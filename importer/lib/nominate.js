@@ -111,11 +111,12 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
 
       const person = lookupPeople(people, name);
       const fcPerson = lookupFactCheckPeople(fcPeople, name);
+      let newPersonId = null;
       if (!person) {
         log.error(`person ${name} not found. gonna create in people.csv`);
-        fcPerson.id = peopleStartingId++
+        newPersonId = peopleStartingId++
         newPeople.push({
-          id: fcPerson.id,
+          id: newPersonId,
           name_en: null,
           name_zh: name,
           estimated_yob: null,
@@ -131,7 +132,7 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         name_zh: name,
         name_en: '',
         election_typ: 'ordinary',
-        persion_id: person ? parseInt(person.id, 10) : (fcPerson ? fcPerson.id : null),
+        person_id: person ? parseInt(person.id, 10) : (fcPerson ? newPersonId : null),
         matched: null,
         year: 2019,
         cacode: code,

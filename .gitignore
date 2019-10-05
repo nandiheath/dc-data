@@ -1,3 +1,7 @@
 coverage
 .DS_Store
 hasura/config.yaml
+
+importer/credentials.json
+
+importer/token.json
