@@ -392,6 +392,7 @@ async function importCandidates(filePath) {
       throw new Error('Invalid response when inserting people');
     }
 
+    console.log(res.body);
     const {
       data: {
         insert_dcd_candidates,
