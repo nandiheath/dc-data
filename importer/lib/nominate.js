@@ -131,7 +131,7 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         id: candidatesStartingId++,
         name_zh: name,
         name_en: '',
-        election_typ: 'ordinary',
+        election_type: 'ordinary',
         person_id: person ? parseInt(person.id, 10) : (fcPerson ? newPersonId : null),
         matched: null,
         year: 2019,

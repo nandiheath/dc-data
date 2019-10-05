@@ -1,4 +1,4 @@
-"id","name_zh","name_en","election_typ","person_id","matched","year","cacode","constituency_id","age","political_affiliation","camp","candidate_number","occupation","votes","vote_percentage","is_won"
+"id","name_zh","name_en","election_type","person_id","matched","year","cacode","constituency_id","age","political_affiliation","camp","candidate_number","occupation","votes","vote_percentage","is_won"
 4406,"許智峯","","ordinary",1014,,2019,"A01",,,"民主黨","泛民",,"立法會、區議會議員",0,0,false
 4407,"莫淦森","","ordinary",2454,,2019,"A02",,,"民主建港協進聯盟","建制",,"立法會議員助理",0,0,false
 4408,"鄭麗琼","","ordinary",2250,,2019,"A03",,,"民主黨","泛民",,"中西區區議員、註冊社會工作者",0,0,false

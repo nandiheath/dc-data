@@ -85,7 +85,7 @@ async function uploadNominatedCandidates(auth, candidates) {
     const rowId = id + 1;
     return [
       id,
-      c.name_zh, c.name_en, c.electoin_type,
+      c.name_zh, c.name_en, c.election_type,
       c.person_id, // since the english name is not here. we use only the chinese name for matching
       // `=INDEX(dcd_people!$A$2:$C$7236,MATCH(concatenate(B${rowId},C${rowId}),dcd_people!$C$2:C&dcd_people!$B$2:B,0),1)`
       `=COUNTIF(dcd_people!$C$2:$C$7236, B${rowId})`,
