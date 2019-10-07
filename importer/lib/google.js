@@ -80,7 +80,7 @@ function getNewToken(oAuth2Client, callback) {
 
 async function uploadNominatedCandidates(auth, candidates) {
   const sheets = google.sheets({ version: 'v4', auth });
-  const values = candidates.map((c) => {
+  const values = candidates.filter((_, i) => i === 0).map((c) => {
     const id = parseInt(c.id, 10);
     const rowId = id + 1;
     return [
@@ -94,7 +94,7 @@ async function uploadNominatedCandidates(auth, candidates) {
       `=index(dcd_constituencies!A$2:D, match(concatenate(2019,H${rowId}),dcd_constituencies!$D$2:D&dcd_constituencies!$B$2:B) , 1)`,
       null,
       c.political_affiliation,
-      c.camp,
+      null, // skip overwrite camp
       null,
       c.occupation,
     ];
@@ -158,6 +158,50 @@ async function uploadNominatedPeople(auth, people) {
   });
 }
 
+const downloadMappings = async (auth) => {
+  const sheets = google.sheets({ version: 'v4', auth });
+  const req = {
+    // The spreadsheet to request.
+    spreadsheetId: '1MopNfvXzfoF57ipWyzmS0JkFZu63lhLLztfYdcIiTKo',
+
+    // The ranges to retrieve from the spreadsheet.
+    range: 'dc2019_candidates_camp!A2:I',
+    auth,
+  };
+
+  const ss = Promise.promisifyAll(sheets.spreadsheets.values);
+  const data = await ss.getAsync(req);
+  const mappings = data.data.values.map(r => ({
+    name: r[0],
+    cacode: r[6],
+    camp: r[7],
+  }));
+  return mappings;
+};
+
+const loadPeopleCampMapping = async () => {
+  let mappings = [];
+
+  let content;
+  try {
+    content = fs.readFileSync('credentials.json').toString();
+    content = JSON.parse(content);
+  } catch (error) {
+    log.error('cannot load the credential file. please download it from https://developers.google.com/sheets/api/quickstart/nodejs');
+    return mappings;
+  }
+  try {
+    const authAsync = Promise.promisify(authorize);
+    const auth = await authAsync(content);
+    mappings = await downloadMappings(auth);
+  } catch (error) {
+    log.error('error when uploading data to google spreadsheet');
+    console.error(error);
+    log.error(JSON.stringify(error));
+  }
+  return mappings;
+}
+
 const uploadIntermediate = async (directory) => {
   let content;
   try {
@@ -184,4 +228,5 @@ const uploadIntermediate = async (directory) => {
 
 module.exports = {
   uploadIntermediate,
+  loadPeopleCampMapping,
 }

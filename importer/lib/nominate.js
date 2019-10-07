@@ -6,24 +6,26 @@ const csv2json = require('csvtojson');
 const chalk = require('chalk');
 const { Parser } = require('json2csv');
 const { nameMatch } = require('./utils');
+const moment = require('moment');
 const uuid = require('uuid/v4');
+const { loadPeopleCampMapping } = require('./google');
 
 
-const getCampByPA = (pa) => {
-  const DEMOCRACY = ['民主黨', '民主動力', '新民主同盟', '民主派',
-    '天水連線', '民主陣線', '社區前進'];
-  const ESTABLISH = ['自由黨', '民主建港協進聯盟', '民建聯',
-    '工聯會', '香港工會聯合會', '經民聯'];
-  if (DEMOCRACY.find(p => pa.indexOf(p) >= 0)) {
-    return '泛民';
-  }
+// const getCampByPA = (pa) => {
+//   const DEMOCRACY = ['民主黨', '民主動力', '新民主同盟', '民主派',
+//     '天水連線', '民主陣線', '社區前進'];
+//   const ESTABLISH = ['自由黨', '民主建港協進聯盟', '民建聯',
+//     '工聯會', '香港工會聯合會', '經民聯'];
+//   if (DEMOCRACY.find(p => pa.indexOf(p) >= 0)) {
+//     return '泛民';
+//   }
 
-  if (ESTABLISH.find(p => pa.indexOf(p) >= 0)) {
-    return '建制';
-  }
+//   if (ESTABLISH.find(p => pa.indexOf(p) >= 0)) {
+//     return '建制';
+//   }
 
-  return '其他';
-}
+//   return '其他';
+// }
 
 // default logger
 const log = {
@@ -53,7 +55,19 @@ const lookupFactCheckPeople = (factcheckPeople, name) => {
   return person;
 }
 
+const lookupCampForPerson = (mappings, name, cacode) => {
+  const mapping = mappings.find(m => m.cacode === cacode && nameMatch(m.name, name))
+  if (!mapping) {
+    return null;
+  }
+
+  return mapping.camp;
+}
 const scrapeNominate = async (csvDirectory, outputDirectory) => {
+
+  // download the mapping first
+  const campMapping = await loadPeopleCampMapping();
+  log.info(`total ${campMapping.length} people-camp mapping found.`);
 
   // Load the person csv first
   const people = await csv2json().fromFile(`${csvDirectory}/dcd_people.csv`);
@@ -139,9 +153,11 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         constituency_id: null,
         age: null,
         political_affiliation: fields[6],
-        camp: getCampByPA(fields[6]),
+        camp: lookupCampForPerson(campMapping, name, code),
         candidate_number: null,
         occupation: fields[5],
+        nominated_at: moment(fields[7], 'DD/MM/YYYY').format('YYYY-MM-DD'),
+        nominate_status: 'nominated',
         votes: 0,
         vote_percentage: 0,
         is_won: false,
