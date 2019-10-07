@@ -80,7 +80,7 @@ function getNewToken(oAuth2Client, callback) {
 
 async function uploadNominatedCandidates(auth, candidates) {
   const sheets = google.sheets({ version: 'v4', auth });
-  const values = candidates.filter((_, i) => i === 0).map((c) => {
+  const values = candidates.map((c) => {
     const id = parseInt(c.id, 10);
     const rowId = id + 1;
     return [
@@ -94,9 +94,11 @@ async function uploadNominatedCandidates(auth, candidates) {
       `=index(dcd_constituencies!A$2:D, match(concatenate(2019,H${rowId}),dcd_constituencies!$D$2:D&dcd_constituencies!$B$2:B) , 1)`,
       null,
       c.political_affiliation,
-      null, // skip overwrite camp
+      c.camp, // skip overwrite camp
       null,
       c.occupation,
+      c.nominated_at,
+      c.nominate_status,
     ];
   });
   const data = [{
