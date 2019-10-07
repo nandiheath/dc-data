@@ -62,7 +62,15 @@ const lookupCampForPerson = (mappings, name, cacode) => {
   }
 
   return mapping.camp;
-}
+};
+
+const getDate = (d) => {
+  if (moment(d, 'YYYY年MM月DD日').isValid()) {
+    return moment(d, 'YYYY年MM月DD日').format('YYYY-MM-DD');
+  }
+  return moment(d, 'DD/MM/YYYY').format('YYYY-MM-DD');
+};
+
 const scrapeNominate = async (csvDirectory, outputDirectory) => {
 
   // download the mapping first
@@ -156,7 +164,7 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         camp: lookupCampForPerson(campMapping, name, code),
         candidate_number: null,
         occupation: fields[5],
-        nominated_at: moment(fields[7], 'DD/MM/YYYY').format('YYYY-MM-DD'),
+        nominated_at: getDate(fields[7]),
         nominate_status: 'nominated',
         votes: 0,
         vote_percentage: 0,

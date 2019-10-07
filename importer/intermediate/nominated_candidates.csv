@@ -1,366 +1,366 @@
 "id","name_zh","name_en","election_type","person_id","matched","year","cacode","constituency_id","age","political_affiliation","camp","candidate_number","occupation","nominated_at","nominate_status","votes","vote_percentage","is_won"
-4406,"許智峯","","ordinary",1014,,2019,"A01",,,"民主黨","民主",,"立法會、區議會議員","2019-10-04","nominated",0,0,false
-4407,"莫淦森","","ordinary",2454,,2019,"A02",,,"民主建港協進聯盟","建制",,"立法會議員助理","2019-10-04","nominated",0,0,false
-4408,"鄭麗琼","","ordinary",2250,,2019,"A03",,,"民主黨","民主",,"中西區區議員、註冊社會工作者","2019-10-04","nominated",0,0,false
-4409,"馮家亮","","ordinary",2455,,2019,"A03",,,"自由黨","建制",,"商人","2019-10-04","nominated",0,0,false
-4410,"楊哲安","","ordinary",1898,,2019,"A04",,,"自由黨","建制",,"公司董事","2019-10-04","nominated",0,0,false
-4411,"歐頌賢","","ordinary",2456,,2019,"A05",,," ","其他",," ","2019-10-04","nominated",0,0,false
-4412,"楊開永","","ordinary",2058,,2019,"A06",,,"民主建港協進聯盟","建制",," ","2019-10-04","nominated",0,0,false
-4413,"陳學鋒","","ordinary",776,,2019,"A07",,,"民主建港協進聯盟","建制",,"銀行從業員","2019-10-04","nominated",0,0,false
-4414,"張國鈞","","ordinary",829,,2019,"A08",,,"民建聯","建制",,"律師","2019-10-04","nominated",0,0,false
-4415,"楊浩然","","ordinary",2243,,2019,"A09",,,"民主黨","民主",,"律師","2019-10-04","nominated",0,0,false
-4416,"陳財喜","","ordinary",2227,,2019,"A10",,," ","建制",,"中西區區議員","2019-10-05","nominated",0,0,false
-4417,"劉天正","","ordinary",2457,,2019,"A11",,,"民主建港協進聯盟","建制",,"企業傳訊主任","2019-10-04","nominated",0,0,false
-4418,"甘乃威","","ordinary",2159,,2019,"A12",,,"民主黨","民主",,"中西區區議員、註冊社工","2019-10-04","nominated",0,0,false
-4419,"呂鴻賓","","ordinary",1800,,2019,"A12",,,"工聯會","建制",," ","2019-10-04","nominated",0,0,false
-4420,"伍凱欣","","ordinary",598,,2019,"A13",,,"民主黨","民主",,"中西區區議員","2019-10-04","nominated",0,0,false
-4421,"張嘉恩","","ordinary",2458,,2019,"A13",,,"民主建港協進聯盟","建制",,"會計","2019-10-04","nominated",0,0,false
-4422,"楊學明","","ordinary",164,,2019,"A15",,,"民建聯","建制",,"業務拓展總監","2019-10-04","nominated",0,0,false
-4423,"穆家駿","","ordinary",2454,,2019,"B02",,,"民建聯","建制",,"中學教師","Invalid date","nominated",0,0,false
-4424,"鍾嘉敏","","ordinary",34,,2019,"B03",,,"民建聯","建制",,"註冊社工","Invalid date","nominated",0,0,false
-4425,"李永財","","ordinary",2459,,2019,"B05",,,"民主動力、維協","民主",,"社區主任","Invalid date","nominated",0,0,false
-4426,"周潔冰","","ordinary",2235,,2019,"B05",,,"民主建港協進聯盟","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4427,"李文龍","","ordinary",602,,2019,"B06",,,"獨立","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4428,"廖添誠","","ordinary",2460,,2019,"B07",,,"獨立候選人","其他",,"講師","Invalid date","nominated",0,0,false
-4429,"陳詠霞","","ordinary",2461,,2019,"B10",,,"2047香港監察","民主",," ","Invalid date","nominated",0,0,false
-4430,"李碧儀","","ordinary",920,,2019,"B12",,,"獨立","其他",,"區議員","Invalid date","nominated",0,0,false
-4431,"李均頤","","ordinary",2288,,2019,"B13",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4432,"張文嵩","","ordinary",2462,,2019,"C03",,," ","其他",,"社區主任、議員助理","Invalid date","nominated",0,0,false
-4433,"梁詠詩","","ordinary",2063,,2019,"C06",,," ","民主",,"中學教師","Invalid date","nominated",0,0,false
-4434,"何毅淦","","ordinary",716,,2019,"C08",,," ","建制",," ","Invalid date","nominated",0,0,false
-4435,"劉淑燕","","ordinary",2463,,2019,"C09",,,"民主建港協進聯盟、香港工會聯合會","建制",,"議員助理","Invalid date","nominated",0,0,false
-4436,"黃健興","","ordinary",674,,2019,"C10",,," ","建制",," ","Invalid date","nominated",0,0,false
-4437,"陳儀真","","ordinary",2464,,2019,"C10",,," ","其他",," ","Invalid date","nominated",0,0,false
-4438,"朱日安","","ordinary",1454,,2019,"C11",,,"獨立","其他",,"董事","Invalid date","nominated",0,0,false
-4439,"楊漢成","","ordinary",51,,2019,"C12",,," ","其他",,"公司董事","Invalid date","nominated",0,0,false
-4440,"梁國鴻","","ordinary",1173,,2019,"C12",,,"香港工會聯合會","建制",," ","Invalid date","nominated",0,0,false
-4441,"陳凱榮","","ordinary",2465,,2019,"C14",,,"民主建港協進聯盟、香港工會聯合會","建制",,"社區研究員","Invalid date","nominated",0,0,false
-4442,"許清安","","ordinary",2236,,2019,"C18",,,"獨立","建制",,"法律及財務顧問","Invalid date","nominated",0,0,false
-4443,"郭偉强","","ordinary",886,,2019,"C19",,,"香港工會聯合會","建制",,"全職議員","Invalid date","nominated",0,0,false
-4444,"鄭志成","","ordinary",2363,,2019,"C23",,,"民主建港協進聯盟","建制",,"區議員","Invalid date","nominated",0,0,false
-4445,"許林慶","","ordinary",719,,2019,"C28",,,"香港工會聯合會","建制",,"區議員","Invalid date","nominated",0,0,false
-4446,"張振傑","","ordinary",2455,,2019,"C28",,,"興東東熹環境關注組","民主",,"土木工程師","Invalid date","nominated",0,0,false
-4447,"吳清清","","ordinary",2466,,2019,"C30",,,"香港工會聯合會","建制",," ","Invalid date","nominated",0,0,false
-4448,"蔡翠雲","","ordinary",2467,,2019,"C34",,,"獨立","建制",," ","Invalid date","nominated",0,0,false
-4449,"劉堅","","ordinary",2468,,2019,"C34",,,"民主建港協進聯盟、香港工會聯合會","建制",,"公司董事","Invalid date","nominated",0,0,false
-4450,"陳真真","","ordinary",2447,,2019,"C35",,," ","其他",," ","Invalid date","nominated",0,0,false
-4451,"任葆琳","","ordinary",1805,,2019,"D01",,,"獨立候選人","建制",,"公司董事","Invalid date","nominated",0,0,false
-4452,"黃銳熺","","ordinary",2469,,2019,"D01",,,"民主派","民主",,"社區主任","Invalid date","nominated",0,0,false
-4453,"林玉珍","","ordinary",1246,,2019,"D02",,,"獨立候選人","建制",,"全職南區區議員","Invalid date","nominated",0,0,false
-4454,"陳堡明","","ordinary",2470,,2019,"D02",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4455,"張錫容","","ordinary",130,,2019,"D03",,,"獨立候選人","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4456,"陳炳洋","","ordinary",2471,,2019,"D03",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4457,"陳欣兒","","ordinary",2472,,2019,"D04",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4458,"吳啓新","","ordinary",2456,,2019,"D04",,,"民建聯","建制",,"社區主任","Invalid date","nominated",0,0,false
-4459,"羅健熙","","ordinary",921,,2019,"D05",,,"民主黨","民主",,"南區區議員","Invalid date","nominated",0,0,false
-4460,"譚晉杰","","ordinary",2457,,2019,"D05",,,"民建聯","建制",,"社區主任","Invalid date","nominated",0,0,false
-4461,"俞竣晞","","ordinary",2473,,2019,"D06",,,"公民黨","民主",,"地區發展主任","Invalid date","nominated",0,0,false
-4462,"黃之鋒","","ordinary",2474,,2019,"D07",,,"民主派","民主",,"社區幹事","Invalid date","nominated",0,0,false
-4463,"潘秉康","","ordinary",2475,,2019,"D08",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4464,"麥謝巧玲","","ordinary",2245,,2019,"D08",,,"民建聯","建制",,"校長","Invalid date","nominated",0,0,false
-4465,"黎熙琳","","ordinary",721,,2019,"D09",,,"民主黨","民主",,"社區發展主任","Invalid date","nominated",0,0,false
-4466,"黃才立","","ordinary",1176,,2019,"D09",,,"民建聯","建制",,"高級理財策劃經理","Invalid date","nominated",0,0,false
-4467,"嚴駿豪","","ordinary",2476,,2019,"D10",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4468,"張偉楠","","ordinary",2458,,2019,"D10",,,"民建聯","建制",,"社區主任","Invalid date","nominated",0,0,false
-4469,"姚潔凝","","ordinary",1808,,2019,"D11",,," ","其他",," ","Invalid date","nominated",0,0,false
-4470,"蕭煒忠","","ordinary",2459,,2019,"D11",,,"民建聯","建制",,"公司董事","Invalid date","nominated",0,0,false
-4471,"林德和","","ordinary",2477,,2019,"D12",,,"獨立","其他",,"大學助教","Invalid date","nominated",0,0,false
-4472,"袁嘉蔚","","ordinary",2478,,2019,"D13",,,"民主派","民主",,"議員助理","Invalid date","nominated",0,0,false
-4473,"朱立威","","ordinary",175,,2019,"D14",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4474,"徐遠華","","ordinary",467,,2019,"D15",,,"民主黨","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4475,"陳榮恩","","ordinary",2010,,2019,"D15",,,"工聯會、民建聯","建制",," ","Invalid date","nominated",0,0,false
-4476,"丁偉良","","ordinary",2460,,2019,"D16",,,"沒有政治聯繫","民主",,"教師","Invalid date","nominated",0,0,false
-4477,"李穎妍","","ordinary",2479,,2019,"E02",,,"民主黨","民主",,"立法會議員助理","Invalid date","nominated",0,0,false
-4478,"孔昭華","","ordinary",46,,2019,"E02",,,"民建聯","建制",,"公司董事","Invalid date","nominated",0,0,false
-4479,"胡穗珊","","ordinary",2480,,2019,"E04",,,"社區前進","民主",,"社區幹事","Invalid date","nominated",0,0,false
-4480,"李偉峰","","ordinary",420,,2019,"E05",,,"民主黨","民主",,"立法會議員助理","Invalid date","nominated",0,0,false
-4481,"許德亮","","ordinary",971,,2019,"E06",,," ","建制",,"區議員、社工","Invalid date","nominated",0,0,false
-4482,"陳源彬","","ordinary",1543,,2019,"E06",,,"獨立民主派","民主",," ","Invalid date","nominated",0,0,false
-4483,"涂謹申","","ordinary",1027,,2019,"E08",,,"民主黨","民主",,"律師、立法會議員","Invalid date","nominated",0,0,false
-4484,"鍾澤暉","","ordinary",1899,,2019,"E09",,," ","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4485,"曾自鳴","","ordinary",2481,,2019,"E10",,,"民主黨","民主",,"立法會議員助理","Invalid date","nominated",0,0,false
-4486,"李國權","","ordinary",2450,,2019,"E12",,,"社區前進","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4487,"林兆彬","","ordinary",2482,,2019,"E14",,,"社區前進","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4488,"仇振輝","","ordinary",2175,,2019,"E15",,," ","建制",,"公司經理","Invalid date","nominated",0,0,false
-4489,"朱江瑋","","ordinary",2483,,2019,"E15",,,"社區前進","民主",," ","Invalid date","nominated",0,0,false
-4490,"林健文","","ordinary",1302,,2019,"E16",,,"無政黨民主派","民主",,"律師","Invalid date","nominated",0,0,false
-4491,"李文傑","","ordinary",2484,,2019,"E16",,," ","建制",," ","Invalid date","nominated",0,0,false
-4492,"朱子洛","","ordinary",2485,,2019,"E17",,,"民主黨","民主",,"研究主任","Invalid date","nominated",0,0,false
-4493,"賀卓軒","","ordinary",2486,,2019,"E20",,,"社區前進","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4494,"麥偉明","","ordinary",678,,2019,"F01",,,"民協","民主",," ","Invalid date","nominated",0,0,false
-4495,"譚振宇","","ordinary",2487,,2019,"F01",,,"香港經濟民生聯盟","建制",," ","Invalid date","nominated",0,0,false
-4496,"衞煥南","","ordinary",1151,,2019,"F08",,,"民協","民主",,"區議員","Invalid date","nominated",0,0,false
-4497,"李炯","","ordinary",1745,,2019,"F10",,,"香港民主民生協進會","民主",," ","Invalid date","nominated",0,0,false
-4498,"袁海文","","ordinary",423,,2019,"F13",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4499,"吳美","","ordinary",280,,2019,"F22",,," ","民主",,"區議員","Invalid date","nominated",0,0,false
-4500,"甄啟榮","","ordinary",1744,,2019,"F23",,,"無黨派","其他",,"區議員","Invalid date","nominated",0,0,false
-4501,"李梓敬","","ordinary",1580,,2019,"F24",,,"自由黨","建制",,"公司董事、區議員","Invalid date","nominated",0,0,false
-4502,"陳麗紅","","ordinary",2488,,2019,"F25",,," ","建制",," ","Invalid date","nominated",0,0,false
-4503,"譚國僑","","ordinary",1365,,2019,"F25",,,"香港民主民生協進會","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4504,"曾健超","","ordinary",587,,2019,"G01",,,"獨立","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4505,"黎廣偉","","ordinary",1812,,2019,"G03",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4506,"鄧巧彤","","ordinary",2489,,2019,"G03",,,"工聯會","建制",," ","Invalid date","nominated",0,0,false
-4507,"馬希鵬","","ordinary",2074,,2019,"G04",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4508,"林正軒","","ordinary",2490,,2019,"G05",,,"民主派區選聯盟","民主",,"毛孟靜立法會議員助理","Invalid date","nominated",0,0,false
-4509,"黃永傑","","ordinary",940,,2019,"G06",,,"民主黨","民主",,"社工","Invalid date","nominated",0,0,false
-4510,"鄭利明","","ordinary",1090,,2019,"G07",,," ","建制",,"副教授","Invalid date","nominated",0,0,false
-4511,"馮文韜","","ordinary",1739,,2019,"G07",,,"民主黨","民主",," ","Invalid date","nominated",0,0,false
-4512,"蕭亮聲","","ordinary",682,,2019,"G08",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4513,"何顯明","","ordinary",1412,,2019,"G10",,,"自由黨","建制",,"區議員","Invalid date","nominated",0,0,false
-4514,"馮達浚","","ordinary",2491,,2019,"G11",,," ","民主",," ","Invalid date","nominated",0,0,false
-4515,"曾俊達","","ordinary",2492,,2019,"G12",,," ","其他",,"註冊護士","Invalid date","nominated",0,0,false
-4516,"何華漢","","ordinary",2015,,2019,"G13",,,"經民聯","建制",," ","Invalid date","nominated",0,0,false
-4517,"張景勛","","ordinary",2461,,2019,"G14",,," ","建制",,"社區主任","Invalid date","nominated",0,0,false
-4518,"童繼民","","ordinary",2493,,2019,"G15",,," ","民主",,"機艙艙務長","Invalid date","nominated",0,0,false
-4519,"李軒朗","","ordinary",2494,,2019,"G17",,,"九龍角落、民主派區選聯盟","民主",,"土瓜灣南社區主任","Invalid date","nominated",0,0,false
-4520,"郭天立","","ordinary",2495,,2019,"G18",,,"民主黨、民主動力","民主",,"社區主任","Invalid date","nominated",0,0,false
-4521,"余志榮","","ordinary",1666,,2019,"G18",,,"獨立候選人","建制",,"商人","Invalid date","nominated",0,0,false
-4522,"關家倫","","ordinary",2496,,2019,"G19",,," ","民主",,"中醫師","Invalid date","nominated",0,0,false
-4523,"鄺葆賢","","ordinary",1851,,2019,"G20",,," ","民主",,"醫生、區議員","Invalid date","nominated",0,0,false
-4524,"任國棟","","ordinary",509,,2019,"G21",,," ","民主",,"社工","Invalid date","nominated",0,0,false
-4525,"關兆倫","","ordinary",2497,,2019,"G22",,," ","民主",,"建築師","Invalid date","nominated",0,0,false
-4526,"周熙雯","","ordinary",2498,,2019,"G23",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4527,"麥瑞淇","","ordinary",2499,,2019,"G24",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4528,"陳麗君","","ordinary",1298,,2019,"G25",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4529,"郭秀英","","ordinary",1376,,2019,"H02",,," ","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4530,"陳俊裕","","ordinary",2500,,2019,"H03",,,"獨立","其他",,"環保團體項目主任","Invalid date","nominated",0,0,false
-4531,"鄧惠强","","ordinary",2501,,2019,"H04",,,"民主黨","民主",,"政策研究主任","Invalid date","nominated",0,0,false
-4532,"越毅強","","ordinary",2502,,2019,"H05",,,"民建聯","建制",,"社區工作者","Invalid date","nominated",0,0,false
-4533,"張嘉宜","","ordinary",2503,,2019,"H05",,,"慈雲山建設力量","民主",,"職業治療師","Invalid date","nominated",0,0,false
-4534,"岳敬寬","","ordinary",1818,,2019,"H06",,,"獨立","其他",,"中藥店店長","Invalid date","nominated",0,0,false
-4535,"陳啟淳","","ordinary",2504,,2019,"H07",,," ","民主",,"銀行業務分析師","Invalid date","nominated",0,0,false
-4536,"李德康","","ordinary",2134,,2019,"H08",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4537,"楊光富","","ordinary",2505,,2019,"H09",,,"民建聯","建制",,"注冊教練","Invalid date","nominated",0,0,false
-4538,"施德來","","ordinary",1484,,2019,"H09",,,"民協","民主",,"區議員、註冊社工","Invalid date","nominated",0,0,false
-4539,"梁銘康","","ordinary",2506,,2019,"H10",,,"獨立","民主",,"工程顧問","Invalid date","nominated",0,0,false
-4540,"黎榮浩","","ordinary",1311,,2019,"H11",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4541,"劉珈汶","","ordinary",2507,,2019,"H11",,,"公民黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4542,"鄭文杰","","ordinary",2508,,2019,"H12",,,"公民黨","民主",,"高級議員助理","Invalid date","nominated",0,0,false
-4543,"許錦成","","ordinary",2204,,2019,"H14",,,"民協","民主",,"機構管理","Invalid date","nominated",0,0,false
-4544,"李健聰","","ordinary",2509,,2019,"H14",,,"工聯會","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4545,"鄭梓健","","ordinary",2510,,2019,"H15",,," ","民主",,"樂器導師","Invalid date","nominated",0,0,false
-4546,"袁國強","","ordinary",475,,2019,"H16",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4547,"張茂清","","ordinary",2511,,2019,"H16",,,"民主黨","民主",,"社區發展主任","Invalid date","nominated",0,0,false
-4548,"潘卓斌","","ordinary",2512,,2019,"H17",,,"民建聯","建制",,"社區工作者","Invalid date","nominated",0,0,false
-4549,"岑宇軒","","ordinary",2513,,2019,"H17",,,"慈雲山建設力量","民主",," ","Invalid date","nominated",0,0,false
-4550,"黃逸旭","","ordinary",286,,2019,"H18",,," ","民主",,"區議員","Invalid date","nominated",0,0,false
-4551,"何漢文","","ordinary",766,,2019,"H19",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4552,"莫綺霞","","ordinary",2514,,2019,"H19",,," ","民主",," ","Invalid date","nominated",0,0,false
-4553,"莫嘉嫻","","ordinary",2342,,2019,"H20",,,"民主黨","民主",,"社區顧問","Invalid date","nominated",0,0,false
-4554,"蔡子健","","ordinary",181,,2019,"H21",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4555,"廖成利","","ordinary",764,,2019,"H21",,,"香港民主民生協進會","民主",,"律師","Invalid date","nominated",0,0,false
-4556,"江景新","","ordinary",2515,,2019,"H22",,,"民建聯","建制",,"投資顧問","Invalid date","nominated",0,0,false
-4557,"沈運華","","ordinary",1490,,2019,"H22",,,"民主黨","民主",,"律師","Invalid date","nominated",0,0,false
-4558,"陳利成","","ordinary",1313,,2019,"H23",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4559,"胡志健","","ordinary",1672,,2019,"H24",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4560,"莫灝哲","","ordinary",2516,,2019,"H25",,,"彩虹邨服務聯會","民主",,"聯席總幹事","Invalid date","nominated",0,0,false
-4561,"莫健榮","","ordinary",1834,,2019,"H25",,,"工聯會","建制",,"區議員","Invalid date","nominated",0,0,false
-4562,"潘任惠珍","","ordinary",2356,,2019,"J02",,," ","建制",," ","Invalid date","nominated",0,0,false
-4563,"畢東尼","","ordinary",2406,,2019,"J04",,,"公民黨","民主",," ","Invalid date","nominated",0,0,false
-4564,"黃家樂","","ordinary",714,,2019,"J07",,," ","其他",,"社區主任","Invalid date","nominated",0,0,false
-4565,"符碧珍","","ordinary",1096,,2019,"J09",,,"獨立候選人","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4566,"龐智笙","","ordinary",2517,,2019,"J24",,,"公屋聯會","建制",," ","Invalid date","nominated",0,0,false
-4567,"李煒林","","ordinary",2518,,2019,"J27",,," ","民主",," ","Invalid date","nominated",0,0,false
-4568,"呂奭群","","ordinary",2519,,2019,"J28",,," ","建制",,"教師","Invalid date","nominated",0,0,false
-4569,"王嘉盈","","ordinary",722,,2019,"J28",,,"公民黨","民主",," ","Invalid date","nominated",0,0,false
-4570,"金堅","","ordinary",947,,2019,"J37",,," ","建制",,"區議員","Invalid date","nominated",0,0,false
-4571,"李軍澤","","ordinary",2520,,2019,"J40",,,"公民黨","民主",," ","Invalid date","nominated",0,0,false
-4572,"羅少傑","","ordinary",245,,2019,"K01",,," ","建制",,"董事總經理","Invalid date","nominated",0,0,false
-4573,"伍俊瑜","","ordinary",2521,,2019,"K02",,,"民建聯","建制",,"助理業務支援經理","Invalid date","nominated",0,0,false
-4574,"陳杰","","ordinary",2522,,2019,"K03",,,"民建聯","建制",,"航行業行政人員","Invalid date","nominated",0,0,false
-4575,"林琳","","ordinary",950,,2019,"K05",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4576,"古揚邦","","ordinary",741,,2019,"K06",,,"民建聯","建制",,"荃灣區議員","Invalid date","nominated",0,0,false
-4577,"曾大","","ordinary",1865,,2019,"K07",,,"民建聯","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4578,"葛兆源","","ordinary",1626,,2019,"K09",,,"工聯會","建制",,"民選區議員","Invalid date","nominated",0,0,false
-4579,"潘朗聰","","ordinary",2523,,2019,"K10",,,"新民主同盟","民主",,"社區主任","Invalid date","nominated",0,0,false
-4580,"譚凱邦","","ordinary",1826,,2019,"K11",,,"新民主同盟","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4581,"黃偉傑","","ordinary",1010,,2019,"K14",,," ","建制",,"區議員","Invalid date","nominated",0,0,false
-4582,"趙恩來","","ordinary",1823,,2019,"K15",,,"工黨","民主",,"社區幹事","Invalid date","nominated",0,0,false
-4583,"文裕明","","ordinary",1285,,2019,"K17",,,"公屋聯會、新界社團聯會","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4584,"馮卓森","","ordinary",2524,,2019,"K18",,,"公屋聯會","建制",," ","Invalid date","nominated",0,0,false
-4585,"林顯輝","","ordinary",2525,,2019,"K19",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4586,"黎駿穎","","ordinary",2462,,2019,"L01",,,"民主黨","民主",,"立法會議員助理","Invalid date","nominated",0,0,false
-4587,"林頌鎧","","ordinary",1393,,2019,"L02",,,"民主黨","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4588,"馮沛賢","","ordinary",1594,,2019,"L03",,,"工聯會、民建聯","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4589,"葉文斌","","ordinary",1628,,2019,"L04",,,"民建聯","建制",,"屯門區議員","Invalid date","nominated",0,0,false
-4590,"葉俊遠","","ordinary",2463,,2019,"L06",,,"民建聯","建制",,"律師","Invalid date","nominated",0,0,false
-4591,"潘智鍵","","ordinary",2464,,2019,"L07",,,"屯門社區網絡","民主",,"社區主任","Invalid date","nominated",0,0,false
-4592,"黃丹晴","","ordinary",2465,,2019,"L08",,,"屯門社區網絡","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4593,"羅焯勇","","ordinary",2466,,2019,"L09",,,"屯門社區網絡","民主",,"社會工作者","Invalid date","nominated",0,0,false
-4594,"陳有海","","ordinary",2322,,2019,"L09",,,"香港工會聯合會","建制",,"區議員","Invalid date","nominated",0,0,false
-4595,"曾振興","","ordinary",1430,,2019,"L10",,,"屯門社區網絡","民主",,"社區主任","Invalid date","nominated",0,0,false
-4596,"徐帆","","ordinary",2324,,2019,"L10",,,"香港工會聯合會","建制",,"區議員","Invalid date","nominated",0,0,false
-4597,"張可森","","ordinary",2467,,2019,"L11",,,"屯結新墟","民主",,"大學助教","Invalid date","nominated",0,0,false
-4598,"馬旗","","ordinary",2126,,2019,"L12",,,"民主黨","民主",,"藥劑師","Invalid date","nominated",0,0,false
-4599,"巫堃泰","","ordinary",2468,,2019,"L13",,,"獨立","其他",,"貿易公司董事","Invalid date","nominated",0,0,false
-4600,"朱順雅","","ordinary",801,,2019,"L14",,,"民主黨","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4601,"張恒輝","","ordinary",1348,,2019,"L15",,,"民主建港協進聯盟","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4602,"梁健文","","ordinary",802,,2019,"L17",,,"民建聯","建制",,"秘書","Invalid date","nominated",0,0,false
-4603,"李家偉","","ordinary",2469,,2019,"L19",,,"富新一代","民主",,"社區主任","Invalid date","nominated",0,0,false
-4604,"盧俊宇","","ordinary",2470,,2019,"L20",,,"民主黨","民主",,"法規經理","Invalid date","nominated",0,0,false
-4605,"曾錦榮","","ordinary",2471,,2019,"L21",,,"龍門關注組","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4606,"龍瑞卿","","ordinary",1349,,2019,"L21",,,"民主建港協進聯盟","建制",," ","Invalid date","nominated",0,0,false
-4607,"黃麗嫦","","ordinary",223,,2019,"L22",,,"民主黨","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4608,"王德源","","ordinary",2472,,2019,"L23",,,"屯門社區網絡","民主",,"社區主任","Invalid date","nominated",0,0,false
-4609,"程志紅","","ordinary",1225,,2019,"L23",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4610,"梁灝文","","ordinary",2473,,2019,"L24",,,"獨立民主派、民主派區選聯盟","民主",,"社會學研究員","Invalid date","nominated",0,0,false
-4611,"李洪森","","ordinary",1397,,2019,"L24",,,"香港工會聯合會","建制",,"區議員","Invalid date","nominated",0,0,false
-4612,"張贊華","","ordinary",2474,,2019,"L25",,,"獨立民主派","民主",," ","Invalid date","nominated",0,0,false
-4613,"蘇嘉雯","","ordinary",956,,2019,"L25",,,"實政圓桌","建制",,"律師","Invalid date","nominated",0,0,false
-4614,"陳文華","","ordinary",1162,,2019,"L26",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4615,"巫成鋒","","ordinary",1431,,2019,"L27",,,"民建聯","建制",,"屯門區議員","Invalid date","nominated",0,0,false
-4616,"盧偉明","","ordinary",2475,,2019,"L28",,,"民主黨","民主",,"教協副總幹事","Invalid date","nominated",0,0,false
-4617,"賴嘉汶","","ordinary",2476,,2019,"L28",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4618,"陳文偉","","ordinary",897,,2019,"L30",,,"香港工會聯合會","建制",,"屯門區議員","Invalid date","nominated",0,0,false
-4619,"何國豪","","ordinary",2477,,2019,"L30",,,"匯政衛言","民主",,"社區主任","Invalid date","nominated",0,0,false
-4620,"何杏梅","","ordinary",2325,,2019,"L31",,,"民主黨","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4621,"石景澄","","ordinary",2526,,2019,"M02",,,"民主陣線","民主",,"社區主任","Invalid date","nominated",0,0,false
-4622,"麥業成","","ordinary",1399,,2019,"M03",,,"民主陣線","民主",,"全職議員","Invalid date","nominated",0,0,false
-4623,"張秀賢","","ordinary",2527,,2019,"M04",,," ","民主",," ","Invalid date","nominated",0,0,false
-4624,"袁敏兒","","ordinary",1015,,2019,"M06",,,"獨立候選人","建制",,"區議員","Invalid date","nominated",0,0,false
-4625,"黃偉賢","","ordinary",1352,,2019,"M07",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4626,"林偉明","","ordinary",2528,,2019,"M07",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4627,"鄺俊宇","","ordinary",1634,,2019,"M08",,,"民主黨","民主",,"立法會議員","Invalid date","nominated",0,0,false
-4628,"譚煒霖","","ordinary",2529,,2019,"M08",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4629,"林廷衞","","ordinary",1941,,2019,"M09",,,"民主黨","民主",,"議員助理","Invalid date","nominated",0,0,false
-4630,"沈豪傑","","ordinary",1635,,2019,"M10",,," ","建制",,"律師","Invalid date","nominated",0,0,false
-4631,"李俊威","","ordinary",2530,,2019,"M11",,," ","民主",," ","Invalid date","nominated",0,0,false
-4632,"林慧明","","ordinary",2531,,2019,"M17",,," ","建制",," ","Invalid date","nominated",0,0,false
-4633,"黃國雄","","ordinary",28,,2019,"M17",,," ","其他",," ","Invalid date","nominated",0,0,false
-4634,"侯文健","","ordinary",2532,,2019,"M18",,,"天水連線","民主",," ","Invalid date","nominated",0,0,false
-4635,"伍軒宏","","ordinary",2533,,2019,"M20",,,"民主黨","民主",,"立法會議員助理","Invalid date","nominated",0,0,false
-4636,"陳美蓮","","ordinary",852,,2019,"M21",,," ","民主",,"元朗區議員","Invalid date","nominated",0,0,false
-4637,"蘇淵","","ordinary",2534,,2019,"M21",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4638,"吳玉英","","ordinary",1972,,2019,"M22",,,"民主黨","民主",,"社區幹事","Invalid date","nominated",0,0,false
-4639,"黃志輝","","ordinary",807,,2019,"M23",,," ","其他",,"退休人士","Invalid date","nominated",0,0,false
-4640,"黎寳華","","ordinary",2535,,2019,"M23",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4641,"湯德駿","","ordinary",2536,,2019,"M23",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4642,"周永勤","","ordinary",2327,,2019,"M24",,," ","其他",,"區議員","Invalid date","nominated",0,0,false
-4643,"林進","","ordinary",2537,,2019,"M24",,,"天水連線","民主",," ","Invalid date","nominated",0,0,false
-4644,"陳詩雅","","ordinary",1526,,2019,"M25",,," ","民主",," ","Invalid date","nominated",0,0,false
-4645,"黃煒鈴","","ordinary",1971,,2019,"M25",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4646,"康展華","","ordinary",2538,,2019,"M28",,," ","民主",,"議員助理","Invalid date","nominated",0,0,false
-4647,"賴玥均","","ordinary",2539,,2019,"M28",,," ","建制",,"議員助理","Invalid date","nominated",0,0,false
-4648,"郭文浩","","ordinary",2540,,2019,"M29",,,"民主黨","民主",,"註冊社工","Invalid date","nominated",0,0,false
-4649,"關俊笙","","ordinary",2541,,2019,"M30",,,"天水連線","民主",," ","Invalid date","nominated",0,0,false
-4650,"郭慶平","","ordinary",1111,,2019,"M31",,,"獨立","其他",,"區議員","Invalid date","nominated",0,0,false
-4651,"王百羽","","ordinary",1683,,2019,"M32",,," ","民主",," ","Invalid date","nominated",0,0,false
-4652,"巫啟航","","ordinary",2542,,2019,"M33",,," ","民主",," ","Invalid date","nominated",0,0,false
-4653,"曹健科","","ordinary",2543,,2019,"M33",,," ","其他",," ","Invalid date","nominated",0,0,false
-4654,"楊家安","","ordinary",1681,,2019,"M34",,," ","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4655,"黃頴灝","","ordinary",2544,,2019,"M35",,,"獨立","其他",,"*回收商","Invalid date","nominated",0,0,false
-4656,"鄧鎔耀","","ordinary",1704,,2019,"M38",,," ","建制",,"民選區議員","Invalid date","nominated",0,0,false
-4657,"鄧志光","","ordinary",1946,,2019,"M38",,," ","建制",,"退休工人","Invalid date","nominated",0,0,false
-4658,"黃凱盈","","ordinary",2545,,2019,"N02",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4659,"陳旭明","","ordinary",1684,,2019,"N03",,,"民主黨","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4660,"陳惠達","","ordinary",514,,2019,"N05",,,"新民主同盟","民主",,"區議員","Invalid date","nominated",0,0,false
-4661,"林淑菁","","ordinary",2546,,2019,"N06",,,"新民主同盟","民主",,"社區主任","Invalid date","nominated",0,0,false
-4662,"何樹光","","ordinary",1471,,2019,"N07",,," ","其他",,"行政及財務總監","Invalid date","nominated",0,0,false
-4663,"黃良喜","","ordinary",1265,,2019,"N08",,,"新民主同盟","民主",," ","Invalid date","nominated",0,0,false
-4664,"温和達","","ordinary",1601,,2019,"N08",,,"工聯會","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4665,"曾勁聰","","ordinary",1638,,2019,"N10",,,"香港工會聯合會","建制",,"區議員","Invalid date","nominated",0,0,false
-4666,"侯福達","","ordinary",1436,,2019,"N11",,," ","建制",,"北區區議員","Invalid date","nominated",0,0,false
-4667,"林子琼","","ordinary",2547,,2019,"N12",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4668,"林卓廷","","ordinary",1472,,2019,"N13",,,"民主黨","民主",,"北區區議員、立法會議員","Invalid date","nominated",0,0,false
-4669,"郭㙟豐","","ordinary",2548,,2019,"N14",,,"民主黨","民主",,"社區主任","Invalid date","nominated",0,0,false
-4670,"黃宏滔","","ordinary",1029,,2019,"N14",,,"工聯會","建制",,"區議員","Invalid date","nominated",0,0,false
-4671,"劉其烽","","ordinary",2089,,2019,"N17",,,"新民主同盟","民主",,"區議員","Invalid date","nominated",0,0,false
-4672,"譚榮勳","","ordinary",440,,2019,"P02",,,"民建聯","建制",,"區議員、註冊社工","Invalid date","nominated",0,0,false
-4673,"梅少峰","","ordinary",1921,,2019,"P03",,,"民主建港協進聯盟","建制",,"社區工作","Invalid date","nominated",0,0,false
-4674,"蘇馬俊","","ordinary",961,,2019,"P04",,," ","其他",," ","Invalid date","nominated",0,0,false
-4675,"鄭俊平","","ordinary",344,,2019,"P04",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4676,"何偉霖","","ordinary",2549,,2019,"P05",,,"獨立","民主",," ","Invalid date","nominated",0,0,false
-4677,"胡綽謙","","ordinary",1951,,2019,"P05",,,"民建聯","建制",,"議員助理","Invalid date","nominated",0,0,false
-4678,"黃碧嬌","","ordinary",630,,2019,"P08",,,"民主建港協進聯盟","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4679,"胡健民","","ordinary",1878,,2019,"P09",,,"民主建港協進聯盟","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4680,"葉俊傑","","ordinary",2550,,2019,"P14",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4681,"鄭俊和","","ordinary",569,,2019,"P15",,," ","建制",,"區議員","Invalid date","nominated",0,0,false
-4682,"李華光","","ordinary",1688,,2019,"P19",,,"經民聯","建制",,"區議員、公司董事","Invalid date","nominated",0,0,false
-4683,"梁衍忻","","ordinary",2551,,2019,"Q01",,,"民主動力、西貢鄉民","民主",,"大學職員","2019-10-04","nominated",0,0,false
-4684,"陳嘉琳","","ordinary",2552,,2019,"Q03",,,"民主動力、西貢鄉民","民主",,"研究幹事","2019-10-04","nominated",0,0,false
-4685,"李賢浩","","ordinary",2553,,2019,"Q04",,,"民主派","民主",," ","2019-10-04","nominated",0,0,false
-4686,"黃炳雄","","ordinary",1879,,2019,"Q06",,,"民主派","民主",,"議員助理","2019-10-04","nominated",0,0,false
-4687,"陳緯烈","","ordinary",2554,,2019,"Q06",,,"將軍澳青年力量、獨立民主派","民主",,"註冊護士","2019-10-04","nominated",0,0,false
-4688,"梁里","","ordinary",334,,2019,"Q07",,,"新民主同盟","民主",,"全職區議員","2019-10-04","nominated",0,0,false
-4689,"莊榮輝","","ordinary",365,,2019,"Q08",,,"民主黨","民主",,"林卓廷立法會議員辦事處總幹事","2019-10-04","nominated",0,0,false
-4690,"李栢棠","","ordinary",2555,,2019,"Q08",,,"民主派","民主",,"高級學位教師","2019-10-04","nominated",0,0,false
-4691,"葉子祈","","ordinary",2556,,2019,"Q09",,," ","民主",," ","2019-10-04","nominated",0,0,false
-4692,"林樂儀","","ordinary",2557,,2019,"Q10",,,"獨立候選人","其他",,"議員助理","2019-10-04","nominated",0,0,false
-4693,"趙志民","","ordinary",2558,,2019,"Q10",,,"民主派","民主",," ","2019-10-04","nominated",0,0,false
-4694,"黎煒棠","","ordinary",2478,,2019,"Q10",,,"新民主同盟","民主",," ","2019-10-05","nominated",0,0,false
-4695,"黃向賢","","ordinary",2559,,2019,"Q11",,,"獨立候選人","其他",,"議員助理","2019-10-04","nominated",0,0,false
-4696,"謝正楓","","ordinary",1844,,2019,"Q11",,,"民主派","民主",,"註冊社工、區議員","2019-10-04","nominated",0,0,false
-4697,"陸平才","","ordinary",523,,2019,"Q12",,,"民主派","民主",,"學位教師","2019-10-04","nominated",0,0,false
-4698,"林素蔚","","ordinary",2560,,2019,"Q13",,,"獨立候選人","其他",,"議員助理、註冊社工","2019-10-04","nominated",0,0,false
-4699,"呂文光","","ordinary",1925,,2019,"Q13",,,"新民主同盟","民主",,"全職區議員","2019-10-04","nominated",0,0,false
-4700,"李嘉睿","","ordinary",2561,,2019,"Q14",,,"民主派","民主",," ","2019-10-04","nominated",0,0,false
-4701,"林少忠","","ordinary",703,,2019,"Q16",,,"新民主同盟","民主",,"區議員","2019-10-04","nominated",0,0,false
-4702,"馮君安","","ordinary",2562,,2019,"Q18",,,"新民主同盟","民主",," ","2019-10-04","nominated",0,0,false
-4703,"鍾錦麟","","ordinary",1641,,2019,"Q19",,,"新民主同盟","民主",,"區議員","2019-10-04","nominated",0,0,false
-4704,"秦海城","","ordinary",2563,,2019,"Q20",,,"新民主同盟","民主",,"議員助理","2019-10-04","nominated",0,0,false
-4705,"范國威","","ordinary",256,,2019,"Q21",,,"新民主同盟","民主",,"區議員、立法會議員","2019-10-04","nominated",0,0,false
-4706,"張偉超","","ordinary",2564,,2019,"Q22",,,"將軍澳青年力量、獨立民主派","民主",,"配鏡助理","2019-10-04","nominated",0,0,false
-4707,"王卓雅","","ordinary",2565,,2019,"Q23",,,"民主派","民主",,"社區主任、認可調解員","2019-10-04","nominated",0,0,false
-4708,"陳耀初","","ordinary",2566,,2019,"Q24",,,"民主派","民主",,"資訊科技顧問","2019-10-04","nominated",0,0,false
-4709,"周賢明","","ordinary",612,,2019,"Q26",,,"獨立候選人","其他",,"社工","2019-10-04","nominated",0,0,false
-4710,"黎銘澤","","ordinary",1768,,2019,"Q27",,,"新民主同盟","民主",,"全職區議員","2019-10-05","nominated",0,0,false
-4711,"陳展浚","","ordinary",2092,,2019,"Q28",,,"民主派、區政聯盟","民主",,"全職社區主任","2019-10-04","nominated",0,0,false
-4712,"方國珊","","ordinary",1792,,2019,"Q28",,,"獨立候選人","其他",,"民選議員、工程師","2019-10-04","nominated",0,0,false
-4713,"鄧家彪","","ordinary",412,,2019,"R09",,,"工聯會、民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4714,"盧德明","","ordinary",2479,,2019,"R09",,," ","民主",,"議員助理","Invalid date","nominated",0,0,false
-4715,"趙佩玉","","ordinary",2480,,2019,"R09",,," ","其他",,"活動統籌主任","Invalid date","nominated",0,0,false
-4716,"丘文俊","","ordinary",1645,,2019,"R10",,,"獨立民主派","民主",,"全職區議員","Invalid date","nominated",0,0,false
-4717,"何偉俊","","ordinary",1735,,2019,"R12",,,"香港工會聯合會","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4718,"程張迎","","ordinary",649,,2019,"R12",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4719,"林玉華","","ordinary",2481,,2019,"R13",,," ","建制",," ","Invalid date","nominated",0,0,false
-4720,"謝玉梅","","ordinary",2482,,2019,"R14",,," ","其他",," ","Invalid date","nominated",0,0,false
-4721,"吳定霖","","ordinary",2483,,2019,"R20",,,"民主黨、民主動力","民主",," ","Invalid date","nominated",0,0,false
-4722,"周曉嵐","","ordinary",2484,,2019,"R24",,,"民主黨、民主動力","民主",,"社區主任","Invalid date","nominated",0,0,false
-4723,"陳天俊","","ordinary",2485,,2019,"R27",,," ","民主",,"講師","Invalid date","nominated",0,0,false
-4724,"李啟雄","","ordinary",2486,,2019,"R28",,," ","其他",,"校長","Invalid date","nominated",0,0,false
-4725,"李子榮","","ordinary",644,,2019,"R28",,," ","建制",,"中學教師","Invalid date","nominated",0,0,false
-4726,"麥潤培","","ordinary",1444,,2019,"R30",,,"獨立民主派","民主",,"區議員、註冊社工","Invalid date","nominated",0,0,false
-4727,"曾素麗","","ordinary",1773,,2019,"R31",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4728,"冼卓嵐","","ordinary",1889,,2019,"R33",,,"民主黨、民主動力","民主",,"社區發展主任","Invalid date","nominated",0,0,false
-4729,"方浩良","","ordinary",2487,,2019,"R34",,,"香港工會聯合會","建制",,"社區工作者","Invalid date","nominated",0,0,false
-4730,"鄭則文","","ordinary",621,,2019,"R34",,,"民主黨","民主",,"沙田區議員","Invalid date","nominated",0,0,false
-4731,"勞越洲","","ordinary",2097,,2019,"R37",,,"民主動力、沙田社區關注社","民主",,"社區主任","Invalid date","nominated",0,0,false
-4732,"劉青","","ordinary",2488,,2019,"R38",,,"民主黨","民主",," ","Invalid date","nominated",0,0,false
-4733,"李偉樂","","ordinary",2567,,2019,"S01",,,"香港工會聯合會","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4734,"駱小鸞","","ordinary",2568,,2019,"S02",,," ","建制",," ","Invalid date","nominated",0,0,false
-4735,"伍志華","","ordinary",2569,,2019,"S03",,,"民建聯","建制",,"社區主任","Invalid date","nominated",0,0,false
-4736,"陳安妮","","ordinary",2570,,2019,"S04",,,"香港工會聯合會","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4737,"許祺祥","","ordinary",359,,2019,"S05",,,"民主黨","民主",,"區議員、營業經理","Invalid date","nominated",0,0,false
-4738,"黃思鴻","","ordinary",2571,,2019,"S05",,,"香港工會聯合會","建制",,"社區幹事","Invalid date","nominated",0,0,false
-4739,"黃炳權","","ordinary",623,,2019,"S05",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4740,"李宏峯","","ordinary",2102,,2019,"S06",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4741,"梁崗銘","","ordinary",1932,,2019,"S07",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4742,"李世隆","","ordinary",1555,,2019,"S08",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4743,"郭芙蓉","","ordinary",1934,,2019,"S09",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4744,"郭玲麗","","ordinary",2572,,2019,"S10",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4745,"劉貴梅","","ordinary",2489,,2019,"S10",,,"民主黨","民主",," ","Invalid date","nominated",0,0,false
-4746,"袁潤洪","","ordinary",2573,,2019,"S12",,,"民主建港協進聯盟","建制",," ","Invalid date","nominated",0,0,false
-4747,"林紹輝","","ordinary",200,,2019,"S12",,,"民主黨","民主",,"區議員","Invalid date","nominated",0,0,false
-4748,"林映惠","","ordinary",2574,,2019,"S14",,,"民建聯","建制",,"助理統籌主任","Invalid date","nominated",0,0,false
-4749,"鄧麗玲","","ordinary",2575,,2019,"S15",,,"民建聯","建制",," ","Invalid date","nominated",0,0,false
-4750,"黃耀聰","","ordinary",460,,2019,"S16",,,"經民聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4751,"朱麗玲","","ordinary",1581,,2019,"S17",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4752,"鮑銘康","","ordinary",2103,,2019,"S18",,,"民建聯","建制",,"民選區議員","Invalid date","nominated",0,0,false
-4753,"譚惠珍","","ordinary",33,,2019,"S21",,,"經民聯","建制",," ","Invalid date","nominated",0,0,false
-4754,"麥美娟","","ordinary",109,,2019,"S22",,,"香港工會聯合會","建制",,"議員","Invalid date","nominated",0,0,false
-4755,"李志強","","ordinary",871,,2019,"S25",,," ","建制",,"區議員","Invalid date","nominated",0,0,false
-4756,"梁嘉銘","","ordinary",592,,2019,"S27",,,"民建聯","建制",,"社區工作者","Invalid date","nominated",0,0,false
-4757,"潘志成","","ordinary",237,,2019,"S28",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4758,"盧婉婷","","ordinary",1560,,2019,"S29",,,"民建聯","建制",,"區議員","Invalid date","nominated",0,0,false
-4759,"劉子傑","","ordinary",1885,,2019,"S30",,,"民主黨","民主",,"議員助理、認可調解員","Invalid date","nominated",0,0,false
-4760,"羅競成","","ordinary",822,,2019,"S31",,,"民建聯","建制",,"全職區議員","Invalid date","nominated",0,0,false
-4761,"馮小燕","","ordinary",2490,,2019,"T01",,," ","民主",,"社區工作者","Invalid date","nominated",0,0,false
-4762,"王俊傑","","ordinary",2576,,2019,"T02",,,"工聯會、民建聯","建制",,"社區服務","Invalid date","nominated",0,0,false
-4763,"劉展鵬","","ordinary",1553,,2019,"T03",,,"工聯會","建制",,"勞工及社區服務","Invalid date","nominated",0,0,false
-4764,"周浩鼎","","ordinary",1561,,2019,"T04",,,"民建聯","建制",,"議員","Invalid date","nominated",0,0,false
-4765,"葉培基","","ordinary",2577,,2019,"T06",,,"民建聯","建制",,"議員助理","Invalid date","nominated",0,0,false
-4766,"徐逸朗","","ordinary",2491,,2019,"T08",,," ","民主",,"社區組織者、設計師","Invalid date","nominated",0,0,false
-4767,"劉舜婷","","ordinary",2578,,2019,"T09",,,"民建聯","建制",,"社區助理","Invalid date","nominated",0,0,false
-4768,"崔靖青","","ordinary",2492,,2019,"T09",,," ","民主",,"社區工作者","Invalid date","nominated",0,0,false
-4769,"郭慧文","","ordinary",2579,,2019,"T10",,,"民建聯","建制",,"項目經理","Invalid date","nominated",0,0,false
-4770,"梁國豪","","ordinary",1828,,2019,"T10",,," ","民主",,"籃球裁判","Invalid date","nominated",0,0,false
+4406,"許智峯","","ordinary",1014,,2019,"A01",,,"民主黨","民主",,"立法會、區議會議員","0004-10-20","nominated",0,0,false
+4407,"莫淦森","","ordinary",2454,,2019,"A02",,,"民主建港協進聯盟","建制",,"立法會議員助理","0004-10-20","nominated",0,0,false
+4408,"鄭麗琼","","ordinary",2250,,2019,"A03",,,"民主黨","民主",,"中西區區議員、註冊社會工作者","0004-10-20","nominated",0,0,false
+4409,"馮家亮","","ordinary",2455,,2019,"A03",,,"自由黨","建制",,"商人","0004-10-20","nominated",0,0,false
+4410,"楊哲安","","ordinary",1898,,2019,"A04",,,"自由黨","建制",,"公司董事","0004-10-20","nominated",0,0,false
+4411,"歐頌賢","","ordinary",2456,,2019,"A05",,," ","其他",," ","0004-10-20","nominated",0,0,false
+4412,"楊開永","","ordinary",2058,,2019,"A06",,,"民主建港協進聯盟","建制",," ","0004-10-20","nominated",0,0,false
+4413,"陳學鋒","","ordinary",776,,2019,"A07",,,"民主建港協進聯盟","建制",,"銀行從業員","0004-10-20","nominated",0,0,false
+4414,"張國鈞","","ordinary",829,,2019,"A08",,,"民建聯","建制",,"律師","0004-10-20","nominated",0,0,false
+4415,"楊浩然","","ordinary",2243,,2019,"A09",,,"民主黨","民主",,"律師","0004-10-20","nominated",0,0,false
+4416,"陳財喜","","ordinary",2227,,2019,"A10",,," ","建制",,"中西區區議員","0005-10-20","nominated",0,0,false
+4417,"劉天正","","ordinary",2457,,2019,"A11",,,"民主建港協進聯盟","建制",,"企業傳訊主任","0004-10-20","nominated",0,0,false
+4418,"甘乃威","","ordinary",2159,,2019,"A12",,,"民主黨","民主",,"中西區區議員、註冊社工","0004-10-20","nominated",0,0,false
+4419,"呂鴻賓","","ordinary",1800,,2019,"A12",,,"工聯會","建制",," ","0004-10-20","nominated",0,0,false
+4420,"伍凱欣","","ordinary",598,,2019,"A13",,,"民主黨","民主",,"中西區區議員","0004-10-20","nominated",0,0,false
+4421,"張嘉恩","","ordinary",2458,,2019,"A13",,,"民主建港協進聯盟","建制",,"會計","0004-10-20","nominated",0,0,false
+4422,"楊學明","","ordinary",164,,2019,"A15",,,"民建聯","建制",,"業務拓展總監","0004-10-20","nominated",0,0,false
+4423,"穆家駿","","ordinary",2454,,2019,"B02",,,"民建聯","建制",,"中學教師","2019-10-05","nominated",0,0,false
+4424,"鍾嘉敏","","ordinary",34,,2019,"B03",,,"民建聯","建制",,"註冊社工","2019-10-05","nominated",0,0,false
+4425,"李永財","","ordinary",2459,,2019,"B05",,,"民主動力、維協","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4426,"周潔冰","","ordinary",2235,,2019,"B05",,,"民主建港協進聯盟","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4427,"李文龍","","ordinary",602,,2019,"B06",,,"獨立","建制",,"全職區議員","2019-10-05","nominated",0,0,false
+4428,"廖添誠","","ordinary",2460,,2019,"B07",,,"獨立候選人","其他",,"講師","2019-10-04","nominated",0,0,false
+4429,"陳詠霞","","ordinary",2461,,2019,"B10",,,"2047香港監察","民主",," ","2019-10-04","nominated",0,0,false
+4430,"李碧儀","","ordinary",920,,2019,"B12",,,"獨立","其他",,"區議員","2019-10-05","nominated",0,0,false
+4431,"李均頤","","ordinary",2288,,2019,"B13",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4432,"張文嵩","","ordinary",2462,,2019,"C03",,," ","其他",,"社區主任、議員助理","2019-10-04","nominated",0,0,false
+4433,"梁詠詩","","ordinary",2063,,2019,"C06",,," ","民主",,"中學教師","2019-10-04","nominated",0,0,false
+4434,"何毅淦","","ordinary",716,,2019,"C08",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4435,"劉淑燕","","ordinary",2463,,2019,"C09",,,"民主建港協進聯盟、香港工會聯合會","建制",,"議員助理","2019-10-04","nominated",0,0,false
+4436,"黃健興","","ordinary",674,,2019,"C10",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4437,"陳儀真","","ordinary",2464,,2019,"C10",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4438,"朱日安","","ordinary",1454,,2019,"C11",,,"獨立","其他",,"董事","2019-10-04","nominated",0,0,false
+4439,"楊漢成","","ordinary",51,,2019,"C12",,," ","其他",,"公司董事","2019-10-04","nominated",0,0,false
+4440,"梁國鴻","","ordinary",1173,,2019,"C12",,,"香港工會聯合會","建制",," ","2019-10-04","nominated",0,0,false
+4441,"陳凱榮","","ordinary",2465,,2019,"C14",,,"民主建港協進聯盟、香港工會聯合會","建制",,"社區研究員","2019-10-04","nominated",0,0,false
+4442,"許清安","","ordinary",2236,,2019,"C18",,,"獨立","建制",,"法律及財務顧問","2019-10-04","nominated",0,0,false
+4443,"郭偉强","","ordinary",886,,2019,"C19",,,"香港工會聯合會","建制",,"全職議員","2019-10-04","nominated",0,0,false
+4444,"鄭志成","","ordinary",2363,,2019,"C23",,,"民主建港協進聯盟","建制",,"區議員","2019-10-04","nominated",0,0,false
+4445,"許林慶","","ordinary",719,,2019,"C28",,,"香港工會聯合會","建制",,"區議員","2019-10-04","nominated",0,0,false
+4446,"張振傑","","ordinary",2455,,2019,"C28",,,"興東東熹環境關注組","民主",,"土木工程師","2019-10-05","nominated",0,0,false
+4447,"吳清清","","ordinary",2466,,2019,"C30",,,"香港工會聯合會","建制",," ","2019-10-04","nominated",0,0,false
+4448,"蔡翠雲","","ordinary",2467,,2019,"C34",,,"獨立","建制",," ","2019-10-04","nominated",0,0,false
+4449,"劉堅","","ordinary",2468,,2019,"C34",,,"民主建港協進聯盟、香港工會聯合會","建制",,"公司董事","2019-10-04","nominated",0,0,false
+4450,"陳真真","","ordinary",2447,,2019,"C35",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4451,"任葆琳","","ordinary",1805,,2019,"D01",,,"獨立候選人","建制",,"公司董事","2019-10-04","nominated",0,0,false
+4452,"黃銳熺","","ordinary",2469,,2019,"D01",,,"民主派","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4453,"林玉珍","","ordinary",1246,,2019,"D02",,,"獨立候選人","建制",,"全職南區區議員","2019-10-04","nominated",0,0,false
+4454,"陳堡明","","ordinary",2470,,2019,"D02",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4455,"張錫容","","ordinary",130,,2019,"D03",,,"獨立候選人","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4456,"陳炳洋","","ordinary",2471,,2019,"D03",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4457,"陳欣兒","","ordinary",2472,,2019,"D04",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4458,"吳啓新","","ordinary",2456,,2019,"D04",,,"民建聯","建制",,"社區主任","2019-10-05","nominated",0,0,false
+4459,"羅健熙","","ordinary",921,,2019,"D05",,,"民主黨","民主",,"南區區議員","2019-10-04","nominated",0,0,false
+4460,"譚晉杰","","ordinary",2457,,2019,"D05",,,"民建聯","建制",,"社區主任","2019-10-05","nominated",0,0,false
+4461,"俞竣晞","","ordinary",2473,,2019,"D06",,,"公民黨","民主",,"地區發展主任","2019-10-04","nominated",0,0,false
+4462,"黃之鋒","","ordinary",2474,,2019,"D07",,,"民主派","民主",,"社區幹事","2019-10-04","nominated",0,0,false
+4463,"潘秉康","","ordinary",2475,,2019,"D08",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4464,"麥謝巧玲","","ordinary",2245,,2019,"D08",,,"民建聯","建制",,"校長","2019-10-05","nominated",0,0,false
+4465,"黎熙琳","","ordinary",721,,2019,"D09",,,"民主黨","民主",,"社區發展主任","2019-10-04","nominated",0,0,false
+4466,"黃才立","","ordinary",1176,,2019,"D09",,,"民建聯","建制",,"高級理財策劃經理","2019-10-05","nominated",0,0,false
+4467,"嚴駿豪","","ordinary",2476,,2019,"D10",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4468,"張偉楠","","ordinary",2458,,2019,"D10",,,"民建聯","建制",,"社區主任","2019-10-05","nominated",0,0,false
+4469,"姚潔凝","","ordinary",1808,,2019,"D11",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4470,"蕭煒忠","","ordinary",2459,,2019,"D11",,,"民建聯","建制",,"公司董事","2019-10-05","nominated",0,0,false
+4471,"林德和","","ordinary",2477,,2019,"D12",,,"獨立","其他",,"大學助教","2019-10-04","nominated",0,0,false
+4472,"袁嘉蔚","","ordinary",2478,,2019,"D13",,,"民主派","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4473,"朱立威","","ordinary",175,,2019,"D14",,,"民建聯","建制",,"區議員","2019-10-05","nominated",0,0,false
+4474,"徐遠華","","ordinary",467,,2019,"D15",,,"民主黨","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4475,"陳榮恩","","ordinary",2010,,2019,"D15",,,"工聯會、民建聯","建制",," ","2019-10-05","nominated",0,0,false
+4476,"丁偉良","","ordinary",2460,,2019,"D16",,,"沒有政治聯繫","民主",,"教師","2019-10-05","nominated",0,0,false
+4477,"李穎妍","","ordinary",2479,,2019,"E02",,,"民主黨","民主",,"立法會議員助理","2019-10-04","nominated",0,0,false
+4478,"孔昭華","","ordinary",46,,2019,"E02",,,"民建聯","建制",,"公司董事","2019-10-05","nominated",0,0,false
+4479,"胡穗珊","","ordinary",2480,,2019,"E04",,,"社區前進","民主",,"社區幹事","2019-10-04","nominated",0,0,false
+4480,"李偉峰","","ordinary",420,,2019,"E05",,,"民主黨","民主",,"立法會議員助理","2019-10-04","nominated",0,0,false
+4481,"許德亮","","ordinary",971,,2019,"E06",,," ","建制",,"區議員、社工","2019-10-04","nominated",0,0,false
+4482,"陳源彬","","ordinary",1543,,2019,"E06",,,"獨立民主派","民主",," ","2019-10-04","nominated",0,0,false
+4483,"涂謹申","","ordinary",1027,,2019,"E08",,,"民主黨","民主",,"律師、立法會議員","2019-10-04","nominated",0,0,false
+4484,"鍾澤暉","","ordinary",1899,,2019,"E09",,," ","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4485,"曾自鳴","","ordinary",2481,,2019,"E10",,,"民主黨","民主",,"立法會議員助理","2019-10-04","nominated",0,0,false
+4486,"李國權","","ordinary",2450,,2019,"E12",,,"社區前進","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4487,"林兆彬","","ordinary",2482,,2019,"E14",,,"社區前進","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4488,"仇振輝","","ordinary",2175,,2019,"E15",,," ","建制",,"公司經理","2019-10-04","nominated",0,0,false
+4489,"朱江瑋","","ordinary",2483,,2019,"E15",,,"社區前進","民主",," ","2019-10-04","nominated",0,0,false
+4490,"林健文","","ordinary",1302,,2019,"E16",,,"無政黨民主派","民主",,"律師","2019-10-04","nominated",0,0,false
+4491,"李文傑","","ordinary",2484,,2019,"E16",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4492,"朱子洛","","ordinary",2485,,2019,"E17",,,"民主黨","民主",,"研究主任","2019-10-04","nominated",0,0,false
+4493,"賀卓軒","","ordinary",2486,,2019,"E20",,,"社區前進","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4494,"麥偉明","","ordinary",678,,2019,"F01",,,"民協","民主",," ","2019-10-04","nominated",0,0,false
+4495,"譚振宇","","ordinary",2487,,2019,"F01",,,"香港經濟民生聯盟","建制",," ","2019-10-04","nominated",0,0,false
+4496,"衞煥南","","ordinary",1151,,2019,"F08",,,"民協","民主",,"區議員","2019-10-04","nominated",0,0,false
+4497,"李炯","","ordinary",1745,,2019,"F10",,,"香港民主民生協進會","民主",," ","2019-10-04","nominated",0,0,false
+4498,"袁海文","","ordinary",423,,2019,"F13",,,"民主黨","民主",,"區議員","2019-10-05","nominated",0,0,false
+4499,"吳美","","ordinary",280,,2019,"F22",,," ","民主",,"區議員","2019-10-04","nominated",0,0,false
+4500,"甄啟榮","","ordinary",1744,,2019,"F23",,,"無黨派","其他",,"區議員","2019-10-04","nominated",0,0,false
+4501,"李梓敬","","ordinary",1580,,2019,"F24",,,"自由黨","建制",,"公司董事、區議員","2019-10-04","nominated",0,0,false
+4502,"陳麗紅","","ordinary",2488,,2019,"F25",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4503,"譚國僑","","ordinary",1365,,2019,"F25",,,"香港民主民生協進會","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4504,"曾健超","","ordinary",587,,2019,"G01",,,"獨立","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4505,"黎廣偉","","ordinary",1812,,2019,"G03",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4506,"鄧巧彤","","ordinary",2489,,2019,"G03",,,"工聯會","建制",," ","2019-10-04","nominated",0,0,false
+4507,"馬希鵬","","ordinary",2074,,2019,"G04",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4508,"林正軒","","ordinary",2490,,2019,"G05",,,"民主派區選聯盟","民主",,"毛孟靜立法會議員助理","2019-10-04","nominated",0,0,false
+4509,"黃永傑","","ordinary",940,,2019,"G06",,,"民主黨","民主",,"社工","2019-10-04","nominated",0,0,false
+4510,"鄭利明","","ordinary",1090,,2019,"G07",,," ","建制",,"副教授","2019-10-04","nominated",0,0,false
+4511,"馮文韜","","ordinary",1739,,2019,"G07",,,"民主黨","民主",," ","2019-10-04","nominated",0,0,false
+4512,"蕭亮聲","","ordinary",682,,2019,"G08",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4513,"何顯明","","ordinary",1412,,2019,"G10",,,"自由黨","建制",,"區議員","2019-10-04","nominated",0,0,false
+4514,"馮達浚","","ordinary",2491,,2019,"G11",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4515,"曾俊達","","ordinary",2492,,2019,"G12",,," ","其他",,"註冊護士","2019-10-04","nominated",0,0,false
+4516,"何華漢","","ordinary",2015,,2019,"G13",,,"經民聯","建制",," ","2019-10-04","nominated",0,0,false
+4517,"張景勛","","ordinary",2461,,2019,"G14",,," ","建制",,"社區主任","2019-10-05","nominated",0,0,false
+4518,"童繼民","","ordinary",2493,,2019,"G15",,," ","民主",,"機艙艙務長","2019-10-04","nominated",0,0,false
+4519,"李軒朗","","ordinary",2494,,2019,"G17",,,"九龍角落、民主派區選聯盟","民主",,"土瓜灣南社區主任","2019-10-04","nominated",0,0,false
+4520,"郭天立","","ordinary",2495,,2019,"G18",,,"民主黨、民主動力","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4521,"余志榮","","ordinary",1666,,2019,"G18",,,"獨立候選人","建制",,"商人","2019-10-05","nominated",0,0,false
+4522,"關家倫","","ordinary",2496,,2019,"G19",,," ","民主",,"中醫師","2019-10-04","nominated",0,0,false
+4523,"鄺葆賢","","ordinary",1851,,2019,"G20",,," ","民主",,"醫生、區議員","2019-10-04","nominated",0,0,false
+4524,"任國棟","","ordinary",509,,2019,"G21",,," ","民主",,"社工","2019-10-04","nominated",0,0,false
+4525,"關兆倫","","ordinary",2497,,2019,"G22",,," ","民主",,"建築師","2019-10-04","nominated",0,0,false
+4526,"周熙雯","","ordinary",2498,,2019,"G23",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4527,"麥瑞淇","","ordinary",2499,,2019,"G24",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4528,"陳麗君","","ordinary",1298,,2019,"G25",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4529,"郭秀英","","ordinary",1376,,2019,"H02",,," ","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4530,"陳俊裕","","ordinary",2500,,2019,"H03",,,"獨立","其他",,"環保團體項目主任","2019-10-04","nominated",0,0,false
+4531,"鄧惠强","","ordinary",2501,,2019,"H04",,,"民主黨","民主",,"政策研究主任","2019-10-04","nominated",0,0,false
+4532,"越毅強","","ordinary",2502,,2019,"H05",,,"民建聯","建制",,"社區工作者","2019-10-04","nominated",0,0,false
+4533,"張嘉宜","","ordinary",2503,,2019,"H05",,,"慈雲山建設力量","民主",,"職業治療師","2019-10-04","nominated",0,0,false
+4534,"岳敬寬","","ordinary",1818,,2019,"H06",,,"獨立","其他",,"中藥店店長","2019-10-04","nominated",0,0,false
+4535,"陳啟淳","","ordinary",2504,,2019,"H07",,," ","民主",,"銀行業務分析師","2019-10-04","nominated",0,0,false
+4536,"李德康","","ordinary",2134,,2019,"H08",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4537,"楊光富","","ordinary",2505,,2019,"H09",,,"民建聯","建制",,"注冊教練","2019-10-04","nominated",0,0,false
+4538,"施德來","","ordinary",1484,,2019,"H09",,,"民協","民主",,"區議員、註冊社工","2019-10-04","nominated",0,0,false
+4539,"梁銘康","","ordinary",2506,,2019,"H10",,,"獨立","民主",,"工程顧問","2019-10-04","nominated",0,0,false
+4540,"黎榮浩","","ordinary",1311,,2019,"H11",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4541,"劉珈汶","","ordinary",2507,,2019,"H11",,,"公民黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4542,"鄭文杰","","ordinary",2508,,2019,"H12",,,"公民黨","民主",,"高級議員助理","2019-10-04","nominated",0,0,false
+4543,"許錦成","","ordinary",2204,,2019,"H14",,,"民協","民主",,"機構管理","2019-10-04","nominated",0,0,false
+4544,"李健聰","","ordinary",2509,,2019,"H14",,,"工聯會","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4545,"鄭梓健","","ordinary",2510,,2019,"H15",,," ","民主",,"樂器導師","2019-10-04","nominated",0,0,false
+4546,"袁國強","","ordinary",475,,2019,"H16",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4547,"張茂清","","ordinary",2511,,2019,"H16",,,"民主黨","民主",,"社區發展主任","2019-10-04","nominated",0,0,false
+4548,"潘卓斌","","ordinary",2512,,2019,"H17",,,"民建聯","建制",,"社區工作者","2019-10-04","nominated",0,0,false
+4549,"岑宇軒","","ordinary",2513,,2019,"H17",,,"慈雲山建設力量","民主",," ","2019-10-04","nominated",0,0,false
+4550,"黃逸旭","","ordinary",286,,2019,"H18",,," ","民主",,"區議員","2019-10-04","nominated",0,0,false
+4551,"何漢文","","ordinary",766,,2019,"H19",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4552,"莫綺霞","","ordinary",2514,,2019,"H19",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4553,"莫嘉嫻","","ordinary",2342,,2019,"H20",,,"民主黨","民主",,"社區顧問","2019-10-04","nominated",0,0,false
+4554,"蔡子健","","ordinary",181,,2019,"H21",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4555,"廖成利","","ordinary",764,,2019,"H21",,,"香港民主民生協進會","民主",,"律師","2019-10-04","nominated",0,0,false
+4556,"江景新","","ordinary",2515,,2019,"H22",,,"民建聯","建制",,"投資顧問","2019-10-04","nominated",0,0,false
+4557,"沈運華","","ordinary",1490,,2019,"H22",,,"民主黨","民主",,"律師","2019-10-04","nominated",0,0,false
+4558,"陳利成","","ordinary",1313,,2019,"H23",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4559,"胡志健","","ordinary",1672,,2019,"H24",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4560,"莫灝哲","","ordinary",2516,,2019,"H25",,,"彩虹邨服務聯會","民主",,"聯席總幹事","2019-10-04","nominated",0,0,false
+4561,"莫健榮","","ordinary",1834,,2019,"H25",,,"工聯會","建制",,"區議員","2019-10-04","nominated",0,0,false
+4562,"潘任惠珍","","ordinary",2356,,2019,"J02",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4563,"畢東尼","","ordinary",2406,,2019,"J04",,,"公民黨","民主",," ","2019-10-04","nominated",0,0,false
+4564,"黃家樂","","ordinary",714,,2019,"J07",,," ","其他",,"社區主任","2019-10-05","nominated",0,0,false
+4565,"符碧珍","","ordinary",1096,,2019,"J09",,,"獨立候選人","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4566,"龐智笙","","ordinary",2517,,2019,"J24",,,"公屋聯會","建制",," ","2019-10-04","nominated",0,0,false
+4567,"李煒林","","ordinary",2518,,2019,"J27",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4568,"呂奭群","","ordinary",2519,,2019,"J28",,," ","建制",,"教師","2019-10-04","nominated",0,0,false
+4569,"王嘉盈","","ordinary",722,,2019,"J28",,,"公民黨","民主",," ","2019-10-04","nominated",0,0,false
+4570,"金堅","","ordinary",947,,2019,"J37",,," ","建制",,"區議員","2019-10-04","nominated",0,0,false
+4571,"李軍澤","","ordinary",2520,,2019,"J40",,,"公民黨","民主",," ","2019-10-04","nominated",0,0,false
+4572,"羅少傑","","ordinary",245,,2019,"K01",,," ","建制",,"董事總經理","2019-10-05","nominated",0,0,false
+4573,"伍俊瑜","","ordinary",2521,,2019,"K02",,,"民建聯","建制",,"助理業務支援經理","2019-10-04","nominated",0,0,false
+4574,"陳杰","","ordinary",2522,,2019,"K03",,,"民建聯","建制",,"航行業行政人員","2019-10-04","nominated",0,0,false
+4575,"林琳","","ordinary",950,,2019,"K05",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4576,"古揚邦","","ordinary",741,,2019,"K06",,,"民建聯","建制",,"荃灣區議員","2019-10-04","nominated",0,0,false
+4577,"曾大","","ordinary",1865,,2019,"K07",,,"民建聯","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4578,"葛兆源","","ordinary",1626,,2019,"K09",,,"工聯會","建制",,"民選區議員","2019-10-04","nominated",0,0,false
+4579,"潘朗聰","","ordinary",2523,,2019,"K10",,,"新民主同盟","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4580,"譚凱邦","","ordinary",1826,,2019,"K11",,,"新民主同盟","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4581,"黃偉傑","","ordinary",1010,,2019,"K14",,," ","建制",,"區議員","2019-10-04","nominated",0,0,false
+4582,"趙恩來","","ordinary",1823,,2019,"K15",,,"工黨","民主",,"社區幹事","2019-10-04","nominated",0,0,false
+4583,"文裕明","","ordinary",1285,,2019,"K17",,,"公屋聯會、新界社團聯會","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4584,"馮卓森","","ordinary",2524,,2019,"K18",,,"公屋聯會","建制",," ","2019-10-04","nominated",0,0,false
+4585,"林顯輝","","ordinary",2525,,2019,"K19",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4586,"黎駿穎","","ordinary",2462,,2019,"L01",,,"民主黨","民主",,"立法會議員助理","2019-10-04","nominated",0,0,false
+4587,"林頌鎧","","ordinary",1393,,2019,"L02",,,"民主黨","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4588,"馮沛賢","","ordinary",1594,,2019,"L03",,,"工聯會、民建聯","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4589,"葉文斌","","ordinary",1628,,2019,"L04",,,"民建聯","建制",,"屯門區議員","2019-10-04","nominated",0,0,false
+4590,"葉俊遠","","ordinary",2463,,2019,"L06",,,"民建聯","建制",,"律師","2019-10-04","nominated",0,0,false
+4591,"潘智鍵","","ordinary",2464,,2019,"L07",,,"屯門社區網絡","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4592,"黃丹晴","","ordinary",2465,,2019,"L08",,,"屯門社區網絡","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4593,"羅焯勇","","ordinary",2466,,2019,"L09",,,"屯門社區網絡","民主",,"社會工作者","2019-10-04","nominated",0,0,false
+4594,"陳有海","","ordinary",2322,,2019,"L09",,,"香港工會聯合會","建制",,"區議員","2019-10-04","nominated",0,0,false
+4595,"曾振興","","ordinary",1430,,2019,"L10",,,"屯門社區網絡","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4596,"徐帆","","ordinary",2324,,2019,"L10",,,"香港工會聯合會","建制",,"區議員","2019-10-04","nominated",0,0,false
+4597,"張可森","","ordinary",2467,,2019,"L11",,,"屯結新墟","民主",,"大學助教","2019-10-04","nominated",0,0,false
+4598,"馬旗","","ordinary",2126,,2019,"L12",,,"民主黨","民主",,"藥劑師","2019-10-04","nominated",0,0,false
+4599,"巫堃泰","","ordinary",2468,,2019,"L13",,,"獨立","其他",,"貿易公司董事","2019-10-04","nominated",0,0,false
+4600,"朱順雅","","ordinary",801,,2019,"L14",,,"民主黨","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4601,"張恒輝","","ordinary",1348,,2019,"L15",,,"民主建港協進聯盟","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4602,"梁健文","","ordinary",802,,2019,"L17",,,"民建聯","建制",,"秘書","2019-10-04","nominated",0,0,false
+4603,"李家偉","","ordinary",2469,,2019,"L19",,,"富新一代","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4604,"盧俊宇","","ordinary",2470,,2019,"L20",,,"民主黨","民主",,"法規經理","2019-10-04","nominated",0,0,false
+4605,"曾錦榮","","ordinary",2471,,2019,"L21",,,"龍門關注組","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4606,"龍瑞卿","","ordinary",1349,,2019,"L21",,,"民主建港協進聯盟","建制",," ","2019-10-04","nominated",0,0,false
+4607,"黃麗嫦","","ordinary",223,,2019,"L22",,,"民主黨","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4608,"王德源","","ordinary",2472,,2019,"L23",,,"屯門社區網絡","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4609,"程志紅","","ordinary",1225,,2019,"L23",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4610,"梁灝文","","ordinary",2473,,2019,"L24",,,"獨立民主派、民主派區選聯盟","民主",,"社會學研究員","2019-10-04","nominated",0,0,false
+4611,"李洪森","","ordinary",1397,,2019,"L24",,,"香港工會聯合會","建制",,"區議員","2019-10-04","nominated",0,0,false
+4612,"張贊華","","ordinary",2474,,2019,"L25",,,"獨立民主派","民主",," ","2019-10-04","nominated",0,0,false
+4613,"蘇嘉雯","","ordinary",956,,2019,"L25",,,"實政圓桌","建制",,"律師","2019-10-04","nominated",0,0,false
+4614,"陳文華","","ordinary",1162,,2019,"L26",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4615,"巫成鋒","","ordinary",1431,,2019,"L27",,,"民建聯","建制",,"屯門區議員","2019-10-04","nominated",0,0,false
+4616,"盧偉明","","ordinary",2475,,2019,"L28",,,"民主黨","民主",,"教協副總幹事","2019-10-04","nominated",0,0,false
+4617,"賴嘉汶","","ordinary",2476,,2019,"L28",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4618,"陳文偉","","ordinary",897,,2019,"L30",,,"香港工會聯合會","建制",,"屯門區議員","2019-10-04","nominated",0,0,false
+4619,"何國豪","","ordinary",2477,,2019,"L30",,,"匯政衛言","民主",,"社區主任","2019-10-05","nominated",0,0,false
+4620,"何杏梅","","ordinary",2325,,2019,"L31",,,"民主黨","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4621,"石景澄","","ordinary",2526,,2019,"M02",,,"民主陣線","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4622,"麥業成","","ordinary",1399,,2019,"M03",,,"民主陣線","民主",,"全職議員","2019-10-04","nominated",0,0,false
+4623,"張秀賢","","ordinary",2527,,2019,"M04",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4624,"袁敏兒","","ordinary",1015,,2019,"M06",,,"獨立候選人","建制",,"區議員","2019-10-04","nominated",0,0,false
+4625,"黃偉賢","","ordinary",1352,,2019,"M07",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4626,"林偉明","","ordinary",2528,,2019,"M07",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4627,"鄺俊宇","","ordinary",1634,,2019,"M08",,,"民主黨","民主",,"立法會議員","2019-10-04","nominated",0,0,false
+4628,"譚煒霖","","ordinary",2529,,2019,"M08",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4629,"林廷衞","","ordinary",1941,,2019,"M09",,,"民主黨","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4630,"沈豪傑","","ordinary",1635,,2019,"M10",,," ","建制",,"律師","2019-10-04","nominated",0,0,false
+4631,"李俊威","","ordinary",2530,,2019,"M11",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4632,"林慧明","","ordinary",2531,,2019,"M17",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4633,"黃國雄","","ordinary",28,,2019,"M17",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4634,"侯文健","","ordinary",2532,,2019,"M18",,,"天水連線","民主",," ","2019-10-04","nominated",0,0,false
+4635,"伍軒宏","","ordinary",2533,,2019,"M20",,,"民主黨","民主",,"立法會議員助理","2019-10-04","nominated",0,0,false
+4636,"陳美蓮","","ordinary",852,,2019,"M21",,," ","民主",,"元朗區議員","2019-10-04","nominated",0,0,false
+4637,"蘇淵","","ordinary",2534,,2019,"M21",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4638,"吳玉英","","ordinary",1972,,2019,"M22",,,"民主黨","民主",,"社區幹事","2019-10-04","nominated",0,0,false
+4639,"黃志輝","","ordinary",807,,2019,"M23",,," ","其他",,"退休人士","2019-10-04","nominated",0,0,false
+4640,"黎寳華","","ordinary",2535,,2019,"M23",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4641,"湯德駿","","ordinary",2536,,2019,"M23",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4642,"周永勤","","ordinary",2327,,2019,"M24",,," ","其他",,"區議員","2019-10-04","nominated",0,0,false
+4643,"林進","","ordinary",2537,,2019,"M24",,,"天水連線","民主",," ","2019-10-04","nominated",0,0,false
+4644,"陳詩雅","","ordinary",1526,,2019,"M25",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4645,"黃煒鈴","","ordinary",1971,,2019,"M25",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4646,"康展華","","ordinary",2538,,2019,"M28",,," ","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4647,"賴玥均","","ordinary",2539,,2019,"M28",,," ","建制",,"議員助理","2019-10-04","nominated",0,0,false
+4648,"郭文浩","","ordinary",2540,,2019,"M29",,,"民主黨","民主",,"註冊社工","2019-10-04","nominated",0,0,false
+4649,"關俊笙","","ordinary",2541,,2019,"M30",,,"天水連線","民主",," ","2019-10-04","nominated",0,0,false
+4650,"郭慶平","","ordinary",1111,,2019,"M31",,,"獨立","其他",,"區議員","2019-10-05","nominated",0,0,false
+4651,"王百羽","","ordinary",1683,,2019,"M32",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4652,"巫啟航","","ordinary",2542,,2019,"M33",,," ","民主",," ","2019-10-04","nominated",0,0,false
+4653,"曹健科","","ordinary",2543,,2019,"M33",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4654,"楊家安","","ordinary",1681,,2019,"M34",,," ","建制",,"全職區議員","2019-10-05","nominated",0,0,false
+4655,"黃頴灝","","ordinary",2544,,2019,"M35",,,"獨立","其他",,"*回收商","2019-10-04","nominated",0,0,false
+4656,"鄧鎔耀","","ordinary",1704,,2019,"M38",,," ","建制",,"民選區議員","2019-10-04","nominated",0,0,false
+4657,"鄧志光","","ordinary",1946,,2019,"M38",,," ","建制",,"退休工人","2019-10-05","nominated",0,0,false
+4658,"黃凱盈","","ordinary",2545,,2019,"N02",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4659,"陳旭明","","ordinary",1684,,2019,"N03",,,"民主黨","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4660,"陳惠達","","ordinary",514,,2019,"N05",,,"新民主同盟","民主",,"區議員","2019-10-04","nominated",0,0,false
+4661,"林淑菁","","ordinary",2546,,2019,"N06",,,"新民主同盟","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4662,"何樹光","","ordinary",1471,,2019,"N07",,," ","其他",,"行政及財務總監","2019-10-04","nominated",0,0,false
+4663,"黃良喜","","ordinary",1265,,2019,"N08",,,"新民主同盟","民主",," ","2019-10-04","nominated",0,0,false
+4664,"温和達","","ordinary",1601,,2019,"N08",,,"工聯會","建制",,"全職區議員","2019-10-05","nominated",0,0,false
+4665,"曾勁聰","","ordinary",1638,,2019,"N10",,,"香港工會聯合會","建制",,"區議員","2019-10-05","nominated",0,0,false
+4666,"侯福達","","ordinary",1436,,2019,"N11",,," ","建制",,"北區區議員","2019-10-04","nominated",0,0,false
+4667,"林子琼","","ordinary",2547,,2019,"N12",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4668,"林卓廷","","ordinary",1472,,2019,"N13",,,"民主黨","民主",,"北區區議員、立法會議員","2019-10-04","nominated",0,0,false
+4669,"郭㙟豐","","ordinary",2548,,2019,"N14",,,"民主黨","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4670,"黃宏滔","","ordinary",1029,,2019,"N14",,,"工聯會","建制",,"區議員","2019-10-05","nominated",0,0,false
+4671,"劉其烽","","ordinary",2089,,2019,"N17",,,"新民主同盟","民主",,"區議員","2019-10-04","nominated",0,0,false
+4672,"譚榮勳","","ordinary",440,,2019,"P02",,,"民建聯","建制",,"區議員、註冊社工","2019-10-04","nominated",0,0,false
+4673,"梅少峰","","ordinary",1921,,2019,"P03",,,"民主建港協進聯盟","建制",,"社區工作","2019-10-04","nominated",0,0,false
+4674,"蘇馬俊","","ordinary",961,,2019,"P04",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4675,"鄭俊平","","ordinary",344,,2019,"P04",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4676,"何偉霖","","ordinary",2549,,2019,"P05",,,"獨立","民主",," ","2019-10-04","nominated",0,0,false
+4677,"胡綽謙","","ordinary",1951,,2019,"P05",,,"民建聯","建制",,"議員助理","2019-10-04","nominated",0,0,false
+4678,"黃碧嬌","","ordinary",630,,2019,"P08",,,"民主建港協進聯盟","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4679,"胡健民","","ordinary",1878,,2019,"P09",,,"民主建港協進聯盟","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4680,"葉俊傑","","ordinary",2550,,2019,"P14",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4681,"鄭俊和","","ordinary",569,,2019,"P15",,," ","建制",,"區議員","2019-10-04","nominated",0,0,false
+4682,"李華光","","ordinary",1688,,2019,"P19",,,"經民聯","建制",,"區議員、公司董事","2019-10-04","nominated",0,0,false
+4683,"梁衍忻","","ordinary",2551,,2019,"Q01",,,"民主動力、西貢鄉民","民主",,"大學職員","0004-10-20","nominated",0,0,false
+4684,"陳嘉琳","","ordinary",2552,,2019,"Q03",,,"民主動力、西貢鄉民","民主",,"研究幹事","0004-10-20","nominated",0,0,false
+4685,"李賢浩","","ordinary",2553,,2019,"Q04",,,"民主派","民主",," ","0004-10-20","nominated",0,0,false
+4686,"黃炳雄","","ordinary",1879,,2019,"Q06",,,"民主派","民主",,"議員助理","0004-10-20","nominated",0,0,false
+4687,"陳緯烈","","ordinary",2554,,2019,"Q06",,,"將軍澳青年力量、獨立民主派","民主",,"註冊護士","0004-10-20","nominated",0,0,false
+4688,"梁里","","ordinary",334,,2019,"Q07",,,"新民主同盟","民主",,"全職區議員","0004-10-20","nominated",0,0,false
+4689,"莊榮輝","","ordinary",365,,2019,"Q08",,,"民主黨","民主",,"林卓廷立法會議員辦事處總幹事","0004-10-20","nominated",0,0,false
+4690,"李栢棠","","ordinary",2555,,2019,"Q08",,,"民主派","民主",,"高級學位教師","0004-10-20","nominated",0,0,false
+4691,"葉子祈","","ordinary",2556,,2019,"Q09",,," ","民主",," ","0004-10-20","nominated",0,0,false
+4692,"林樂儀","","ordinary",2557,,2019,"Q10",,,"獨立候選人","其他",,"議員助理","0004-10-20","nominated",0,0,false
+4693,"趙志民","","ordinary",2558,,2019,"Q10",,,"民主派","民主",," ","0004-10-20","nominated",0,0,false
+4694,"黎煒棠","","ordinary",2478,,2019,"Q10",,,"新民主同盟","民主",," ","0005-10-20","nominated",0,0,false
+4695,"黃向賢","","ordinary",2559,,2019,"Q11",,,"獨立候選人","其他",,"議員助理","0004-10-20","nominated",0,0,false
+4696,"謝正楓","","ordinary",1844,,2019,"Q11",,,"民主派","民主",,"註冊社工、區議員","0004-10-20","nominated",0,0,false
+4697,"陸平才","","ordinary",523,,2019,"Q12",,,"民主派","民主",,"學位教師","0004-10-20","nominated",0,0,false
+4698,"林素蔚","","ordinary",2560,,2019,"Q13",,,"獨立候選人","其他",,"議員助理、註冊社工","0004-10-20","nominated",0,0,false
+4699,"呂文光","","ordinary",1925,,2019,"Q13",,,"新民主同盟","民主",,"全職區議員","0004-10-20","nominated",0,0,false
+4700,"李嘉睿","","ordinary",2561,,2019,"Q14",,,"民主派","民主",," ","0004-10-20","nominated",0,0,false
+4701,"林少忠","","ordinary",703,,2019,"Q16",,,"新民主同盟","民主",,"區議員","0004-10-20","nominated",0,0,false
+4702,"馮君安","","ordinary",2562,,2019,"Q18",,,"新民主同盟","民主",," ","0004-10-20","nominated",0,0,false
+4703,"鍾錦麟","","ordinary",1641,,2019,"Q19",,,"新民主同盟","民主",,"區議員","0004-10-20","nominated",0,0,false
+4704,"秦海城","","ordinary",2563,,2019,"Q20",,,"新民主同盟","民主",,"議員助理","0004-10-20","nominated",0,0,false
+4705,"范國威","","ordinary",256,,2019,"Q21",,,"新民主同盟","民主",,"區議員、立法會議員","0004-10-20","nominated",0,0,false
+4706,"張偉超","","ordinary",2564,,2019,"Q22",,,"將軍澳青年力量、獨立民主派","民主",,"配鏡助理","0004-10-20","nominated",0,0,false
+4707,"王卓雅","","ordinary",2565,,2019,"Q23",,,"民主派","民主",,"社區主任、認可調解員","0004-10-20","nominated",0,0,false
+4708,"陳耀初","","ordinary",2566,,2019,"Q24",,,"民主派","民主",,"資訊科技顧問","0004-10-20","nominated",0,0,false
+4709,"周賢明","","ordinary",612,,2019,"Q26",,,"獨立候選人","其他",,"社工","0004-10-20","nominated",0,0,false
+4710,"黎銘澤","","ordinary",1768,,2019,"Q27",,,"新民主同盟","民主",,"全職區議員","0005-10-20","nominated",0,0,false
+4711,"陳展浚","","ordinary",2092,,2019,"Q28",,,"民主派、區政聯盟","民主",,"全職社區主任","0004-10-20","nominated",0,0,false
+4712,"方國珊","","ordinary",1792,,2019,"Q28",,,"獨立候選人","其他",,"民選議員、工程師","0004-10-20","nominated",0,0,false
+4713,"鄧家彪","","ordinary",412,,2019,"R09",,,"工聯會、民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4714,"盧德明","","ordinary",2479,,2019,"R09",,," ","民主",,"議員助理","2019-10-04","nominated",0,0,false
+4715,"趙佩玉","","ordinary",2480,,2019,"R09",,," ","其他",,"活動統籌主任","2019-10-05","nominated",0,0,false
+4716,"丘文俊","","ordinary",1645,,2019,"R10",,,"獨立民主派","民主",,"全職區議員","2019-10-04","nominated",0,0,false
+4717,"何偉俊","","ordinary",1735,,2019,"R12",,,"香港工會聯合會","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4718,"程張迎","","ordinary",649,,2019,"R12",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4719,"林玉華","","ordinary",2481,,2019,"R13",,," ","建制",," ","2019-10-05","nominated",0,0,false
+4720,"謝玉梅","","ordinary",2482,,2019,"R14",,," ","其他",," ","2019-10-04","nominated",0,0,false
+4721,"吳定霖","","ordinary",2483,,2019,"R20",,,"民主黨、民主動力","民主",," ","2019-10-04","nominated",0,0,false
+4722,"周曉嵐","","ordinary",2484,,2019,"R24",,,"民主黨、民主動力","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4723,"陳天俊","","ordinary",2485,,2019,"R27",,," ","民主",,"講師","2019-10-04","nominated",0,0,false
+4724,"李啟雄","","ordinary",2486,,2019,"R28",,," ","其他",,"校長","2019-10-04","nominated",0,0,false
+4725,"李子榮","","ordinary",644,,2019,"R28",,," ","建制",,"中學教師","2019-10-05","nominated",0,0,false
+4726,"麥潤培","","ordinary",1444,,2019,"R30",,,"獨立民主派","民主",,"區議員、註冊社工","2019-10-04","nominated",0,0,false
+4727,"曾素麗","","ordinary",1773,,2019,"R31",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4728,"冼卓嵐","","ordinary",1889,,2019,"R33",,,"民主黨、民主動力","民主",,"社區發展主任","2019-10-04","nominated",0,0,false
+4729,"方浩良","","ordinary",2487,,2019,"R34",,,"香港工會聯合會","建制",,"社區工作者","2019-10-04","nominated",0,0,false
+4730,"鄭則文","","ordinary",621,,2019,"R34",,,"民主黨","民主",,"沙田區議員","2019-10-04","nominated",0,0,false
+4731,"勞越洲","","ordinary",2097,,2019,"R37",,,"民主動力、沙田社區關注社","民主",,"社區主任","2019-10-04","nominated",0,0,false
+4732,"劉青","","ordinary",2488,,2019,"R38",,,"民主黨","民主",," ","2019-10-04","nominated",0,0,false
+4733,"李偉樂","","ordinary",2567,,2019,"S01",,,"香港工會聯合會","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4734,"駱小鸞","","ordinary",2568,,2019,"S02",,," ","建制",," ","2019-10-04","nominated",0,0,false
+4735,"伍志華","","ordinary",2569,,2019,"S03",,,"民建聯","建制",,"社區主任","2019-10-04","nominated",0,0,false
+4736,"陳安妮","","ordinary",2570,,2019,"S04",,,"香港工會聯合會","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4737,"許祺祥","","ordinary",359,,2019,"S05",,,"民主黨","民主",,"區議員、營業經理","2019-10-05","nominated",0,0,false
+4738,"黃思鴻","","ordinary",2571,,2019,"S05",,,"香港工會聯合會","建制",,"社區幹事","2019-10-04","nominated",0,0,false
+4739,"黃炳權","","ordinary",623,,2019,"S05",,,"民主黨","民主",,"區議員","2019-10-04","nominated",0,0,false
+4740,"李宏峯","","ordinary",2102,,2019,"S06",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4741,"梁崗銘","","ordinary",1932,,2019,"S07",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4742,"李世隆","","ordinary",1555,,2019,"S08",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4743,"郭芙蓉","","ordinary",1934,,2019,"S09",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4744,"郭玲麗","","ordinary",2572,,2019,"S10",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4745,"劉貴梅","","ordinary",2489,,2019,"S10",,,"民主黨","民主",," ","2019-10-05","nominated",0,0,false
+4746,"袁潤洪","","ordinary",2573,,2019,"S12",,,"民主建港協進聯盟","建制",," ","2019-10-04","nominated",0,0,false
+4747,"林紹輝","","ordinary",200,,2019,"S12",,,"民主黨","民主",,"區議員","2019-10-05","nominated",0,0,false
+4748,"林映惠","","ordinary",2574,,2019,"S14",,,"民建聯","建制",,"助理統籌主任","2019-10-04","nominated",0,0,false
+4749,"鄧麗玲","","ordinary",2575,,2019,"S15",,,"民建聯","建制",," ","2019-10-04","nominated",0,0,false
+4750,"黃耀聰","","ordinary",460,,2019,"S16",,,"經民聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4751,"朱麗玲","","ordinary",1581,,2019,"S17",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4752,"鮑銘康","","ordinary",2103,,2019,"S18",,,"民建聯","建制",,"民選區議員","2019-10-04","nominated",0,0,false
+4753,"譚惠珍","","ordinary",33,,2019,"S21",,,"經民聯","建制",," ","2019-10-04","nominated",0,0,false
+4754,"麥美娟","","ordinary",109,,2019,"S22",,,"香港工會聯合會","建制",,"議員","2019-10-04","nominated",0,0,false
+4755,"李志強","","ordinary",871,,2019,"S25",,," ","建制",,"區議員","2019-10-04","nominated",0,0,false
+4756,"梁嘉銘","","ordinary",592,,2019,"S27",,,"民建聯","建制",,"社區工作者","2019-10-04","nominated",0,0,false
+4757,"潘志成","","ordinary",237,,2019,"S28",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4758,"盧婉婷","","ordinary",1560,,2019,"S29",,,"民建聯","建制",,"區議員","2019-10-04","nominated",0,0,false
+4759,"劉子傑","","ordinary",1885,,2019,"S30",,,"民主黨","民主",,"議員助理、認可調解員","2019-10-05","nominated",0,0,false
+4760,"羅競成","","ordinary",822,,2019,"S31",,,"民建聯","建制",,"全職區議員","2019-10-04","nominated",0,0,false
+4761,"馮小燕","","ordinary",2490,,2019,"T01",,," ","民主",,"社區工作者","2019-10-05","nominated",0,0,false
+4762,"王俊傑","","ordinary",2576,,2019,"T02",,,"工聯會、民建聯","建制",,"社區服務","2019-10-04","nominated",0,0,false
+4763,"劉展鵬","","ordinary",1553,,2019,"T03",,,"工聯會","建制",,"勞工及社區服務","2019-10-04","nominated",0,0,false
+4764,"周浩鼎","","ordinary",1561,,2019,"T04",,,"民建聯","建制",,"議員","2019-10-04","nominated",0,0,false
+4765,"葉培基","","ordinary",2577,,2019,"T06",,,"民建聯","建制",,"議員助理","2019-10-04","nominated",0,0,false
+4766,"徐逸朗","","ordinary",2491,,2019,"T08",,," ","民主",,"社區組織者、設計師","2019-10-05","nominated",0,0,false
+4767,"劉舜婷","","ordinary",2578,,2019,"T09",,,"民建聯","建制",,"社區助理","2019-10-04","nominated",0,0,false
+4768,"崔靖青","","ordinary",2492,,2019,"T09",,," ","民主",,"社區工作者","2019-10-05","nominated",0,0,false
+4769,"郭慧文","","ordinary",2579,,2019,"T10",,,"民建聯","建制",,"項目經理","2019-10-04","nominated",0,0,false
+4770,"梁國豪","","ordinary",1828,,2019,"T10",,," ","民主",,"籃球裁判","2019-10-05","nominated",0,0,false
