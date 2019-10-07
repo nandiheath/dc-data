@@ -9,9 +9,12 @@ require('dotenv').config();
 program
   .version('0.1.0');
 
-async function importNominateData(csvDirectory, intermediateDirectory) {
+async function importNominateData(csvDirectory, intermediateDirectory, cmd) {
+
   await scrapeNominate(csvDirectory, intermediateDirectory);
-  await uploadIntermediate(intermediateDirectory);
+  if (cmd.upload) {
+    await uploadIntermediate(intermediateDirectory);
+  }
 }
 
 program
@@ -23,6 +26,7 @@ program
 program
   .command('nominate <csv_directory> <intermediate_directory>')
   .description('scrape the nominate data from gov and upload to master sheet')
+  .option('-u, --upload', 'uploda the data to master data sheet')
   .action(importNominateData);
 
 // program.command('import [command]', 'import data from csv to hasura');

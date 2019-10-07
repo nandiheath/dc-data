@@ -378,6 +378,8 @@ async function importCandidates(filePath) {
             age: getInt(record.age, null),
             is_won: record.is_won === 'TRUE',
             occupation: getStr(record.occupation, null),
+            nominated_at: getStr(record.nominated_at, null),
+            nominate_status: getStr(record.nominate_status, null),
             votes: getInt(record.votes, 0),
             person_id: parseInt(record.person_id, 10),
             vote_percentage: getInt(record.vote_percentage, 0),

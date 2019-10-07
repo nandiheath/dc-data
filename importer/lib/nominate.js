@@ -65,10 +65,11 @@ const lookupCampForPerson = (mappings, name, cacode) => {
 };
 
 const getDate = (d) => {
-  if (moment(d, 'YYYY年MM月DD日').isValid()) {
-    return moment(d, 'YYYY年MM月DD日').format('YYYY-MM-DD');
+  if (moment(d, 'DD/MM/YYYY').isValid()) {
+    return moment(d, 'DD/MM/YYYY').format('YYYY-MM-DD');
   }
-  return moment(d, 'DD/MM/YYYY').format('YYYY-MM-DD');
+
+  return moment(d, 'YYYY年MM月DD日').format('YYYY-MM-DD');
 };
 
 const scrapeNominate = async (csvDirectory, outputDirectory) => {
@@ -81,7 +82,8 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
   const people = await csv2json().fromFile(`${csvDirectory}/dcd_people.csv`);
   const fcPeople = await getFactCheckPeople();
 
-  let peopleStartingId = 2454;
+  // Get the last people id
+  let peopleStartingId = people.map(p => p.id).reduce((c, v) => Math.max(c, v), 0) + 1;
   let candidatesStartingId = 4406;
 
   const nomiateSourceURL = 'https://www.elections.gov.hk/dc2019/chi/nominat2.html';
