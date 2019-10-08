@@ -167,7 +167,7 @@ const downloadMappings = async (auth) => {
     spreadsheetId: '1MopNfvXzfoF57ipWyzmS0JkFZu63lhLLztfYdcIiTKo',
 
     // The ranges to retrieve from the spreadsheet.
-    range: 'dc2019_candidates_camp!A2:I',
+    range: 'dc2019_candidates_camp!A2:K',
     auth,
   };
 
@@ -176,7 +176,7 @@ const downloadMappings = async (auth) => {
   const mappings = data.data.values.map(r => ({
     name: r[0],
     cacode: r[6],
-    camp: r[7],
+    camp: r[10],
   }));
   return mappings;
 };

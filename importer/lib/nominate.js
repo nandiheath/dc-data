@@ -5,9 +5,9 @@ const fs = require('fs');
 const csv2json = require('csvtojson');
 const chalk = require('chalk');
 const { Parser } = require('json2csv');
-const { nameMatch } = require('./utils');
 const moment = require('moment');
 const uuid = require('uuid/v4');
+const { nameMatch } = require('./utils');
 const { loadPeopleCampMapping } = require('./google');
 
 
@@ -53,10 +53,19 @@ const lookupPeople = (peopleFromCSV, name) => {
 const lookupFactCheckPeople = (factcheckPeople, name) => {
   const person = factcheckPeople.find(p => nameMatch(p.name, name));
   return person;
-}
+};
+
+const getCampFromHKFactcheck = (pf) => {
+  switch (pf) {
+    case 'PROESTAB': return '建制';
+    case 'PANDEMO': return '民主';
+    case 'OTHER': return '其他';
+    default: return null;
+  }
+};
 
 const lookupCampForPerson = (mappings, name, cacode) => {
-  const mapping = mappings.find(m => m.cacode === cacode && nameMatch(m.name, name))
+  const mapping = mappings.find(m => m.cacode === cacode && nameMatch(m.name, name));
   if (!mapping) {
     return null;
   }
@@ -73,7 +82,6 @@ const getDate = (d) => {
 };
 
 const scrapeNominate = async (csvDirectory, outputDirectory) => {
-
   // download the mapping first
   const campMapping = await loadPeopleCampMapping();
   log.info(`total ${campMapping.length} people-camp mapping found.`);
@@ -136,9 +144,13 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
       const person = lookupPeople(people, name);
       const fcPerson = lookupFactCheckPeople(fcPeople, name);
       let newPersonId = null;
+      let camp = null;
+      if (fcPerson) {
+        camp = getCampFromHKFactcheck(fcPerson.politicalFaction);
+      }
       if (!person) {
         log.error(`person ${name} not found. gonna create in people.csv`);
-        newPersonId = peopleStartingId++
+        newPersonId = peopleStartingId++;
         newPeople.push({
           id: newPersonId,
           name_en: null,
@@ -150,6 +162,9 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
           fc_uuid: fcPerson ? fcPerson.personId : null,
         });
       }
+
+      const campOverride = lookupCampForPerson(campMapping, name, code);
+      camp = campOverride || camp;
       // id,name_zh,name_en,election_type,person_id,matched,year,cacode,constituency_id,age,political_affiliation,camp,candidate_number,occupation,votes,vote_percentage,is_won
       candidates.push({
         id: candidatesStartingId++,
@@ -163,7 +178,7 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         constituency_id: null,
         age: null,
         political_affiliation: fields[6],
-        camp: lookupCampForPerson(campMapping, name, code),
+        camp,
         candidate_number: null,
         occupation: fields[5],
         nominated_at: getDate(fields[7]),
@@ -181,10 +196,12 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
   let csv = parser.parse(candidates);
   fs.writeFileSync(`${outputDirectory}/nominated_candidates.csv`, csv);
 
-  parser = new Parser({});
-  csv = parser.parse(newPeople);
-  fs.writeFileSync(`${outputDirectory}/nominated_people.csv`, csv);
-}
+  if (newPeople.length > 0) {
+    parser = new Parser({});
+    csv = parser.parse(newPeople);
+    fs.writeFileSync(`${outputDirectory}/nominated_people.csv`, csv);
+  }
+};
 
 module.exports = {
   scrapeNominate,
