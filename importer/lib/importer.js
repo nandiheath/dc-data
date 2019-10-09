@@ -61,7 +61,7 @@ async function importPeople(filePath) {
     })),
   });
 
-  if (res.statusCode !== 200) {
+  if (res.statusCode !== 200 || !res.body.data) {
     console.error(res.body);
     throw new Error('Invalid response when inserting people');
   }
@@ -350,7 +350,7 @@ async function importCouncilorAttendance(filePath) {
       },
     } = res.body;
 
-    log.info(`${insert_dcd_councillor_meeting_attendances.affected_rows} new data inserted.`);
+    log.info(`${insert_dcd_councillor_meeting_attendances.affected_rows} new councillor_meeting_attendances inserted.`);
   }
 
   log.info(`${records.length} councilor attendance in csv ..`);
@@ -391,17 +391,16 @@ async function importCandidates(filePath) {
 
     if (res.statusCode !== 200) {
       console.error(JSON.stringify(res.body));
-      throw new Error('Invalid response when inserting people');
+      throw new Error('Invalid response when inserting candidates');
     }
 
-    console.log(res.body);
     const {
       data: {
         insert_dcd_candidates,
       },
     } = res.body;
 
-    log.info(`${insert_dcd_candidates.affected_rows} new data inserted.`);
+    log.info(`${insert_dcd_candidates.affected_rows} candidates inserted.`);
   }
 
   log.info(`${records.length} candidates in csv ..`);
@@ -453,7 +452,7 @@ async function importVoteStations(filePath) {
       },
     } = res.body;
 
-    log.info(`${insert_dcd_constituency_vote_stations.affected_rows} new data inserted.`);
+    log.info(`${insert_dcd_constituency_vote_stations.affected_rows} new vote_stations inserted.`);
   }
 
   log.info(`${records.length} vote_station_stats in csv ..`);

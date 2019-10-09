@@ -42,16 +42,27 @@ async function getFactCheckPeople() {
   return data;
 }
 
-const lookupPeople = (peopleFromCSV, name) => {
-  const person = peopleFromCSV.find(p => nameMatch(p.name_zh, name));
+const lookupPeople = (peopleFromCSV, name, code) => {
+  const person = peopleFromCSV.find(p =>
+    name === '何啟明'
+      ? ((code === 'J21')
+        ? p.estimated_yob === '1985' && nameMatch(p.name_zh, name)
+        : p.estimated_yob === '1988' && nameMatch(p.name_zh, name))
+      : nameMatch(p.name_zh, name)
+  );
   if (!person) {
     return null;
   }
   return person;
 };
 
-const lookupFactCheckPeople = (factcheckPeople, name) => {
-  const person = factcheckPeople.find(p => nameMatch(p.name, name));
+const lookupFactCheckPeople = (factcheckPeople, name, code) => {
+  const person = factcheckPeople.find(p =>
+    name === '何啟明'
+      ? ((code === 'J21')
+        ? p.politicalFaction === 'PROESTAB' && nameMatch(p.name, name)
+        : p.politicalFaction === 'PANDEMO' && nameMatch(p.name, name))
+      : nameMatch(p.name, name));
   return person;
 };
 
@@ -81,6 +92,8 @@ const getDate = (d) => {
   return moment(d, 'YYYY年MM月DD日').format('YYYY-MM-DD');
 };
 
+const filterText = str => str && str.replace('*', '');
+
 const scrapeNominate = async (csvDirectory, outputDirectory) => {
   // download the mapping first
   const campMapping = await loadPeopleCampMapping();
@@ -88,10 +101,12 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
 
   // Load the person csv first
   const people = await csv2json().fromFile(`${csvDirectory}/dcd_people.csv`);
+  const nominatedPeople = await csv2json().fromFile(`${outputDirectory}/nominated_people.csv`);
   const fcPeople = await getFactCheckPeople();
 
   // Get the last people id
-  let peopleStartingId = people.map(p => p.id).reduce((c, v) => Math.max(c, v), 0) + 1;
+  let peopleStartingId = people.concat(nominatedPeople).map(p => p.id).reduce((c, v) => Math.max(c, v), 0) + 1;
+  log.info(`starting people id: ${peopleStartingId}`);
   let candidatesStartingId = 4406;
 
   const nomiateSourceURL = 'https://www.elections.gov.hk/dc2019/chi/nominat2.html';
@@ -115,8 +130,6 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
   }
 
   const candidates = [];
-  const newPeople = [];
-
   for (const url of htmlList) {
     res = await request.getAsync(url);
     $ = cheerio.load(res.body);
@@ -141,8 +154,11 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         name = '林淑菁';
       }
 
-      const person = lookupPeople(people, name);
-      const fcPerson = lookupFactCheckPeople(fcPeople, name);
+      let person = lookupPeople(people, name, code);
+      if (!person) {
+        person = lookupPeople(nominatedPeople, name, code);
+      }
+      const fcPerson = lookupFactCheckPeople(fcPeople, name, code);
       let newPersonId = null;
       let camp = null;
       if (fcPerson) {
@@ -151,13 +167,13 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
       if (!person) {
         log.error(`person ${name} not found. gonna create in people.csv`);
         newPersonId = peopleStartingId++;
-        newPeople.push({
+        nominatedPeople.push({
           id: newPersonId,
           name_en: null,
           name_zh: name,
           estimated_yob: null,
-          gender: fields[4] === '男' ? 'MALE' : 'FEMALE',
-          related_organization: fields[6],
+          gender: filterText(fields[4]) === '男' ? 'MALE' : 'FEMALE',
+          related_organization: filterText(fields[6]),
           uuid: uuid(),
           fc_uuid: fcPerson ? fcPerson.personId : null,
         });
@@ -177,11 +193,11 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
         cacode: code,
         constituency_id: null,
         age: null,
-        political_affiliation: fields[6],
+        political_affiliation: filterText(fields[6]),
         camp,
         candidate_number: null,
-        occupation: fields[5],
-        nominated_at: getDate(fields[7]),
+        occupation: filterText(fields[5]),
+        nominated_at: getDate(filterText(fields[7])),
         nominate_status: 'nominated',
         votes: 0,
         vote_percentage: 0,
@@ -191,14 +207,14 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
   }
 
   log.info(`total ${candidates.length} candiates crawled.`);
-  log.info(`and total ${newPeople.length} new candidates.`);
+  log.info(`and total ${nominatedPeople.length} new people.`);
   let parser = new Parser({});
   let csv = parser.parse(candidates);
   fs.writeFileSync(`${outputDirectory}/nominated_candidates.csv`, csv);
 
-  if (newPeople.length > 0) {
+  if (nominatedPeople.length > 0) {
     parser = new Parser({});
-    csv = parser.parse(newPeople);
+    csv = parser.parse(nominatedPeople);
     fs.writeFileSync(`${outputDirectory}/nominated_people.csv`, csv);
   }
 };
