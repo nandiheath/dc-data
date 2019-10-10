@@ -148,10 +148,17 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
 
       // Speical handling
       let name = fields[2];
-      if (name === 'BUX SHEIK ANTHONY') {
-        name = '畢東尼';
-      } else if (name === '林淑\uE3C5') {
-        name = '林淑菁';
+
+      switch (name) {
+        case 'BUX SHEIK ANTHONY':
+            name = '畢東尼';
+            break;
+        case '林淑\uE3C5':
+            name = '林淑菁';
+            break;
+        case '陳㨗貴':
+            name = '陳捷貴';
+            break;    
       }
 
       let person = lookupPeople(people, name, code);
