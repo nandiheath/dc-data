@@ -151,14 +151,20 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
 
       switch (name) {
         case 'BUX SHEIK ANTHONY':
-            name = '畢東尼';
-            break;
+          name = '畢東尼';
+          break;
         case '林淑\uE3C5':
-            name = '林淑菁';
-            break;
+          name = '林淑菁';
+          break;
         case '陳㨗貴':
-            name = '陳捷貴';
-            break;    
+          name = '陳捷貴';
+          break;
+      }
+
+      const duplicated = candidates.find(c => c.name_zh === name && c.cacode === code);
+      if (duplicated) {
+        log.error(`duplicated candidate: ${duplicated.name_zh}`);
+        return;
       }
 
       let person = lookupPeople(people, name, code);
