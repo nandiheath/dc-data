@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "public"."dcd_candidates" DROP COLUMN "fb_id";
+  type: run_sql

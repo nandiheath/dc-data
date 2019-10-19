@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "public"."dcd_districts" ADD COLUMN "dc_description_en" text
+      NULL;
+  type: run_sql
