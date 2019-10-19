@@ -148,7 +148,7 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
 
       // Speical handling
       let name = fields[2];
-
+      const remark = fields[8];
       switch (name) {
         case 'BUX SHEIK ANTHONY':
           name = '畢東尼';
@@ -164,6 +164,15 @@ const scrapeNominate = async (csvDirectory, outputDirectory) => {
       const duplicated = candidates.find(c => c.name_zh === name && c.cacode === code);
       if (duplicated) {
         log.error(`duplicated candidate: ${duplicated.name_zh}`);
+        return;
+      }
+
+      if (remark && remark.length > 1) {
+        if (remark.indexOf('退選') > 0) {
+          log.info(`[${code}]${name} ${remark}`);
+        } else {
+          log.error(remark);
+        }
         return;
       }
 

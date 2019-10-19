@@ -385,6 +385,8 @@ async function importCandidates(filePath) {
             vote_percentage: getInt(record.vote_percentage, 0),
             election_type: getStr(record.election_type, null),
             constituency_id: getStr(record.constituency_id, null),
+            fb_id: getStr(record.fb_id, null),
+            ig_id: getStr(record.ig_id, null),
           };
         }),
     });
