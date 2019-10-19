@@ -1152,7 +1152,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1406,,柳傑翹,1964,FEMALE,,987f4087-b356-4654-b4d3-d654b70b7f72,
 926,LAU Yuk-shing,柳玉成,1953,MALE,,168c25cd-4491-471a-95e0-2984dde7aa78,
 370,CHAI MAN HON,柴文瀚,1977,MALE,民主黨,732618b0-19c4-46a6-8ae7-262ca2604fa4,da767198-dd13-41b8-a64b-405bf7e9ecd7
-1909,LEUNG YAU KING,梁祐敬,1988,MALE,,dd4191a8-e14f-4d86-9c4a-376c777e3597,
 662,LEUNG CHUNG LING,梁仲玲,1951,FEMALE,,c5f913e3-21ba-4719-846a-870e13f995a6,
 170,LEUNG CHUN KIN CUPID,梁俊健,1967,MALE,,072212ba-0082-4a0f-b40e-fcafa27b494e,
 372,LEUNG WAI KEI,梁偉基,1952,MALE,,37e9b0bd-665b-4b11-8b73-6c809a805579,
@@ -1214,8 +1213,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1840,LEUNG MING KIN,梁明堅,1981,MALE,,5a707c79-fc2b-4210-93dc-7d85e4adbbc3,5fc97961-09dc-4d56-8aec-df7fd9f9a6ea
 1690,LEUNG CHIU HUNG,梁昭鴻,1971,MALE,,071739a5-e859-49fa-b729-f6ed213af1f7,
 2460,,梁晃維,,MALE,獨立,6d650159-8f0b-4a1d-aa67-e666b3c21aca,4fe14aee-cfb7-459f-8eaf-b2c3dbf0296a
-1741,LEUNG YAU FONG,梁有方,1900,MALE,,f617b967-382d-45c4-8e56-55717410d8fd,f21cf412-bd55-43e3-9425-394062b9d3d9
-2178,LEUNG YAU FONG,梁有方,1949,,民協,c5467a93-a437-4418-96b1-ff36a7ee9675,
+1741,LEUNG YAU FONG,梁有方,1949,MALE,民協,f617b967-382d-45c4-8e56-55717410d8fd,f21cf412-bd55-43e3-9425-394062b9d3d9
 1651,LEUNG PAK KIN,梁柏堅,1980,MALE,,a7fff1c9-c9d8-4ffd-843b-a4ddb65bc099,af8de578-da96-4102-8093-3dc88ba56ac1
 2329,,梁柏洪,1938,MALE,,f315f07c-037f-4220-8ae6-d6862025bd06,
 1532,LEUNG YIP PANG,梁業鵬,1983,MALE,,0bd52ea4-4de7-444f-9f1a-1e1e99afa899,
@@ -1238,6 +1236,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1499,LEUNG YUK CHEUNG,梁玉祥,1964,MALE,,92612c25-8623-467c-aa51-f740a8e2cd99,
 622,LEUNG YUK FUNG,梁玉鳳,1963,FEMALE,,f233d830-4ee6-4441-86d6-48b99c0d7590,
 765,,梁社榮,1951,MALE,,a6d6fb1c-eb7d-472b-b83e-0430e2751f77,
+1909,LEUNG YAU KING,梁祐敬,1988,MALE,,dd4191a8-e14f-4d86-9c4a-376c777e3597,
 1400,LEUNG Fuk-yuen,梁福元,1957,MALE,,66a549e9-77fd-47de-b9cc-fc8064a8962a,9aac39ee-4c19-494a-8084-8ff87a7a56bb
 1732,LEUNG WING MAN,梁穎敏,1987,FEMALE,公民黨,24e4cf9a-012c-4134-a8e1-a2e8f6aefe68,215fadc5-1d48-498d-8e2f-f1699bd9b79c
 135,LEUNG Mei-fun,梁美芬,1960,FEMALE,"西九新動力,經民聯",813440ac-c2a7-440b-818f-be871f8dc3bd,820c83da-f5b0-4c23-9507-9b3df1930fad
@@ -1283,7 +1282,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 640,,楊位鐵,1947,MALE,,d8c05ed5-ce60-415e-ae1e-44a1bb454410,
 1347,,楊佩雄,1948,MALE,,87d1bc84-19ab-4984-ba6f-1efc1b38fedd,
 20,YEUNG SIN HUNG,楊倩紅,1951,FEMALE,,f81631b1-432f-4345-be5f-3b88f27686aa,
-1608,YEUNG SIN HUNG,楊倩紅,1900,,,87e9c03c-6d1e-419d-b255-64bbbf9aaf8d,
 1453,YEUNG WAI HONG,楊偉康,1961,MALE,,e8f31bb3-2df6-4a55-b187-240f53a3fca9,
 762,YEUNG WAI LEUNG,楊偉良,1970,MALE,,c644d63e-9f0c-465b-b9bb-525fe91ccd0b,
 750,,楊健德,1962,MALE,,cf04cd80-5f10-4615-beb4-fa5b3591afaf,
@@ -1305,7 +1303,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1001,YEUNG Chun-yu,楊振宇,1981,MALE,,77c33fef-0251-431a-962c-e08b2cbcccb0,f024ba3e-92c9-4c00-9f3b-a0e7a99805c8
 1749,YEUNG MAN SEK EDMOND,楊敏碩,1976,MALE,,58de708d-30b4-4005-8edc-291da6bf8626,
 410,YEUNG Man-tat,楊文達,1969,MALE,,de28396a-7bc0-4623-92bb-d29b94780ba4,
-706,YEUNG Man-yui,楊文銳,1983,MALE,,419a1c0b-f0ff-433e-a147-1337943768a5,
 1613,YEUNG MAN YUI,楊文鋭,1983,MALE,,e64acf4a-48e2-42a1-8722-4f65d0088aff,
 1452,YEUNG SZE CHUN,楊斯竣,1990,MALE,政賢力量,21b0236c-7ab3-4db8-b39c-e4ed99fd474a,d774878c-9502-4a54-b37c-fb508b3b9cc7
 1108,YEUNG Chi-hang,楊智恒,1981,MALE,民協,05b52634-b766-4ce3-bc3c-041e47ab2dbc,1227dc63-c0f5-4deb-93d3-4bd56e9c4359
@@ -1358,7 +1355,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2554,,江景新,,MALE,民建聯,f3964047-b8e9-4ec3-bd5f-98cb4a7d9868,b4400537-985e-4628-975d-02b17ebeb12a
 431,KONG WOOD CHIU,江活潮,1947,MALE,,9a36b4e1-342f-4ec3-8f39-21f4e17f2e35,
 1020,KONG CHACK HO,江澤濠,1949,MALE,,5491eab7-c864-45d6-b8b4-2e7c957b51f7,
-1733,KONG CHACK HO,江澤濠,1900,,,39352ac7-4229-456a-b850-09dfb0e8d1dc,
 1659,KONG YUK FOON DOREEN,江玉歡,1970,FEMALE,,69aa23b8-7f07-4dbc-a559-0d0d36dc368c,
 1182,KWONG Sui-wah,江瑞華,1951,MALE,,250ea0b2-bbf6-4446-9460-c57977d59145,
 3006,,江美婷,,FEMALE, ,5f7dbef7-4ecd-411b-9602-770a627d4662,
@@ -1391,7 +1387,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1544,WAN KAI MING,温啟明,1988,MALE,民建聯,c7e8d1c5-d0ea-44e7-bea4-a0267ff79891,
 2827,,温子衆,,MALE,人民力量,582a26e9-86ef-497c-b544-dc52e93b5d02,
 1545,WAN YUET CHEUNG,温悅昌,1952,MALE,,dbc39acf-cf4c-4a52-8d70-23de1bd92a9b,
-2426,,温悦昌,,,"公民力量,新民黨",18908439-58f4-4d50-88aa-8a1794a0a189,
 1539,WAN YUK WING,温玉榮,1952,MALE,,babbc84b-6437-4713-ae5c-f183aee1581b,
 1191,,游明泰,1962,MALE,,68192c9b-1a74-4768-95fc-938fc869f8e3,
 1794,YAU YUET WAH DONNA,游月華,1971,FEMALE,,597009b6-c11c-4044-84f0-654cfa33bd69,
@@ -1400,17 +1395,14 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2224,CHAM KA HUNG DANIEL,湛家雄,1958,MALE,,63060c2e-e29f-4468-bb57-889ab056c2d5,2ed78522-9153-42f1-bf71-5cac4d72e029
 3015,,湯子霈,,MALE,獨立民主派,24e6ca6f-d70d-4057-b3a8-649cc6e53639,c0275612-95b8-4053-975b-2d0e4447a144
 1881,TONG KA WAH RONNY,湯家驊,1950,MALE,,f209d5f3-5851-4969-87ec-1ba9f1f32d74,
-589,TONG Po-chun,湯寶珍,1900,FEMALE,,d907c7ba-b6df-47de-beab-100900cb8089,
 1445,TONG PO CHUN,湯寶珍,1949,FEMALE,,de52a5c2-6740-43ae-9cd1-dc80a84024a5,
-1550,TONG PO CHUN,湯寶珍,1900,,,fac44aa9-df8a-4d4e-8b03-1368ae765795,
 2630,,湯德駿,,MALE,民建聯,0b9a7429-753a-488f-97cc-860089312dd6,9022d149-cd7b-453a-b22e-03360a41d1b6
 1781,TOWN MAN HOI EDWIN,湯文海,1948,MALE,,e7bdb792-2ef2-4845-82f8-41ca2865695d,
 967,TONG KEI YUK JUDY,湯棋淯,1961,FEMALE,,dc34738c-ab75-42dc-8dc2-413a02c19c14,
 329,"TONG Kei-hiu, Peggy",湯淇曉,1958,FEMALE,,43432301-262e-44ef-8775-a2831ec52147,
 399,TONG Pik-fung,湯碧鳳,1962,FEMALE,,37e62d77-469e-463b-be8b-474f7cbc06f3,
 1523,TONG WING CHI,湯詠芝,1986,FEMALE,,29b7f8a5-74b2-4322-a5c0-47acebc7d279,
-3,WAN WO FAI,溫和輝,1961,MALE,民建聯,93d8591d-a38c-4572-baa3-bc01b19f0f0a,4daa32e2-0d74-4bc5-99a0-efd6c219d2fc
-330,,溫和輝,1963,MALE,,0764ac7b-811a-4b64-9405-d8f6e6c6d8a6,
+3,WAN WO FAI,溫和輝,1962,MALE,民建聯,93d8591d-a38c-4572-baa3-bc01b19f0f0a,4daa32e2-0d74-4bc5-99a0-efd6c219d2fc
 299,WAN WO TAT WARWICK,溫和達,1967,MALE,工聯會,df8a4816-de7d-4a12-bae3-42ffd067cf34,fd5192f2-8911-40f7-8e1f-25bf5d09abe0
 1169,,溫官球,1969,MALE,,0ef0122f-9c36-45f4-a45a-a37954f940b7,
 1238,,溫忠平,1958,MALE,,050b474b-a337-4490-aaed-4a1433e02445,
@@ -1480,8 +1472,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1443,WONG MAN KIT SUNNY,王文傑,1981,MALE,,72c77d77-1bbe-451c-bd08-d1422dc11256,
 192,,王昌年,1960,MALE,,7722feec-bb5c-4f60-b0bd-02f287709646,
 2964,,王曉聖,,MALE, ,dc05ce64-fe19-4fdd-a9b4-8b4e137744ff,
-788,WONG Kwai-wan,王桂雲,1900,FEMALE,,ce5b5a63-e207-4e3c-91e2-510a15524b98,
-1407,WONG KWAI WAN,王桂雲,1941,FEMALE,,eebb6d90-df62-43e5-81ff-dbefe17b9828,
+788,WONG KWAI WAN,王桂雲,1941,FEMALE,,ce5b5a63-e207-4e3c-91e2-510a15524b98,
 1177,WONG Shu-kau,王樹球,1964,MALE,,57c7d769-a4e2-4edd-93b1-eb56054dcb72,
 1904,WONG MAN SING,王民聲,1954,MALE,,082c2480-4957-4280-9c82-a61c8b5ff521,
 2427,WONG Shui-sang,王水生,,,,d8fed298-e248-4942-885d-e3484364de5a,
@@ -1506,14 +1497,12 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1346,,王鄧英,1956,FEMALE,,a35db857-775b-4150-b3ab-13c9a5b6dc4d,
 6,WONG KAM SANG,王金生,1949,MALE,,56eefaa5-a350-4df6-a0e9-e6df92ff6eb9,
 2374,WONG YUI TAK LOUIS,王銳德,1954,MALE,,af93676c-1751-4859-b1ca-5379add1c5c8,
-1860,WONG YUI TAK LOUIS,王鋭德,1954,MALE,,e8ddee64-bffa-49d9-a770-56d7874c4fe8,
 2122,WONG KAM CHUEN,王錦泉,1963,MALE,,a241c4fe-ee60-4e83-88d2-7a6429bd8cb1,
 2956,,王鑑賢,,MALE,柴聯體育會,bbfecd33-4831-411a-891a-0d35eea948e2,ead799e0-13c6-4216-a02b-7cc033abf12d
 532,WONG SUET YING,王雪盈,1980,FEMALE,,e3407aca-46c6-4248-a0e6-564c4093d88b,
 2785,,王頴思,,FEMALE,熱血公民,c8287565-3aeb-4673-9f18-7b56b49f60c3,fe1261f5-3368-4ea7-9be4-05fc2aad3a34
 380,YAN YUNG HONG,甄勇航,1945,MALE,,9e34b671-c268-4f8a-a10d-2a5229cf09f3,
-1744,YAN KAI WING,甄啟榮,1900,MALE,,00861b59-6d21-4664-bfa3-1bf64a0e184b,1ca59a8f-d5b1-4a7a-9f96-a180d7ac3b33
-2309,YAN KAI WING,甄啟榮,1966,,,9fc589da-426d-45e7-9c1d-9ca15083ad33,
+1744,YAN KAI WING,甄啟榮,1966,MALE,,00861b59-6d21-4664-bfa3-1bf64a0e184b,1ca59a8f-d5b1-4a7a-9f96-a180d7ac3b33
 2362,"YAN Wing-lok, Alexander",甄永樂,1963,MALE,,007a740f-4e6c-402f-b1c8-9ac3b232aef8,
 1371,,甄為堅,1955,MALE,,be5fa086-2e33-41ad-926e-a74178a1590e,
 2083,YAN SIU NAM,甄紹南,1987,MALE,民協,376e6fe1-3036-4639-a211-db4f0d1375a8,297cc096-6c38-4dd0-afa3-3e73ae0d4894
@@ -1544,7 +1533,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1560,LO YUEN TING,盧婉婷,1986,FEMALE,民建聯,f1be972a-3cf1-41ae-9b42-232de2e8c856,cf13e486-623e-4f3b-91f1-a5441d36c844
 2684,,盧德明,,MALE, ,b83b6a98-7baa-4fec-a004-14634fcd121e,1d53819f-a49f-4ce2-8721-96a1dc7738ec
 201,LO WAI LAN,盧慧蘭,1946,FEMALE,,2f2c0f4b-1345-4837-87f3-8206088f0b5f,
-1556,LO WAI LAN,盧慧蘭,1900,,,e7b1cf37-f717-4fcc-85a5-bec2c3b0f842,
 600,LO YEE HANG,盧懿杏,1976,FEMALE,民建聯,8d6b93a6-a44e-43f2-9cb6-a0f389146305,1d21ee3a-79d5-4838-b5c4-6ff4640913f9
 376,LO YEE HANG,盧懿行,1976,FEMALE,,4a345d60-bc54-4fb4-9d65-7955cb11f453,
 1981,LO TIM MAN HIM,盧文謙,1987,MALE,,e9a43645-d3bb-4698-8be9-524524337a8b,
@@ -1561,8 +1549,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 989,LO TANG KWONG,盧騰光,1965,MALE,,7ca92a87-71f1-4a40-9b59-55238165d21e,
 2283,SHEK KWOK KEUNG,石國強,1951,MALE,,12b54270-cde2-4ef7-99cf-738bc7001fae,
 2924,,石威廉,,MALE,獨立民主派,bd0ca0b0-4260-4ab7-92ed-e653a86b90ad,87ac8612-a638-43bc-9eda-891232c070f8
-351,,石志強,1965,MALE,,3e77fe35-e5c0-4912-8302-4d809e888e39,
-2052,SHEK CHI KEUNG,石志强,1965,MALE,,320f184f-26e8-4e3a-9fb0-7e7efd071dce,
+351,SHEK CHI KEUNG,石志強,1965,MALE,,3e77fe35-e5c0-4912-8302-4d809e888e39,
 1920,SHEK FONG YAU,石房有,1975,MALE,,eb159955-9c78-491e-9e3a-3cd0c6febc03,
 2614,,石景澄,,MALE,民主陣線,7659b8e3-0aca-4df4-8521-86ce9e7e9bfe,54857686-5fd4-4242-b800-8de6553e653b
 2258,,石貴春,1951,MALE,,2b621fce-cc82-4f4f-ab5a-ce7e2aa9f2b4,
@@ -1592,7 +1579,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1985,KAN SIU KEI,簡兆祺,1958,MALE,工聯會,fda8f271-0753-4d77-a08d-123025a9810f,7685b3eb-1ada-4bf9-9237-515e03d5bc09
 851,KAN KWOK HUNG,簡國雄,1960,MALE,,4644b999-c8a9-48ac-8a94-62106bc5c158,
 763,KAN CHI HO,簡志豪,1946,MALE,民建聯,dc7a3ec7-25ea-4b01-a2ef-d20eb98c4bc2,f642c33c-7686-4ae7-8fdf-ee7c9d913af7
-1750,KAN CHI HO,簡志豪,1900,,,2d1ea823-6328-45be-9576-4c934a2714a0,
 494,KAN CHUNG NIN TONY,簡松年,1950,MALE,,cab9aeda-66b6-456d-bb5d-ca7d79dd464a,
 326,KAN Yuk-man,簡郁文,1972,MALE,,bcdd1a5d-b297-46de-bbb0-cb6b038c302c,
 867,KAN Ming-tung,簡銘東,1978,MALE,工聯會,baae9b13-e30b-4c39-ba49-c5ebfbf13de1,fd3a5e94-dc1f-41a5-92df-c558d5683b0c
@@ -1726,7 +1712,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2668,,葉子祈,,MALE, ,6c4266de-7a3a-4b53-90af-49e81dfc1abb,fe5b43e2-e9ac-4cea-a43c-640e0d9a59ce
 1771,YIP KA MING MICHAEL,葉家明,1978,MALE,,d4992228-6eaa-4a93-9662-7cbaa21be2cf,
 691,YIP PO LAM,葉寶琳,1980,FEMALE,,7b215187-8dc8-4177-b2e1-e151e27d13b1,
-996,IP Chiu-shing,葉就生,1900,MALE,,29277efa-7530-4dd4-b2ce-7d88b74a1e10,
 2168,IP CHIU SHING,葉就生,1940,MALE,,46d785ee-dcc5-4926-93aa-a3529bb3c9ca,
 860,"IP Chi-wai, Alexander",葉志偉,1950,MALE,,3d4bba49-ef4d-48b6-ac42-c417958f4ef8,
 977,IP CHI WAI ALEXANDER,葉志偉,1948,MALE,,8af00c23-44d9-4099-8579-f86233759a51,
@@ -1752,8 +1737,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 686,IP Tat-fung,葉達豐,1957,MALE,,45d05cb5-f358-4087-ba9e-cfc27dfb464a,
 1416,IP KWAN HO,葉鈞浩,1988,MALE,,e4111f25-c29d-4f50-8fc7-f157068492cc,
 1890,YIP KAM LUNG SAM,葉錦龍,1987,MALE,,cfe9914d-af96-4810-864c-c7afba98e470,4915785f-153f-46a5-8e8d-96084f89790b
-1527,YIP LAI MEI NATALIE,葉麗媚,1900,FEMALE,,2e325853-297a-4da7-9db9-eecc930015b8,
-1699,YIP LAI MEI NATALIE,葉麗媚,1962,,,e8f285c5-d23e-4da6-b715-4435b3e265f5,
+1527,YIP LAI MEI NATALIE,葉麗媚,1962,FEMALE,,2e325853-297a-4da7-9db9-eecc930015b8,
 1626,KOT SIU YUEN,葛兆源,1984,MALE,工聯會,77da5e6b-8002-4366-aed9-d3bf38485fe4,7e562503-01ea-4ad8-a175-097aee7ef8a7
 153,QUAT Elizabeth,葛珮帆,1967,FEMALE,,33f6b87d-0eb7-4102-9c87-c7f741bb9d66,
 1646,TUNG KIN LEI,董健莉,1980,FEMALE,民建聯,8164d9f8-ece8-4120-a46a-77206f2ec4de,2ebe736e-9ff5-45ca-8a47-17399e975f30
@@ -1762,7 +1746,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 727,CHOI SAI CHUEN,蔡世傳,1949,MALE,,50d426b8-1daa-4027-acdc-75a04e3faee8,
 1546,CHOI KIN CHING,蔡乾正,1972,MALE,,8a92ee89-62bd-42ca-bd70-77f0adda052b,
 619,TSOI AH CHUNG,蔡亞仲,1947,MALE,,a4b96e10-75a6-4c96-828e-a395770ac9a2,
-1039,TSOI Ah-chung,蔡亞仲,1900,MALE,,4747928b-4ce9-40bc-8b41-b092b328d096,
 3014,,蔡佳鏗,,MALE, ,b9603154-acdf-44d6-94a2-9d7347c8b2cc,4bbeb042-e0a0-496b-ad48-6f1014d5132e
 2350,CHOI LUK SING,蔡六乘,1945,MALE,,b4bfee25-f99b-43f2-b71e-b578bf94538c,
 2961,,蔡其隆,,MALE, ,085a9370-65bc-403b-bca9-ec60af8ecdf1,
@@ -1832,8 +1815,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1877,SO CHIN LUNG TIM,蘇展龍,1980,MALE,,49692814-0707-4043-8c68-f46e928867be,
 724,,蘇德華,1961,MALE,,23bd1d8e-cefb-4ce0-baa0-ac057bfbf4bf,
 2117,,蘇悲鴻,1954,MALE,,f7ed79fb-efb5-4306-8a7e-e8778cf66354,
-1678,SO OI KWAN,蘇愛群,1900,FEMALE,,422b9adb-9217-4f1a-b61d-e67552bc8623,
-2389,SO OI KWAN,蘇愛群,1954,,,04ba4e9e-f81a-45fa-ae49-78353822d8ff,
+1678,SO OI KWAN,蘇愛群,1954,FEMALE,,422b9adb-9217-4f1a-b61d-e67552bc8623,
 815,"SO Wai-yin, Herdy",蘇慧賢,1969,FEMALE,,3e85fa96-926e-4c7a-a0bf-6098951a4eb3,
 3018,,蘇智誠,,MALE, ,b08c5eea-9309-43b2-a455-e71d5e07680c,
 50,SO Tsz-wing,蘇梓榮,1979,MALE,,6d98692a-93b2-4d25-830b-cb0a1559b4c5,
@@ -1858,7 +1840,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2124,,衛煥南,1962,MALE,,2e025419-207d-4e66-8aa0-af2de757e5c1,
 595,WAI PUI SHUEN,衛珮璇,1986,FEMALE,,5e98f1e0-6b72-457a-8e1b-0a9db2f33f8f,
 26,WAI HING CHEUNG,衞慶祥,1959,MALE,泛民區選聯盟,4b0bd84d-a8b4-4541-b7c3-b09a47f2fe76,30bcd549-3873-44d8-b82e-ae916109e365
-2430,,衞慶祥,,,泛民區選聯盟,1802defa-b9d6-43d3-84dc-2015c03fe417,
 1151,WAI WOON NAM,衞煥南,1962,MALE,民協,88bf7dfa-2ddf-497d-b61a-4c6d9d757e2c,c1903d4b-47e6-4320-b837-c4d4343a1b00
 2498,,袁嘉蔚,,FEMALE,民主派,e1db1cb3-5029-464f-83c4-3feb9753c4f5,72467dd9-466d-436b-9061-6f16ca2badc1
 475,YUEN Kwok-keung,袁國強,1962,MALE,民建聯,912dc187-ed8f-4622-a544-f4e27d77afe5,744c8b20-b5a0-4827-82d0-5b1cc4757c72
@@ -1941,7 +1922,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2715,,譚家浚,,MALE,公民黨,4f21f2d0-50d0-4399-a47b-46d5b2fe581f,00b96e30-3914-4373-a483-6b3af4634a70
 2006,TAM TAK CHI,譚得志,1972,MALE,,126c1ae5-af9b-4323-b69c-2cbc0bd923d2,82c43cc7-4f70-472f-b7c0-385cd8240216
 33,TAM WAI CHUN,譚惠珍,1952,FEMALE,經民聯,65b978da-eec1-43b3-9aed-9d7c823410f9,e3c8ba00-2990-4f56-9754-b51f685aef96
-1557,TAM WAI CHUN,譚惠珍,1900,,,66d7e601-0eba-45ed-b77f-2b6c5f4f5204,
 2515,,譚振宇,,MALE,香港經濟民生聯盟,398b38bc-19a6-4d9d-85e2-2c675f6685e5,95cbe250-3d72-43b1-9567-09a959eb228b
 1042,TAM Man-ho Jeremy Jansen,譚文豪,1975,MALE,,eadf2579-8f01-45be-b5b2-78365eaf4ca6,
 2490,,譚晉杰,,MALE,民建聯,dd5ad8bf-e598-4753-ac0b-33b206de0c76,18183ece-ac0f-47e8-803d-7e74805bad52
@@ -2289,7 +2269,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1411,CHAN KIN SHING ALEXIS,陳健成,1960,MALE,,48b100cf-e587-44f0-9e39-742770c51ebd,
 937,CHAN KIN CHUN KEN,陳健浚,1979,MALE,,6e309700-5b95-412d-a20a-0ef156272c7b,68d4fce1-5ffb-4bcf-842a-a4d410ca4f6f
 2475,,陳儀真,,FEMALE, ,f1b30a12-45c9-4479-a3a5-20e6b89ad2dc,cd425a90-2fb4-4ef0-abcf-b91fa007f104
-319,CHAN Siu-kay,陳兆基,1970,MALE,,60ec4a71-fd24-4a3c-9602-2fe197160bad,
 2222,CHAN SIU KAY,陳兆基,1954,MALE,,df7a0fbc-8b75-4e15-991c-467f021cd475,
 1607,CHAN BILLY SHIU YEUNG,陳兆陽,1991,MALE,"沙田區政,區政聯盟",67eae123-71cb-4b89-be04-3a84a31cba66,348d136d-30ba-4709-822c-1d414e96aa75
 455,CHAN HAK KAN,陳克勤,1976,MALE,,b66a9a98-dbe1-4c37-9332-c2c5f05d31bf,
@@ -2411,8 +2390,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2098,CHAN MAN FAI,陳文煇,1900,MALE,,7aad4615-b520-4a33-8125-576eb6b51236,
 1162,CHAN MAN WAH,陳文華,1952,MALE,民建聯,70bddc8d-8bce-4c17-9fea-8f50704df3a3,0082f5b9-a2d2-4e24-830d-b1e4bf72bada
 1684,CHAN YUK MING,陳旭明,1988,MALE,民主黨,04cab064-8fe2-41c4-a2cf-cfac2443c6db,8739927d-0eaa-4380-9bf2-26c0aa270ad9
-479,CHAN Cheong,陳昌,1900,MALE,,d14a2a76-0d52-48f9-bc75-fc3a5eea8bcf,
-1205,CHAN CHEONG,陳昌,1954,,,8b950cef-3e4b-43f5-85f4-a8e3553d0ff2,
+479,CHAN CHEONG,陳昌,1954,MALE,,d14a2a76-0d52-48f9-bc75-fc3a5eea8bcf,
 2384,CHAN MING,陳明,1958,FEMALE,,11bc9205-e068-4b8c-8fb5-42af7c54997f,
 2566,,陳易舜,,MALE,獨立民主派,b7f758e9-2e22-4dcb-a812-e94c9f026c7a,927cf80e-6f2a-4621-b4b7-82b8f85f1ac7
 2197,CHAN KING WONG,陳景煌,1949,MALE,,dc118bfc-7ce9-4fb0-a1e4-2adb22d0e35e,
@@ -2480,7 +2458,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1032,CHAN Shek-pong,陳碩邦,1979,MALE,,5953757c-56e7-4e2d-8bc9-e33f349bd650,
 2892,,陳祖光,,MALE, ,6874828c-2822-4310-8d18-d4ff3fb03a7f,bfb3fb46-53ca-4619-a206-3a2b7ecba7f5
 1395,CHAN SAU WAN,陳秀雲,1951,FEMALE,,8e370f44-65b4-4535-a531-303e14e3f177,
-1969,CHAN SAU WAN,陳秀雲,1953,,,7e5f2b03-13b3-4c35-9782-f207243b5e75,
 1789,CHAN PING HANG,陳秉衡,1962,MALE,,a8bbf216-4a49-4dc9-adfe-4768cec52ddc,
 2137,,陳秋帆,1930,MALE,,bd5b26f1-f5d6-48cf-a877-41d72cfe8ed2,
 2999,,陳科伊,,MALE, ,bc298f6d-5990-469a-ab68-5f86ab574f6e,
@@ -2541,14 +2518,12 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2125,CHAN KENG CHAU,陳鏡秋,1949,MALE,,dbeaafd8-bcdf-4831-bc48-9ce0252fd96a,531b72d6-e566-4357-a35b-a08a3ca90ca6
 2367,CHAN KAM LAM,陳鑑林,1949,MALE,,b4511212-5e04-455b-b018-1daef8589064,
 512,CHAN KAM BOR,陳鑑波,1947,MALE,,ae422cb3-6c39-4f6c-9668-a55faf1c49e5,
-1525,CHAN WAN SANG,陳雲生,1900,MALE,,30b56cfa-ef9d-41f5-8515-07694dc89112,
-2218,CHAN WAN SANG,陳雲生,1950,,,5262b45e-b32a-4776-9b71-f58f4dae3e1c,
+1525,CHAN WAN SANG,陳雲生,1950,MALE,,30b56cfa-ef9d-41f5-8515-07694dc89112,
 749,CHAN OI KWAN,陳靄群,1950,FEMALE,,1d0c0dce-2aa7-438f-bc0a-d0f775ae86f2,
 1377,,陳靜霞,1955,FEMALE,,e9350439-eba5-45c7-b42d-f983511caf1f,
 2502,,陳順意,,MALE,無黨派候選人,284038c9-2be7-492b-bd6b-555b3edc504e,811e3a24-29e8-42cd-afee-82cde55a5eb7
 559,CHAN HIN CHUNG JOHN,陳顯中,1900,MALE,,89391a43-4aae-4428-90aa-0695db387571,
 1298,CHAN LAI KWAN,陳麗君,1952,FEMALE,,138adf4b-3415-4bd9-a110-7659bb9c8be9,b3361f34-5c71-441e-a99f-75fb5e21191f
-1906,CHAN LAI KWAN,陳麗君,1900,,,80939e88-818a-43cf-a1db-675f229b0b89,
 1357,,陳麗珊,1954,FEMALE,,34040108-5146-4fd3-bd2f-e986ee65d9b2,
 2522,,陳麗紅,,FEMALE, ,50aa2d5d-4072-44b1-bd84-273ba072fefb,6c4b11aa-c3a4-46cf-b13c-62cfc1c5bb83
 2752,,陳龍傑,,MALE,民建聯,782e8f77-0955-4737-b759-7ca25e4aa81d,def34898-09b1-4a7f-a4c3-2c29c7dc89c6
@@ -2567,7 +2542,6 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 523,LUK PING CHOI,陸平才,1964,MALE,將軍澳民生關注組,b12124d3-971d-4281-8aa6-ae820ac1d3af,68da8b18-ef77-49ff-8fd7-90ed130d7dbc
 609,LUK WAI MAN,陸惠民,1940,MALE,,d750557d-f661-4960-ac16-1d4922ff64ff,
 271,LUK KING SHING,陸景城,1954,MALE,,b18c1420-e5fc-4c04-925c-f3fa818e5598,
-1040,LUK King-shing,陸景城,1900,MALE,,07f64a7e-17ee-460e-bcd4-328ae23e4c44,
 2700,,陸梓峂,,FEMALE,公民黨,01cabba3-92ea-49be-8762-3db066312312,87789688-9a15-4019-8cf0-6f0bf04e80c6
 67,LUK Wing-chuen,陸榮全,1965,MALE,,efb1cbe6-6c1e-4d1a-8787-3dcef1582a55,
 911,LUK HO MAN RAYMOND,陸浩民,1979,MALE,,afddce15-af2b-45ce-8e07-5e3cc4b2552f,

@@ -39,7 +39,7 @@ function getFloat(val, fallback) {
 }
 
 function getStr(val, fallback) {
-  if (!val || val === '#N/A') {
+  if (!val || val === '#N/A' || val === 'n/a') {
     return fallback;
   }
   return val;
@@ -361,7 +361,7 @@ async function importCandidates(filePath) {
 
   await runQuery(MUTATION_DELETE_CANDIDATES, null);
 
-  const BATCH_SIZE = 500;
+  const BATCH_SIZE = 10;
   for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
     const start = i * BATCH_SIZE;
     const end = Math.min((i + 1) * BATCH_SIZE, records.length);
@@ -393,16 +393,18 @@ async function importCandidates(filePath) {
 
     if (res.statusCode !== 200) {
       console.error(JSON.stringify(res.body));
+      log.error('error in inserting data.');
+      log.error(res.body);
+      log.error(`row: ${start} - ${end}`);
       throw new Error('Invalid response when inserting candidates');
     }
 
-    const {
-      data: {
-        insert_dcd_candidates,
-      },
-    } = res.body;
+    // const {
+    //   data,
+    // } = res.body;
 
-    log.info(`${insert_dcd_candidates.affected_rows} candidates inserted.`);
+
+    // log.info(`${insert_dcd_candidates.affected_rows} candidates inserted.`);
   }
 
   log.info(`${records.length} candidates in csv ..`);
