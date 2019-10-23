@@ -1043,7 +1043,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2517,,林倩同,,FEMALE, ,50714654-17f0-4757-a310-906042018963,94406187-62d6-4f6b-83db-6150409d041c
 2166,,林偉光,1943,MALE,,04962262-fa5e-401e-b2b8-f25f2e727fbb,
 835,LAM WAI KEI,林偉基,1978,MALE,,384262d9-0fec-48a6-85f9-dcd52a937458,d49fd0dd-cc45-40fe-a9a0-428be8748c9c
-2060,LAM WAI MAN WIND,林偉文,1984,MALE,自由黨,8df2a3f1-0ec3-4878-befa-1ac0fdf52574,a30e3d00-eb46-42e0-937c-9bf956a47367
+2060,LAM WAI MAN WIND (ANSON),林偉文,1984,MALE,自由黨,d4c99c34-c2d4-4215-bdac-8e72e25e9b1f,a30e3d00-eb46-42e0-937c-9bf956a47367
 2617,,林偉明,,MALE,民建聯,9f2b344f-8b4c-4fa3-9bac-e215f15be554,fcca813d-b626-48ed-be05-4af3b1859c17
 2072,LAM WAI TONG,林偉棠,1972,MALE,,ea59b0d4-8e56-4c87-8dbf-c31929522a77,
 302,LAM WAI YIN,林偉賢,1962,MALE,,dc6ac9d8-8a0d-44f0-a25e-ce5b9f50e99b,
@@ -1518,7 +1518,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 949,TIEN MICHAEL PUK SUN,田北辰,1950,MALE,實政圓桌,25422d1b-be18-4829-8f0b-ef9454b1e310,fd409c7e-8306-4acb-957f-b4375f78da87
 639,,田永強,1960,MALE,,849b1f0c-efc8-42c9-a085-72c5600a71fe,
 1950,SUN WAI KEI,申偉基,1983,MALE,,34657443-7d45-4425-9991-44b236a8c462,
-2406,,畢東尼,,,公民黨,38cded3f-8e84-41f0-9c10-b5f03e8236a7,c4307b95-fea6-439c-ae99-64aff5eb7a18
+2406,BUX SHEIK ANTHONY,畢東尼,1970,MALE,公民黨,ca4f1b47-32c9-49b9-abfa-598d93307c7c,c4307b95-fea6-439c-ae99-64aff5eb7a18
 81,PAK FU HUNG,白富鴻,1964,MALE,,51d842d1-0cc1-4dd8-afeb-99408f1740ac,
 1044,PECK WAN KAM PAMELA,白韻琹,1944,FEMALE,,6c4be5a2-61a8-4134-b962-202a2457dbcc,
 631,LO SAM SHING,盧三勝,1936,MALE,,e0cdb034-fbb6-4c85-ac21-554f7407f789,
@@ -2005,7 +2005,7 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 2835,,邱文勁,,MALE,獨立候選人,9bdbc8d7-04a3-4631-873a-3b2f70461a52,391cbf49-4aff-433f-b58d-d9da32413760
 2044,YAU CHI KIN,邱智堅,1973,MALE,,f1bcd240-e201-4249-accb-81412b2e03b3,
 14,,邱榮光,1957,MALE,,e88fdb31-57b4-4781-a75a-635b26c4613d,
-2734,,邱汶珊,,FEMALE,獨立候選人,fc34e1b9-f752-4a74-86ff-6beeda49c41f,94d27bb3-135d-41a6-9930-45815364c75a
+2734,,邱汶珊,,FEMALE,灣仔起步,fc34e1b9-f752-4a74-86ff-6beeda49c41f,94d27bb3-135d-41a6-9930-45815364c75a
 2795,,邱浩麟,,MALE,民建聯,322cd60b-8de9-46f9-8880-f9fda07cdde9,19f462c9-b4b1-421d-aaa7-a8d0b7f04975
 406,YAU Yuk-lun,邱玉麟,1952,MALE,民建聯,e8789e9a-6416-4690-a05a-14ddadc83f4a,4a903bfd-da0c-4948-a311-c4123fffa91c
 247,,邱福平,1946,MALE,,af271fa6-02db-40f9-a65f-de7944cef230,
@@ -2258,8 +2258,8 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 497,,陳偉文,1960,MALE,,77b97d94-0a08-419a-ac40-154ddb1d802f,
 846,CHAN WAI MAN,陳偉文,1965,MALE,,7a393fbc-154c-475c-906b-70b749c59818,
 1873,CHAN WAI MAN,陳偉文,1970,,,86b97186-db67-4308-80b3-145c850d31cf,
-1283,CHAN WAI MING,陳偉明,1955,MALE,,2fb8554e-03d9-4f27-bb5b-b381207a9137,15530626-58eb-445e-95bc-4b5316ed09fc
-2340,CHAN WAI MING,陳偉明,1967,,民建聯,0d58d8cf-eff9-474f-bcfc-43a5ad13d0f8,
+1283,CHAN WAI MING,陳偉明,1955,MALE,,2fb8554e-03d9-4f27-bb5b-b381207a9137,
+2340,CHAN WAI MING,陳偉明,1967,MALE,民建聯,0d58d8cf-eff9-474f-bcfc-43a5ad13d0f8,15530626-58eb-445e-95bc-4b5316ed09fc
 531,CHAN WAI TONG,陳偉棠,1962,MALE,,d6bb47d3-e7ab-4e4e-ba0a-3e839f8328b1,
 2378,CHAN WAI YIP ALBERT,陳偉業,1955,MALE,,31b1f2bc-c3b4-4aee-a43b-c681445a8de9,
 2332,,陳偉泉,1952,MALE,,6410eaae-86cd-40e9-9b8c-4cbc55433c6b,
@@ -2961,3 +2961,4 @@ id,name_en,name_zh,estimated_yob,gender,related_organization,uuid,fc_uuid
 1290,SINGH HARMINDER,,1983,MALE,,f0bf61e3-2437-4daf-8276-22e483bc25b7,
 1807,SCHAUS DAVID JOHN,,1976,MALE,,4958864d-612f-4f59-b46d-c30c8cce1fb4,
 1856,BUX SHEIK ANTHONY,,1970,MALE,,ca4f1b47-32c9-49b9-abfa-598d93307c7c,
+3021,LAM WAI MAN RAYMOND,林偉文,1985,MALE,民建聯、工聯會,8df2a3f1-0ec3-4878-befa-1ac0fdf52574,d51738d1-8a41-41b8-a20f-46c5a2ba0c6d
