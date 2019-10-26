@@ -1,0 +1,12 @@
+- args:
+    name: tags
+    table:
+      name: dcd_candidates
+      schema: public
+    using:
+      foreign_key_constraint_on:
+        column: candidate_id
+        table:
+          name: dcd_candidate_tags
+          schema: public
+  type: create_array_relationship

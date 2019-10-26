@@ -1,0 +1,3 @@
+- args:
+    sql: DROP TABLE "public"."dcd_candidate_tags"
+  type: run_sql

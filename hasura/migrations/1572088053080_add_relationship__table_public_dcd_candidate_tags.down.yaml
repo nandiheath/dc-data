@@ -1,0 +1,6 @@
+- args:
+    relationship: candidate
+    table:
+      name: dcd_candidate_tags
+      schema: public
+  type: drop_relationship

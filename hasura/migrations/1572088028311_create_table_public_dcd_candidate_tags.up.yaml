@@ -1,0 +1,10 @@
+- args:
+    sql: CREATE TABLE "public"."dcd_candidate_tags"("candidate_id" int4 NOT NULL,
+      "tag" text NOT NULL, "type" text NOT NULL, PRIMARY KEY ("candidate_id","tag")
+      , FOREIGN KEY ("candidate_id") REFERENCES "public"."dcd_candidates"("id") ON
+      UPDATE cascade ON DELETE cascade);
+  type: run_sql
+- args:
+    name: dcd_candidate_tags
+    schema: public
+  type: add_existing_table_or_view

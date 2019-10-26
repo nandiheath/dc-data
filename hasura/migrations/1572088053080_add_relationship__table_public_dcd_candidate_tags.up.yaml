@@ -1,0 +1,8 @@
+- args:
+    name: candidate
+    table:
+      name: dcd_candidate_tags
+      schema: public
+    using:
+      foreign_key_constraint_on: candidate_id
+  type: create_object_relationship
