@@ -58,6 +58,7 @@ async function importPeople(filePath) {
       estimated_yob: getInt(person.estimated_yob, null),
       gender: getStr(person.gender, null),
       fc_uuid: getStr(person.fc_uuid, null),
+      description: getStr(person.description, null),
     })),
   });
 
@@ -191,6 +192,7 @@ async function importConstituencies(filePath) {
           main_areas: JSON.parse(record.main_areas),
           boundaries: JSON.parse(record.boundaries),
           vote_stats: voteStats,
+          description: getStr(record.description, null),
         };
       }),
     });
@@ -206,7 +208,7 @@ async function importConstituencies(filePath) {
       },
     } = res.body;
 
-    log.info(`${insert_dcd_constituencies.affected_rows} new data inserted.`);
+    log.info(`${insert_dcd_constituencies.affected_rows} new constituencies inserted.`);
   }
 
   log.info(`${records.length} constituencies in csv ..`);
@@ -387,6 +389,16 @@ async function importCandidates(filePath) {
             constituency_id: getStr(record.constituency_id, null),
             fb_id: getStr(record.fb_id, null),
             ig_id: getStr(record.ig_id, null),
+            tags: {
+              data: [
+                ...record.tags.split(',').filter(t => t.length > 0).map((entry) => {
+                  const [type, tag] = entry.split(':');
+                  return {
+                    tag, type,
+                  };
+                }),
+              ],
+            },
           };
         }),
     });
@@ -478,6 +490,12 @@ async function importAll(directory) {
   await importConstitencyPredecessors(path.join(directory, 'dcd_constituency_predecessors.csv'));
 }
 
+
+async function importCandidate(candidateId) {
+
+}
+
 module.exports = {
   importAll,
+  importCandidate,
 };
