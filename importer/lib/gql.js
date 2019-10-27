@@ -123,6 +123,30 @@ mutation insert_data($objects: [dcd_districts_insert_input!]!){
 }
 `;
 
+const MUTATION_UPDATE_PERSON = `
+mutation ($personId: Int!, $updateInput:dcd_people_set_input!){
+  update_dcd_people(where: {id : {_eq: $personId}}
+  _set: $updateInput) {
+    affected_rows
+  }
+}`;
+
+
+const MUTATION_UPDATE_CANDIDATE = `
+mutation delete_tag($candidateId: Int!, $updateInput:dcd_candidates_set_input!, $tags: [dcd_candidate_tags_insert_input!]!){
+  delete_dcd_candidate_tags(where:{
+    candidate_id: {_eq: $candidateId}
+  }) {
+    affected_rows
+  }
+  update_dcd_candidates(where: {id : {_eq: $candidateId}}
+  _set: $updateInput) {
+    affected_rows
+  }
+  insert_dcd_candidate_tags(objects: $tags) {
+    affected_rows
+  }
+}`;
 
 module.exports = {
   MUTATION_CLEAR_AND_INSERT_PEOPLE,
@@ -140,4 +164,6 @@ module.exports = {
   MUTATION_INSERT_DISTRICTS,
   MUTATION_DELETE_CONSTITUENCY_PREDECESSORS,
   MUTATION_INSERT_CONSTITUENCY_PREDECESSORS,
+  MUTATION_UPDATE_PERSON,
+  MUTATION_UPDATE_CANDIDATE,
 };

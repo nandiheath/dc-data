@@ -24,3 +24,25 @@ https://developers.google.com/sheets/api/quickstart/nodejs
 
 Then run the command
 `./cli.js nominate csv intermediate`
+
+## Update candidates
+
+This function is created for updating the 2019 candidates. Theoretically works for older year but not yet tested throughly. The script will automatically fetch the data from master data spreadsheet and import to hasura.
+
+### Restrictions
+
+- only for `dcd_candidates` and `dcd_people` are updated
+- cannot update candidate_id nor person_id
+- cannot update the assoicated constituencies
+- will update the `dcd_candidate_tags` as well
+
+### Usage
+
+```
+./cli.js update [candidate_id_from] [candidate_id_to]
+
+# example
+# if you want to update candidate id 5379
+./cli.js update 5379 5379
+```
+
