@@ -532,6 +532,7 @@ async function updateCandidate(fromIdStr, toIdStr) {
           occupation: getStr(occupation, null),
           nominated_at: getStr(nominated_at, null),
           nominate_status: getStr(nominate_status, null),
+          candidate_number: getStr(candidate_number, null),
           fb_id: getStr(fb_id, null),
           ig_id: getStr(ig_id, null),
         },

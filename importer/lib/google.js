@@ -157,7 +157,6 @@ async function uploadNominatedPeople(auth, people) {
       log.error(`cannot update spreadsheet. error: ${JSON.stringify(err)}`);
       return;
     }
-
     log.info(`total ${result.data.totalUpdatedCells} cells updated.`);
   });
 }
@@ -182,6 +181,46 @@ const downloadMappings = async (auth) => {
   }));
   return mappings;
 };
+
+const updateCandidatesWithField = async (candidateIds, records, column) => {
+  let content;
+  try {
+    content = fs.readFileSync('credentials.json').toString();
+    content = JSON.parse(content);
+  } catch (error) {
+    log.error('cannot load the credential file. please download it from https://developers.google.com/sheets/api/quickstart/nodejs');
+    return [];
+  }
+  try {
+    const authAsync = Promise.promisify(authorize);
+    const auth = await authAsync(content);
+    const sheets = google.sheets({ version: 'v4', auth });
+    const data = candidateIds.map((id, index) => ({
+      range: `dcd_candidates!${column}${id + 1}:${column}`,
+      values: [[records[index]]],
+    }));
+    // Additional ranges to update ...
+    const resource = {
+      data,
+      valueInputOption: 'USER_ENTERED',
+    };
+    sheets.spreadsheets.values.batchUpdate({
+      spreadsheetId: MASTER_DATA_SHEET_ID,
+      resource,
+    }, (err, result) => {
+      if (err) {
+        log.error(`cannot update spreadsheet. error: ${JSON.stringify(err)}`);
+        return;
+      }
+      log.info(`total ${result.data.totalUpdatedCells} cells updated.`);
+    });
+  } catch (error) {
+    log.error('error when uploading data to google spreadsheet');
+    console.error(error);
+    log.error(JSON.stringify(error));
+  }
+  return [];
+}
 
 const loadPeople = async () => {
   let content;
@@ -301,4 +340,5 @@ module.exports = {
   loadCandidates,
   loadPeople,
   loadPeopleCampMapping,
+  updateCandidatesWithField,
 };
