@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const program = require('commander');
-const { importAll, updateCandidate } = require('./lib/importer');
+const { importAll } = require('./lib/importer');
 const { scrapeNominate } = require('./lib/nominate');
 const { uploadIntermediate } = require('./lib/google');
 require('dotenv').config();
@@ -23,9 +23,7 @@ program
   .action(importAll);
 
 program
-  .command('update <fromId> <toId>')
-  .description('update the candidate from master data sheet and import to hasura directly')
-  .action(updateCandidate);
+  .command('update', 'update the candidate from master data sheet and import to hasura directly');
 
 program
   .command('nominate <csv_directory> <intermediate_directory>')

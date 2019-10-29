@@ -38,11 +38,29 @@ This function is created for updating the 2019 candidates. Theoretically works f
 
 ### Usage
 
-```
-./cli.js update [candidate_id_from] [candidate_id_to]
+```bash
+./cli.js update candidates [candidate_id_from] [candidate_id_to]
 
 # example
 # if you want to update candidate id 5379
 ./cli.js update 5379 5379
 ```
 
+## Update constituencies
+
+This function is created for updating the constituencies. The script will automatically fetch the data from master data spreadsheet and import to hasura.
+
+### Restrictions
+
+- only for `dcd_constituencies`
+- only support description field now
+
+### Usage
+
+```bash
+./cli.js update constituencies [constituency_id_from] [constituency_id_to]
+
+# example
+# if you want to update constituency id 2230 to 2231
+./cli.js update 2230 2231
+```

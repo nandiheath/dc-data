@@ -148,6 +148,14 @@ mutation delete_tag($candidateId: Int!, $updateInput:dcd_candidates_set_input!, 
   }
 }`;
 
+const MUTATION_UPDATE_CONSTITUENCY = `
+mutation ($constituencyId: Int!, $updateInput:dcd_constituencies_set_input!){
+  update_dcd_constituencies(where: {id : {_eq: $constituencyId}}
+  _set: $updateInput) {
+    affected_rows
+  }
+}`;
+
 module.exports = {
   MUTATION_CLEAR_AND_INSERT_PEOPLE,
   MUTATION_DELETE_CONSTITUENCIES,
@@ -166,4 +174,5 @@ module.exports = {
   MUTATION_INSERT_CONSTITUENCY_PREDECESSORS,
   MUTATION_UPDATE_PERSON,
   MUTATION_UPDATE_CANDIDATE,
+  MUTATION_UPDATE_CONSTITUENCY,
 };

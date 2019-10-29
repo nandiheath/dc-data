@@ -255,6 +255,39 @@ const loadPeople = async () => {
   return null;
 };
 
+const loadConstituencies = async (fromId, toId) => {
+  let content;
+  try {
+    content = fs.readFileSync('credentials.json').toString();
+    content = JSON.parse(content);
+  } catch (error) {
+    log.error('cannot load the credential file. please download it from https://developers.google.com/sheets/api/quickstart/nodejs');
+    return [];
+  }
+  try {
+    const authAsync = Promise.promisify(authorize);
+    const auth = await authAsync(content);
+    const sheets = google.sheets({ version: 'v4', auth });
+    const req = {
+      // The spreadsheet to request.
+      spreadsheetId: MASTER_DATA_SHEET_ID,
+
+      // The ranges to retrieve from the spreadsheet.
+      range: `dcd_constituencies!A${fromId + 1}:Q${toId + 1}`,
+      auth,
+    };
+
+    const ss = Promise.promisifyAll(sheets.spreadsheets.values);
+    const data = await ss.getAsync(req);
+    return data.data.values;
+  } catch (error) {
+    log.error('error when uploading data to google spreadsheet');
+    console.error(error);
+    log.error(JSON.stringify(error));
+  }
+  return [];
+};
+
 const loadCandidates = async (fromId, toId) => {
   let content;
   try {
@@ -339,6 +372,7 @@ module.exports = {
   uploadIntermediate,
   loadCandidates,
   loadPeople,
+  loadConstituencies,
   loadPeopleCampMapping,
   updateCandidatesWithField,
 };
