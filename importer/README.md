@@ -42,8 +42,11 @@ This function is created for updating the 2019 candidates. Theoretically works f
 ./cli.js update candidates [candidate_id_from] [candidate_id_to]
 
 # example
-# if you want to update candidate id 5379
+# if you want to update candidate id 5379 only
 ./cli.js update 5379 5379
+
+# if you want to update all 2019 candidates
+./cli.js update 4406 5503
 ```
 
 ## Update constituencies
@@ -61,6 +64,9 @@ This function is created for updating the constituencies. The script will automa
 ./cli.js update constituencies [constituency_id_from] [constituency_id_to]
 
 # example
-# if you want to update constituency id 2230 to 2231
-./cli.js update 2230 2231
+# if you want to update constituency id 2230 only
+./cli.js update 2230 2230
+
+# if you want to update all 2019 constituencies
+./cli.js update 2039 2490
 ```
