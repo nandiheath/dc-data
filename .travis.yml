@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+    - "8"
+stages:
+  # Build the docker image only on master branch
+  - name: deploy
+
+jobs:
+  include:
+    - stage: deploy
+      script:
+        - echo "skipping tests"
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        repo: hkvoteguide/hk-dce-data
+        fqdn: dce-data.vote4.hk
+        github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        keep-history: true
+        committer_from_gh: true
+        target_branch: master
+        local-dir: data # the local dir is relative to root and ignoring the one set with before_install
+        on:
+          branch: master

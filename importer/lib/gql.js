@@ -41,6 +41,21 @@ mutation insert_data($objects: [dcd_constituency_predecessors_insert_input!]!){
   }
 }`;
 
+
+const MUTATION_DELETE_CONSTITUENCY_VOTE_STATS = `
+mutation delate_data{
+  delete_dcd_constituency_vote_stats(where:{}) {
+    affected_rows
+  }
+}`;
+
+const MUTATION_INSERT_CONSTITUENCY_VOTE_STATS = `
+mutation insert_data($objects: [dcd_constituency_vote_stats_insert_input!]!){
+  insert_dcd_constituency_vote_stats(objects: $objects) {
+    affected_rows
+  }
+}`;
+
 const MUTATION_DELETE_COUNCILORS = `
 mutation delate_data{
   delete_dcd_councillors(where:{}) {
@@ -175,4 +190,6 @@ module.exports = {
   MUTATION_UPDATE_PERSON,
   MUTATION_UPDATE_CANDIDATE,
   MUTATION_UPDATE_CONSTITUENCY,
+  MUTATION_DELETE_CONSTITUENCY_VOTE_STATS,
+  MUTATION_INSERT_CONSTITUENCY_VOTE_STATS,
 };
