@@ -43,10 +43,10 @@ This function is created for updating the 2019 candidates. Theoretically works f
 
 # example
 # if you want to update candidate id 5379 only
-./cli.js update 5379 5379
+./cli.js update candidates 5379 5379
 
 # if you want to update all 2019 candidates
-./cli.js update 4406 5503
+./cli.js update candidates 4406 5503
 ```
 
 ## Update constituencies
@@ -65,8 +65,8 @@ This function is created for updating the constituencies. The script will automa
 
 # example
 # if you want to update constituency id 2230 only
-./cli.js update 2230 2230
+./cli.js update constituencies 2230 2230
 
 # if you want to update all 2019 constituencies
-./cli.js update 2039 2490
+./cli.js update constituencies 2039 2490
 ```
