@@ -1,0 +1,4 @@
+- args:
+    sql: alter table "public"."dcd_people" add constraint "dcd_people_uuid_key" unique
+      ("uuid");
+  type: run_sql

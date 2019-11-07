@@ -1,3 +1,0 @@
-- args:
-    sql: alter table "public"."dcd_people" drop constraint "dcd_people_fc_uuid_key";
-  type: run_sql
