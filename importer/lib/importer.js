@@ -43,7 +43,7 @@ function getFloat(val, fallback) {
 }
 
 function getStr(val, fallback) {
-  if (!val || val === '#N/A' || val === 'n/a') {
+  if (!val || val === '#N/A' || val === 'n/a' || val === '-') {
     return fallback;
   }
   return val;
@@ -60,9 +60,12 @@ async function importPeople(filePath) {
       name_en: getStr(person.name_en, null),
       related_organization: getStr(person.related_organization, null),
       estimated_yob: getInt(person.estimated_yob, null),
+      yod: getInt(person.yod, null),
       gender: getStr(person.gender, null),
       fc_uuid: getStr(person.fc_uuid, null),
       description: getStr(person.description, null),
+      description_zh: getStr(person.description_zh, null),
+      description_en: getStr(person.description_en, null),
     })),
   });
 
@@ -223,6 +226,8 @@ async function importConstituencies(filePath) {
         main_areas: JSON.parse(record.main_areas),
         boundaries: JSON.parse(record.boundaries),
         description: getStr(record.description, null),
+        description_zh: getStr(record.description_zh, null),
+        description_en: getStr(record.description_en, null),
       })),
     });
 
@@ -409,6 +414,13 @@ async function importCandidates(filePath) {
             age: getInt(record.age, null),
             is_won: record.is_won === 'TRUE',
             occupation: getStr(record.occupation, null),
+            occupation_zh: getStr(record.occupation_zh, null),
+            occupation_en: getStr(record.occupation_en, null),
+            political_affiliation_zh: getStr(record.political_affiliation_zh, null),
+            political_affiliation_en: getStr(record.political_affiliation_en, null),
+            electoral_message_zh: getStr(record.electoral_message_zh, null),
+            electoral_message_en: getStr(record.electoral_message_en, null),
+            email_or_website: getStr(record.email_or_website, null),
             nominated_at: getStr(record.nominated_at, null),
             nominate_status: getStr(record.nominate_status, null),
             votes: getInt(record.votes, 0),
@@ -509,15 +521,16 @@ async function importAll(directory) {
     return;
   }
 
+
+  await importDistricts(path.join(directory, 'dcd_districts.csv'));
+  await importPeople(path.join(directory, 'dcd_people.csv'));
+  await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
+  await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
+  await importCandidates(path.join(directory, 'dcd_candidates.csv'));
+  await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
+  await importCouncilorAttendance(path.join(directory, 'dcd_councilor_attendances.csv'));
+  await importConstitencyPredecessors(path.join(directory, 'dcd_constituency_predecessors.csv'));
   await importConstituencyVoteStats(path.join(directory, 'dcd_constituency_voters.csv'));
-  // await importDistricts(path.join(directory, 'dcd_districts.csv'));
-  // await importPeople(path.join(directory, 'dcd_people.csv'));
-  // await importConstituencies(path.join(directory, 'dcd_constituencies.csv'));
-  // await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
-  // await importCandidates(path.join(directory, 'dcd_candidates.csv'));
-  // await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
-  // await importCouncilorAttendance(path.join(directory, 'dcd_councilor_attendances.csv'));
-  // await importConstitencyPredecessors(path.join(directory, 'dcd_constituency_predecessors.csv'));
 }
 
 
