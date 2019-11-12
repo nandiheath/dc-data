@@ -70,7 +70,7 @@ async function updateCandidate(fromIdStr, toIdStr) {
   let peopleUpdateCount = 0;
   for (let i = 0; i < candidates.length; i += 1) {
     const candidate = candidates[i];
-    const [candidate_id, cname_zh, cname_en, , person_id, , , cacode, , , political_affiliation, camp, candidate_number, occupation, nominated_at, nominate_status, , , fb_id, ig_id, tags] = candidate;
+    const [candidate_id, cname_zh, cname_en, , person_id, , , cacode, , , political_affiliation, camp, candidate_number, occupation, nominated_at, nominate_status, , , fb_id, ig_id, tags, occupation_zh, occupation_en, political_affiliation_zh, political_affiliation_en, electoral_message_zh, electoral_message_en, email_or_website] = candidate;
     const person = people.find(p => p[0] === person_id);
     if (person === null) {
       log.error(`people not found for candidata_id:${candidate_id} [${cname_zh}]`);
@@ -91,6 +91,13 @@ async function updateCandidate(fromIdStr, toIdStr) {
           candidate_number: getStr(candidate_number, null),
           fb_id: getStr(fb_id, null),
           ig_id: getStr(ig_id, null),
+          occupation_zh: getStr(occupation_zh, null),
+          occupation_en: getStr(occupation_en, null),
+          political_affiliation_zh: getStr(political_affiliation_zh, null),
+          political_affiliation_en: getStr(political_affiliation_en, null),
+          electoral_message_zh: getStr(electoral_message_zh, null),
+          electoral_message_en: getStr(electoral_message_en, null),
+          email_or_website: getStr(email_or_website, null),
         },
         tags: tags && tags.length > 0 ? tags.split(',').filter(t => t.length > 0).map((entry) => {
           const [type, tag] = entry.split(':');
@@ -112,7 +119,8 @@ async function updateCandidate(fromIdStr, toIdStr) {
 
 
     try {
-      const [, name_en, name_zh, estimated_yob, gender, related_organization, , fc_uuid, description] = person;
+      // id	name_en	name_zh	estimated_yob	yod	gender	related_organization	related_organization_zh	related_organization_en	uuid	fc_uuid	description_zh	description_en
+      const [, name_en, name_zh, estimated_yob, yod, gender, related_organization, related_organization_zh, related_organization_en, uuid, fc_uuid, description_zh, description_en] = person;
       const res = await runQuery(MUTATION_UPDATE_PERSON, {
         personId: getInt(person_id, null),
         updateInput: {
@@ -122,7 +130,9 @@ async function updateCandidate(fromIdStr, toIdStr) {
           estimated_yob: getInt(estimated_yob, null),
           gender: getStr(gender, null),
           fc_uuid: getStr(fc_uuid, null),
-          description: getStr(description, null),
+          description: getStr(description_zh, null), // to be deprecated
+          description_zh: getStr(description_zh, null),
+          description_en: getStr(description_en, null),
         },
       });
 
@@ -156,7 +166,7 @@ program
 
 program
   .command('constituencies <fromId> <toId>')
-  .description('update the candidate from master data sheet and import to hasura directly')
+  .description('update the constituencies from master data sheet and import to hasura directly')
   .action(updateConstituencies);
 
 

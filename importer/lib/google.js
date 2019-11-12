@@ -240,7 +240,7 @@ const loadPeople = async () => {
       spreadsheetId: MASTER_DATA_SHEET_ID,
 
       // The ranges to retrieve from the spreadsheet.
-      range: 'dcd_people!A1:K',
+      range: 'dcd_people!A1:Q',
       auth,
     };
 
@@ -306,7 +306,7 @@ const loadCandidates = async (fromId, toId) => {
       spreadsheetId: MASTER_DATA_SHEET_ID,
 
       // The ranges to retrieve from the spreadsheet.
-      range: `dcd_candidates!A${fromId + 1}:U${toId + 1}`,
+      range: `dcd_candidates!A${fromId + 1}:AB${toId + 1}`,
       auth,
     };
 
