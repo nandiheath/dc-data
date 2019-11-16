@@ -520,7 +520,7 @@ async function importVoteStations(filePath) {
 async function importVoteStations2019(filePath) {
   const records = await csv2json().fromFile(filePath);
 
-  await runQuery(MUTATION_DELETE_VOTE_STATIONS, null);
+  // wont delete data as we have import the previous year's data
 
   const BATCH_SIZE = 100;
   for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
