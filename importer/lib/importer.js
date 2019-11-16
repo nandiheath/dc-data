@@ -59,6 +59,8 @@ async function importPeople(filePath) {
       name_zh: getStr(person.name_zh, null),
       name_en: getStr(person.name_en, null),
       related_organization: getStr(person.related_organization, null),
+      related_organization_zh: getStr(person.related_organization_zh, null),
+      related_organization_en: getStr(person.related_organization_en, null),
       estimated_yob: getInt(person.estimated_yob, null),
       yod: getInt(person.yod, null),
       gender: getStr(person.gender, null),
@@ -515,6 +517,51 @@ async function importVoteStations(filePath) {
   log.info(`${records.length} vote_station_stats in csv ..`);
 }
 
+async function importVoteStations2019(filePath) {
+  const records = await csv2json().fromFile(filePath);
+
+  await runQuery(MUTATION_DELETE_VOTE_STATIONS, null);
+
+  const BATCH_SIZE = 100;
+  for (let i = 0; i < records.length / BATCH_SIZE; i += 1) {
+
+    const start = i * BATCH_SIZE;
+    const end = Math.min((i + 1) * BATCH_SIZE, records.length);
+
+    const res = await runQuery(MUTATION_INSERT_VOTE_STATIONS, {
+      objects: records.slice(start, end).map(record => ({
+        id: record.id,
+        constituency_id: record.constituency_id,
+        station_code: record.station_code,
+        name_en: getStr(record.name_en, null),
+        name_zh: getStr(record.name_zh, null),
+        address_en: getStr(record.address_en, null),
+        address_zh: getStr(record.address_zh, null),
+        year: getInt(record.year, null),
+        location: {
+          type: 'Point',
+          coordinates: [getFloat(record.lng, 0), getFloat(record.lat, 0)],
+        },
+      })),
+    });
+
+    if (res.statusCode !== 200) {
+      console.error(JSON.stringify(res.body));
+      throw new Error('Invalid response when inserting vote stations');
+    }
+
+    const {
+      data: {
+        insert_dcd_constituency_vote_stations,
+      },
+    } = res.body;
+
+    log.info(`${insert_dcd_constituency_vote_stations.affected_rows} new vote_stations inserted.`);
+  }
+
+  log.info(`${records.length} vote_station_stats in csv ..`);
+}
+
 async function importAll(directory) {
   if (!fs.existsSync(directory)) {
     log.error('File does not exists');
@@ -528,6 +575,7 @@ async function importAll(directory) {
   await importCouncilors(path.join(directory, 'dcd_councilors.csv'));
   await importCandidates(path.join(directory, 'dcd_candidates.csv'));
   await importVoteStations(path.join(directory, 'dcd_vote_station_stats.csv'));
+  await importVoteStations2019(path.join(directory, 'dcd_vote_stations.csv'));
   await importCouncilorAttendance(path.join(directory, 'dcd_councilor_attendances.csv'));
   await importConstitencyPredecessors(path.join(directory, 'dcd_constituency_predecessors.csv'));
   await importConstituencyVoteStats(path.join(directory, 'dcd_constituency_voters.csv'));

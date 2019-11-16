@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "public"."dcd_constituency_vote_stations" ADD COLUMN "address_en"
+      text NULL;
+  type: run_sql
