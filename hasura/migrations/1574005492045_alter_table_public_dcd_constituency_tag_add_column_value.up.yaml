@@ -1,0 +1,4 @@
+- args:
+    sql: ALTER TABLE "public"."dcd_constituency_tag" ADD COLUMN "value" numeric NOT
+      NULL DEFAULT 0;
+  type: run_sql

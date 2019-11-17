@@ -1,0 +1,3 @@
+- args:
+    sql: ALTER TABLE "public"."dcd_constituencies" DROP COLUMN "meta";
+  type: run_sql

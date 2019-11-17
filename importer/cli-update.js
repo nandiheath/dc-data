@@ -26,7 +26,7 @@ async function updateConstituencies(fromIdStr, toIdStr) {
   let updateCount = 0;
   for (let i = 0; i < constituencies.length; i += 1) {
     const constituency = constituencies[i];
-    const [constituency_id, , , , , , , , tags, meta_tags, , , , , description, description_zh, description_en] = constituency;
+    const [constituency_id, , , , , , , , tags, meta_tags, , , , , description, description_zh, description_en, meta] = constituency;
     // hasura update
     try {
       const res = await runQuery(MUTATION_UPDATE_CONSTITUENCY, {
@@ -35,6 +35,7 @@ async function updateConstituencies(fromIdStr, toIdStr) {
           description,
           description_zh,
           description_en,
+          meta: JSON.parse(meta),
         },
       });
 
