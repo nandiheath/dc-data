@@ -1,4 +1,4 @@
-id,year,ca_code,ca_name,constituency_id,編號,name_zh,adress_zh,Constituency Code,Constituency,station_code,name_en,address_en,googleAPI_lat,googleAPI_lng,addrParser_dc_name_19,lat,lng
+id,year,ca_code,ca_name,constituency_id,編號,name_zh,address_zh,Constituency Code,Constituency,station_code,name_en,address_en,googleAPI_lat,googleAPI_lng,addrParser_dc_name_19,lat,lng
 1001,2019,A01,中環,2039,A0101,H6 Conet,香港中環皇后大道中99號中環中心地下,A01,CHUNG WAN,A0101,H6 Conet,"G/F, The Center, 99 Queen's Road Central, Central, Hong Kong",22.284617,114.154718,中環 (A01),22.28467,114.1544
 1002,2019,A01,中環,2039,A0102,香港視覺藝術中心,香港中區堅尼地道7A號4樓,A01,CHUNG WAN,A0102,Hong Kong Visual Arts Centre,"4/F, 7A Kennedy Road, Central, Hong Kong",22.276737,114.159374,中環 (A01),22.27673,114.15888
 1003,2019,A02,半山東,2040,A0201,高主教書院,香港羅便臣道2號,A02,MID LEVELS EAST,A0201,Raimondi College,"2 Robinson Road, Hong Kong",22.2782914,114.1533874,半山東 (A02),22.27842,114.15326
