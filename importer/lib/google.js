@@ -273,7 +273,7 @@ const loadConstituencies = async (fromId, toId) => {
       spreadsheetId: MASTER_DATA_SHEET_ID,
 
       // The ranges to retrieve from the spreadsheet.
-      range: `dcd_constituencies!A${fromId + 1}:Q${toId + 1}`,
+      range: `dcd_constituencies!A${fromId + 1}:R${toId + 1}`,
       auth,
     };
 

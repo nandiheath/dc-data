@@ -26,13 +26,15 @@ async function updateConstituencies(fromIdStr, toIdStr) {
   let updateCount = 0;
   for (let i = 0; i < constituencies.length; i += 1) {
     const constituency = constituencies[i];
-    const [constituency_id, , , , , , , , tags, meta_tags, , , , , description] = constituency;
+    const [constituency_id, , , , , , , , tags, meta_tags, , , , , description, description_zh, description_en] = constituency;
     // hasura update
     try {
       const res = await runQuery(MUTATION_UPDATE_CONSTITUENCY, {
         constituencyId: getInt(constituency_id, null),
         updateInput: {
           description,
+          description_zh,
+          description_en,
         },
       });
 
