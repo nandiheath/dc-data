@@ -129,7 +129,8 @@ async function updateCandidate(fromIdStr, toIdStr) {
         updateInput: {
           name_zh: getStr(name_zh, null),
           name_en: getStr(name_en, null),
-          related_organization: getStr(related_organization, null),
+          related_organization_zh: getStr(related_organization_zh, null),
+          related_organization_en: getStr(related_organization_en, null),
           estimated_yob: getInt(estimated_yob, null),
           gender: getStr(gender, null),
           fc_uuid: getStr(fc_uuid, null),
