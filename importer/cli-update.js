@@ -122,7 +122,7 @@ async function updateCandidate(fromIdStr, toIdStr) {
           electoral_message_en: getStr(electoral_message_en, null),
           email_or_website: getStr(email_or_website, null),
           votes: getInt(votes, 0),
-          is_won: getStr(is_won, 'false') === 'false',
+          is_won: getStr(is_won, 'false') === 'true',
         },
         tags: tags && tags.length > 0 ? tags.split(',').filter(t => t.length > 0).map((entry) => {
           const [type, tag] = entry.split(':');
