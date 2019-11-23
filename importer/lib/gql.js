@@ -27,6 +27,14 @@ mutation insert_data($objects: [dcd_constituencies_insert_input!]!){
 }
 `;
 
+const MUTATION_INSERT_CONSTITUENCY_TAGS = `
+mutation insert_data($objects: [dcd_constituency_tag_insert_input!]!){
+  insert_dcd_constituency_tag(objects: $objects) {
+    affected_rows
+  }
+}
+`;
+
 const MUTATION_DELETE_CONSTITUENCY_PREDECESSORS = `
 mutation delate_data{
   delete_dcd_constituency_predecessors(where:{}) {
@@ -171,10 +179,24 @@ mutation ($constituencyId: Int!, $updateInput:dcd_constituencies_set_input!){
   }
 }`;
 
+const MUTATION_UPDATE_CONFIG = `
+mutation update_config($key: String!, $value: jsonb!) {
+  insert_dcd_config(objects:{
+    key: $key,
+    value: $value
+  } on_conflict:{
+    constraint: dcd_config_pkey
+    update_columns: [value]
+  }) {
+    affected_rows
+  } 
+}`;
+
 module.exports = {
   MUTATION_CLEAR_AND_INSERT_PEOPLE,
   MUTATION_DELETE_CONSTITUENCIES,
   MUTATION_INSERT_CONSTITUENCIES,
+  MUTATION_INSERT_CONSTITUENCY_TAGS,
   MUTATION_DELETE_COUNCILORS,
   MUTATION_INSERT_COUNCILORS,
   MUTATION_DELETE_CANDIDATES,
@@ -192,4 +214,5 @@ module.exports = {
   MUTATION_UPDATE_CONSTITUENCY,
   MUTATION_DELETE_CONSTITUENCY_VOTE_STATS,
   MUTATION_INSERT_CONSTITUENCY_VOTE_STATS,
+  MUTATION_UPDATE_CONFIG,
 };

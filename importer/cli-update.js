@@ -9,8 +9,28 @@ const {
   MUTATION_UPDATE_PERSON,
   MUTATION_UPDATE_CANDIDATE,
   MUTATION_UPDATE_CONSTITUENCY,
+  MUTATION_UPDATE_CONFIG,
 } = require('./lib/gql');
 const { runQuery } = require('./lib/hasura');
+
+async function updateGovTurnout() {
+  try {
+    const res = await runQuery(MUTATION_UPDATE_CONFIG, {
+      key: 'gov_turnout_rate',
+      value: {
+        A01: [],
+      },
+    });
+
+    if (res.statusCode !== 200 || !res.body.data.affected_rows) {
+      throw res.body.data;
+    }
+  } catch (error) {
+    log.error('error when updating config');
+    console.error(error);
+  }
+  log.info('config update completed');
+}
 
 async function updateConstituencies(fromIdStr, toIdStr) {
   const fromId = parseInt(fromIdStr, 10);
@@ -73,7 +93,7 @@ async function updateCandidate(fromIdStr, toIdStr) {
   let peopleUpdateCount = 0;
   for (let i = 0; i < candidates.length; i += 1) {
     const candidate = candidates[i];
-    const [candidate_id, cname_zh, cname_en, , person_id, , , cacode, , , political_affiliation, camp, candidate_number, occupation, nominated_at, nominate_status, , , fb_id, ig_id, tags, occupation_zh, occupation_en, political_affiliation_zh, political_affiliation_en, electoral_message_zh, electoral_message_en, email_or_website] = candidate;
+    const [candidate_id, cname_zh, cname_en, , person_id, , , cacode, , , political_affiliation, camp, candidate_number, occupation, nominated_at, nominate_status, votes, is_won, fb_id, ig_id, tags, occupation_zh, occupation_en, political_affiliation_zh, political_affiliation_en, electoral_message_zh, electoral_message_en, email_or_website] = candidate;
     const person = people.find(p => p[0] === person_id);
     if (person === null) {
       log.error(`people not found for candidata_id:${candidate_id} [${cname_zh}]`);
@@ -101,6 +121,8 @@ async function updateCandidate(fromIdStr, toIdStr) {
           electoral_message_zh: getStr(electoral_message_zh, null),
           electoral_message_en: getStr(electoral_message_en, null),
           email_or_website: getStr(email_or_website, null),
+          votes: getInt(votes, 0),
+          is_won: getStr(is_won, 'false') === 'false',
         },
         tags: tags && tags.length > 0 ? tags.split(',').filter(t => t.length > 0).map((entry) => {
           const [type, tag] = entry.split(':');
@@ -173,9 +195,12 @@ program
   .description('update the constituencies from master data sheet and import to hasura directly')
   .action(updateConstituencies);
 
+program
+  .command('turnout')
+  .description('update the turnout data')
+  .action(updateGovTurnout);
 
 program.parse(process.argv);
 
 // If no arguments we should output the help
 if (!program.args.length) program.help();
-
