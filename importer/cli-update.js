@@ -131,7 +131,7 @@ async function updateCandidate(fromIdStr, toIdStr) {
           electoral_message_en: getStr(electoral_message_en, null),
           email_or_website: getStr(email_or_website, null),
           votes: getInt(votes, 0),
-          is_won: getStr(is_won, 'false') === 'true',
+          is_won: getStr(is_won, 'FALSE') === 'TRUE',
         },
         tags: tags && tags.length > 0 ? tags.split(',').filter(t => t.length > 0).map((entry) => {
           const [type, tag] = entry.split(':');
@@ -142,7 +142,8 @@ async function updateCandidate(fromIdStr, toIdStr) {
       });
 
       if (res.statusCode !== 200 || !res.body.data.update_dcd_candidates) {
-        throw res.body.data;
+        log.error(JSON.stringify(res.body, null, 4));
+        throw res.body;
       }
 
       candidatesUpdateCount += 1;
