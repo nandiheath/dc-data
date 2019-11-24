@@ -3,7 +3,7 @@
 const program = require('commander');
 require('dotenv').config();
 
-const { getStr, getInt, log } = require('./lib/importer');
+const { getStr, getInt, log, getGovTurnouts } = require('./lib/importer');
 const { loadCandidates, loadPeople, loadConstituencies } = require('./lib/google');
 const {
   MUTATION_UPDATE_PERSON,
@@ -15,11 +15,18 @@ const { runQuery } = require('./lib/hasura');
 
 async function updateGovTurnout() {
   try {
+    const turnouts = await getGovTurnouts();
+
+    const value = turnouts.reduce((a, v) => {
+      return {
+        ...a,
+        [v.code]: v.results,
+      };
+    }, {});
+
     const res = await runQuery(MUTATION_UPDATE_CONFIG, {
       key: 'gov_turnout_rate',
-      value: {
-        A01: [],
-      },
+      value,
     });
 
     if (res.statusCode !== 200 || !res.body.data.affected_rows) {

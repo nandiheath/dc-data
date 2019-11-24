@@ -18,7 +18,8 @@
     "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "request": "^2.88.0",
-    "uuid": "^3.3.3"
+    "uuid": "^3.3.3",
+    "x-ray": "^2.3.4"
   },
   "devDependencies": {
     "chai": "^4.1.2",

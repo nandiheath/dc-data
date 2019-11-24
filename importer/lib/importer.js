@@ -3,6 +3,7 @@ const chalk = require('chalk');
 const csv2json = require('csvtojson');
 const path = require('path');
 const _ = require('lodash');
+const Xray = require('X-ray');
 
 const {
   MUTATION_CLEAR_AND_INSERT_PEOPLE,
@@ -90,8 +91,8 @@ async function importPeople(filePath) {
 
 /**
  * For constituencies
- * @param {*} voters 
- * @param {*} newVoters 
+ * @param {*} voters
+ * @param {*} newVoters
  */
 function getVoteStats(constituency_id, type, voters, newVoters) {
   const data = [];
@@ -119,8 +120,8 @@ function getVoteStats(constituency_id, type, voters, newVoters) {
 
 /**
  * For vote station stats ()
- * @param {*} voters 
- * @param {*} newVoters 
+ * @param {*} voters
+ * @param {*} newVoters
  */
 function getStationVoteStats(record) {
   const data = [];
@@ -581,10 +582,74 @@ async function importAll(directory) {
   await importConstituencyVoteStats(path.join(directory, 'dcd_constituency_voters.csv'));
 }
 
+const getGovTurnouts = async () => {
+  const turnoutUrls = {
+    total: 'https://www.elections.gov.hk/dc2019/chi/turnout.html',
+    A: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_central_western.html',
+    B: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_wan_chai.html',
+    C: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_eastern.html',
+    D: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_southern.html',
+    E: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_yau_tsim_mong.html',
+    F: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_sham_shui_po.html',
+    G: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_kowloon_city.html',
+    H: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_wong_tai_sin.html',
+    J: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_kwun_tong.html',
+    K: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_tsuen_wan.html',
+    L: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_tuen_mun.html',
+    M: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_yuen_long.html',
+    N: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_north.html',
+    P: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_tai_po.html',
+    Q: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_sai_kung.html',
+    R: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_sha_tin.html',
+    S: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_kwai_tsing.html',
+    T: 'https://www.elections.gov.hk/dc2019/chi/turnout_18d_islands.html',
+  };
+
+  const x = Xray();
+
+  const crawlTurnout = (url, code) => {
+    // console.debug(`Crawling data for gov turnout ${url}`);
+
+    return x(url, '#table-district-member tr', [
+      {
+        time: 'td:nth-child(1)',
+        count: 'td:nth-child(2)',
+        percent: 'td:nth-child(3)',
+      },
+    ]).then((res) => {
+      const clean = res.map((r) => ({
+        time: r.time,
+        count: parseInt(r.count.replace(/,/g, '')) || null, // Change 123,456 to 123456
+        percent: parseInt(r.percent) || null,
+      }));
+
+      // console.debug(`Crawled data for gov turnout ${url}`);
+      // console.debug(clean);
+
+      const results = clean.map(c => c.count);
+      return {
+        code,
+        results,
+      };
+    }).catch((err) => {
+      console.log(err);
+      return {};
+    });
+  };
+
+  const results = _.map(turnoutUrls, (url, code) => {
+    return crawlTurnout(url, code);
+  });
+
+  return Promise.all(results).then(res => {
+    return res;
+  });
+};
 
 module.exports = {
   importAll,
   getStr,
   getInt,
   log,
+  getGovTurnouts,
 };
