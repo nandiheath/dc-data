@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const program = require('commander');
+const _ = require('lodash');
+
 require('dotenv').config();
 
 const { getStr, getInt, log, getGovTurnouts } = require('./lib/importer');
